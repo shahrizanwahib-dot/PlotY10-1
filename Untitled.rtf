@@ -1,0 +1,1001 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2822
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red70\green137\blue204;\red23\green24\blue24;\red140\green211\blue254;
+\red202\green202\blue202;\red109\green109\blue109;\red194\green126\blue101;\red109\green115\blue120;\red212\green212\blue212;
+\red113\green192\blue131;\red183\green111\blue247;\red54\green192\blue160;\red167\green197\blue152;\red246\green124\blue48;
+\red163\green79\blue131;}
+{\*\expandedcolortbl;;\cssrgb\c33725\c61176\c83922;\cssrgb\c11765\c12157\c12549;\cssrgb\c61176\c86275\c99608;
+\cssrgb\c83137\c83137\c83137;\cssrgb\c50196\c50196\c50196;\cssrgb\c80784\c56863\c47059;\cssrgb\c50196\c52549\c54510;\cssrgb\c86275\c86275\c86275;
+\cssrgb\c50588\c78824\c58431;\cssrgb\c77255\c54118\c97647;\cssrgb\c23922\c78824\c69020;\cssrgb\c70980\c80784\c65882;\cssrgb\c98039\c56471\c24314;
+\cssrgb\c70588\c40000\c58431;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs28 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 <!DOCTYPE\cf4 \strokec4  html\cf2 \strokec2 >\cf5 \cb1 \strokec5 \
+\pard\pardeftab720\partightenfactor0
+\cf6 \cb3 \strokec6 <\cf2 \strokec2 html\cf5 \strokec5  \cf4 \strokec4 lang\cf6 \strokec6 =\cf7 \strokec7 "ms"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cf6 \cb3 \strokec6 <\cf2 \strokec2 head\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\pard\pardeftab720\partightenfactor0
+\cf5 \cb3   \cf6 \strokec6 <\cf2 \strokec2 meta\cf5 \strokec5  \cf4 \strokec4 charset\cf6 \strokec6 =\cf7 \strokec7 "utf-8"\cf5 \strokec5  \cf6 \strokec6 />\cf5 \cb1 \strokec5 \
+\cb3   \cf6 \strokec6 <\cf2 \strokec2 meta\cf5 \strokec5  \cf4 \strokec4 name\cf6 \strokec6 =\cf7 \strokec7 "viewport"\cf5 \strokec5  \cf4 \strokec4 content\cf6 \strokec6 =\cf7 \strokec7 "width=device-width, initial-scale=1, user-scalable=no"\cf5 \strokec5  \cf6 \strokec6 />\cf5 \cb1 \strokec5 \
+\cb3   \cf6 \strokec6 <\cf2 \strokec2 title\cf6 \strokec6 >\cf5 \strokec5 Slaid: Memahami Plot Cerita (Versi Interaktif + AI)\cf6 \strokec6 </\cf2 \strokec2 title\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3   \cb1 \
+\cb3   \cf8 \strokec8 <!-- Tailwind CSS -->\cf5 \cb1 \strokec5 \
+\cb3   \cf6 \strokec6 <\cf2 \strokec2 script\cf5 \strokec5  \cf4 \strokec4 src\cf6 \strokec6 =\cf7 \strokec7 "https://cdn.tailwindcss.com"\cf6 \strokec6 ></\cf2 \strokec2 script\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3   \cb1 \
+\cb3   \cf8 \strokec8 <!-- Fonts -->\cf5 \cb1 \strokec5 \
+\cb3   \cf6 \strokec6 <\cf2 \strokec2 link\cf5 \strokec5  \cf4 \strokec4 rel\cf6 \strokec6 =\cf7 \strokec7 "preconnect"\cf5 \strokec5  \cf4 \strokec4 href\cf6 \strokec6 =\cf7 \strokec7 "https://fonts.googleapis.com"\cf6 \strokec6 />\cf5 \cb1 \strokec5 \
+\cb3   \cf6 \strokec6 <\cf2 \strokec2 link\cf5 \strokec5  \cf4 \strokec4 rel\cf6 \strokec6 =\cf7 \strokec7 "preconnect"\cf5 \strokec5  \cf4 \strokec4 href\cf6 \strokec6 =\cf7 \strokec7 "https://fonts.gstatic.com"\cf5 \strokec5  \cf4 \strokec4 crossorigin\cf6 \strokec6 />\cf5 \cb1 \strokec5 \
+\cb3   \cf6 \strokec6 <\cf2 \strokec2 link\cf5 \strokec5  \cf4 \strokec4 href\cf6 \strokec6 =\cf7 \strokec7 "https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&display=swap"\cf5 \strokec5  \cf4 \strokec4 rel\cf6 \strokec6 =\cf7 \strokec7 "stylesheet"\cf5 \strokec5  \cf6 \strokec6 />\cf5 \cb1 \strokec5 \
+\cb3   \cf6 \strokec6 <\cf2 \strokec2 link\cf5 \strokec5  \cf4 \strokec4 href\cf6 \strokec6 =\cf7 \strokec7 "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"\cf5 \strokec5  \cf4 \strokec4 rel\cf6 \strokec6 =\cf7 \strokec7 "stylesheet"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\
+\cb3   \cf8 \strokec8 <!-- Mobile Drag & Drop Polyfill -->\cf5 \cb1 \strokec5 \
+\cb3   \cf6 \strokec6 <\cf2 \strokec2 link\cf5 \strokec5  \cf4 \strokec4 rel\cf6 \strokec6 =\cf7 \strokec7 "stylesheet"\cf5 \strokec5  \cf4 \strokec4 href\cf6 \strokec6 =\cf7 \strokec7 "https://cdn.jsdelivr.net/npm/mobile-drag-drop@2.3.0-rc.2/default.css"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3   \cf6 \strokec6 <\cf2 \strokec2 script\cf5 \strokec5  \cf4 \strokec4 src\cf6 \strokec6 =\cf7 \strokec7 "https://cdn.jsdelivr.net/npm/mobile-drag-drop@2.3.0-rc.2/index.min.js"\cf6 \strokec6 ></\cf2 \strokec2 script\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3   \cf6 \strokec6 <\cf2 \strokec2 script\cf5 \strokec5  \cf4 \strokec4 src\cf6 \strokec6 =\cf7 \strokec7 "https://cdn.jsdelivr.net/npm/mobile-drag-drop@2.3.0-rc.2/scroll-behaviour.min.js"\cf6 \strokec6 ></\cf2 \strokec2 script\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\
+\cb3   \cf6 \strokec6 <\cf2 \strokec2 script\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3     document\cf9 \strokec9 .\cf5 \strokec5 addEventListener\cf9 \strokec9 (\cf10 \strokec10 "DOMContentLoaded"\cf9 \strokec9 ,\cf5 \strokec5  \cf11 \strokec11 function\cf9 \strokec9 ()\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
+\cb3         \cf11 \strokec11 if\cf5 \strokec5  \cf9 \strokec9 (\cf11 \strokec11 typeof\cf5 \strokec5  \cf12 \strokec12 MobileDragDrop\cf5 \strokec5  \cf9 \strokec9 !==\cf5 \strokec5  \cf10 \strokec10 'undefined'\cf9 \strokec9 )\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
+\cb3             \cf11 \strokec11 var\cf5 \strokec5  options \cf9 \strokec9 =\cf5 \strokec5  \cf9 \strokec9 \{\};\cf5 \cb1 \strokec5 \
+\cb3             \cf11 \strokec11 if\cf5 \strokec5  \cf9 \strokec9 (\cf12 \strokec12 MobileDragDrop\cf9 \strokec9 .\cf5 \strokec5 scrollBehaviour\cf9 \strokec9 )\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
+\cb3                 options\cf9 \strokec9 .\cf5 \strokec5 dragImageTranslateOverride \cf9 \strokec9 =\cf5 \strokec5  \cf12 \strokec12 MobileDragDrop\cf9 \strokec9 .\cf5 \strokec5 scrollBehaviour\cf9 \strokec9 .\cf5 \strokec5 dragImageTranslateOverride\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3             \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\cb3             \cf12 \strokec12 MobileDragDrop\cf9 \strokec9 .\cf5 \strokec5 polyfill\cf9 \strokec9 (\cf5 \strokec5 options\cf9 \strokec9 );\cf5 \cb1 \strokec5 \
+\cb3         \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\cb3     \cf9 \strokec9 \});\cf5 \cb1 \strokec5 \
+\cb3   \cf6 \strokec6 </\cf2 \strokec2 script\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\
+\cb3   \cf6 \strokec6 <\cf2 \strokec2 style\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3     \cf2 \strokec2 body\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \strokec5  \cf4 \strokec4 box-sizing:\cf5 \strokec5  \cf7 \strokec7 border-box\cf9 \strokec9 ;\cf5 \strokec5  \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\cb3     \cf2 \strokec2 :root\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \strokec5  \cf4 \strokec4 --base-font:\cf5 \strokec5  \cf13 \strokec13 18px\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 --content-width:\cf5 \strokec5  \cf13 \strokec13 1200px\cf9 \strokec9 ;\cf5 \strokec5  \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\cb3     \cf2 \strokec2 html\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \strokec5  \cf4 \strokec4 font-size:\cf5 \strokec5  \cf7 \strokec7 var(--base-font)\cf9 \strokec9 ;\cf5 \strokec5  \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\cb3     \cf2 \strokec2 body\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \strokec5  \cf4 \strokec4 font-family:\cf5 \strokec5  \cf10 \strokec10 'Plus Jakarta Sans'\cf9 \strokec9 ,\cf5 \strokec5  \cf7 \strokec7 system-ui\cf9 \strokec9 ,\cf5 \strokec5  \cf7 \strokec7 -apple-system\cf9 \strokec9 ,\cf5 \strokec5  \cf7 \strokec7 sans-serif\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 background:\cf5 \strokec5  #ffffff\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 color:\cf5 \strokec5  #0b0f19\cf9 \strokec9 ;\cf5 \strokec5  \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\
+\cb3     \cf2 \strokec2 .title\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \strokec5  \cf4 \strokec4 font-size:\cf5 \strokec5  \cf7 \strokec7 clamp(\cf13 \strokec13 2rem\cf9 \strokec9 ,\cf5 \strokec5  \cf13 \strokec13 2vw\cf5 \strokec5  \cf9 \strokec9 +\cf5 \strokec5  \cf13 \strokec13 1.2rem\cf9 \strokec9 ,\cf5 \strokec5  \cf13 \strokec13 3rem\cf7 \strokec7 )\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 line-height:\cf5 \strokec5  \cf13 \strokec13 1.12\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 font-weight:\cf5 \strokec5  \cf13 \strokec13 900\cf9 \strokec9 ;\cf5 \strokec5  \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\cb3     \cf2 \strokec2 .btn\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \strokec5  \cf4 \strokec4 border-radius:\cf5 \strokec5  \cf13 \strokec13 14px\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 font-weight:\cf5 \strokec5  \cf13 \strokec13 800\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 padding:\cf5 \strokec5  \cf13 \strokec13 .6rem\cf5 \strokec5  \cf13 \strokec13 1rem\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 transition:\cf5 \strokec5  \cf7 \strokec7 all\cf5 \strokec5  \cf13 \strokec13 .2s\cf5 \strokec5  \cf7 \strokec7 ease\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 cursor:\cf5 \strokec5  \cf7 \strokec7 pointer\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 border:\cf5 \strokec5  \cf7 \strokec7 none\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 display:\cf5 \strokec5  \cf7 \strokec7 inline-flex\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 align-items:\cf5 \strokec5  \cf7 \strokec7 center\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 justify-content:\cf5 \strokec5  \cf7 \strokec7 center\cf9 \strokec9 ;\}\cf5 \cb1 \strokec5 \
+\cb3     \cf2 \strokec2 .btn:active\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \strokec5  \cf4 \strokec4 transform:\cf5 \strokec5  \cf7 \strokec7 scale(\cf13 \strokec13 0.98\cf7 \strokec7 )\cf9 \strokec9 ;\cf5 \strokec5  \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\cb3     \cf2 \strokec2 .btn-primary\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \strokec5  \cf4 \strokec4 background:\cf5 \strokec5  #3b82f6\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 color:\cf5 \strokec5  #fff\cf9 \strokec9 ;\cf5 \strokec5  \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\cb3     \cf2 \strokec2 .btn-primary:disabled\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \strokec5  \cf4 \strokec4 background:\cf5 \strokec5  #cbd5e1\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 cursor:\cf5 \strokec5  \cf7 \strokec7 not-allowed\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 transform:\cf5 \strokec5  \cf7 \strokec7 none\cf9 \strokec9 ;\cf5 \strokec5  \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\cb3     \cf2 \strokec2 .btn-ghost\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \strokec5  \cf4 \strokec4 background:\cf5 \strokec5  \cf7 \strokec7 rgba(\cf13 \strokec13 0\cf9 \strokec9 ,\cf13 \strokec13 0\cf9 \strokec9 ,\cf13 \strokec13 0\cf9 \strokec9 ,\cf13 \strokec13 .06\cf7 \strokec7 )\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 color:\cf5 \strokec5  #0b0f19\cf9 \strokec9 ;\cf5 \strokec5  \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\cb3     \cf2 \strokec2 .btn-danger\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \strokec5  \cf4 \strokec4 background:\cf5 \strokec5  #fee2e2\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 color:\cf5 \strokec5  #991b1b\cf9 \strokec9 ;\cf5 \strokec5  \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\cb3     \cf2 \strokec2 .btn-danger:hover\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \strokec5  \cf4 \strokec4 background:\cf5 \strokec5  #fecaca\cf9 \strokec9 ;\cf5 \strokec5  \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\cb3     \cf2 \strokec2 .btn-success\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \strokec5  \cf4 \strokec4 background:\cf5 \strokec5  #22c55e\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 color:\cf5 \strokec5  #fff\cf9 \strokec9 ;\cf5 \strokec5  \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\cb3     \cf2 \strokec2 .btn-success:hover\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \strokec5  \cf4 \strokec4 background:\cf5 \strokec5  #16a34a\cf9 \strokec9 ;\cf5 \strokec5  \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\cb3     \cb1 \
+\cb3     \cf8 \strokec8 /* AI Buttons */\cf5 \cb1 \strokec5 \
+\cb3     \cf2 \strokec2 .btn-ai\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \strokec5  \cf4 \strokec4 background:\cf5 \strokec5  \cf7 \strokec7 linear-gradient(\cf13 \strokec13 135deg\cf9 \strokec9 ,\cf5 \strokec5  #8b5cf6 \cf13 \strokec13 0%\cf9 \strokec9 ,\cf5 \strokec5  #d946ef \cf13 \strokec13 100%\cf7 \strokec7 )\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 color:\cf5 \strokec5  \cf7 \strokec7 white\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 border:\cf5 \strokec5  \cf7 \strokec7 none\cf9 \strokec9 ;\cf5 \strokec5  \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\cb3     \cf2 \strokec2 .btn-ai:hover\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \strokec5  \cf4 \strokec4 filter:\cf5 \strokec5  \cf7 \strokec7 brightness(\cf13 \strokec13 1.1\cf7 \strokec7 )\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 transform:\cf5 \strokec5  \cf7 \strokec7 translateY(\cf13 \strokec13 -1px\cf7 \strokec7 )\cf9 \strokec9 ;\cf5 \strokec5  \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\cb3     \cf2 \strokec2 .btn-ai:disabled\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \strokec5  \cf4 \strokec4 opacity:\cf5 \strokec5  \cf13 \strokec13 0.7\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 cursor:\cf5 \strokec5  \cf7 \strokec7 wait\cf9 \strokec9 ;\cf5 \strokec5  \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\cb3     \cf2 \strokec2 .btn-ai-dark\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \strokec5  \cf4 \strokec4 background:\cf5 \strokec5  \cf7 \strokec7 linear-gradient(\cf13 \strokec13 135deg\cf9 \strokec9 ,\cf5 \strokec5  #4c1d95 \cf13 \strokec13 0%\cf9 \strokec9 ,\cf5 \strokec5  #7e22ce \cf13 \strokec13 100%\cf7 \strokec7 )\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 color:\cf5 \strokec5  \cf7 \strokec7 white\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 border:\cf5 \strokec5  \cf7 \strokec7 none\cf9 \strokec9 ;\cf5 \strokec5  \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\cb3     \cf2 \strokec2 .btn-outline-ai\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \strokec5  \cf4 \strokec4 border:\cf5 \strokec5  \cf13 \strokec13 2px\cf5 \strokec5  \cf7 \strokec7 solid\cf5 \strokec5  #8b5cf6\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 color:\cf5 \strokec5  #7c3aed\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 background:\cf5 \strokec5  \cf7 \strokec7 transparent\cf9 \strokec9 ;\cf5 \strokec5  \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\cb3     \cf2 \strokec2 .btn-outline-ai:hover\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \strokec5  \cf4 \strokec4 background:\cf5 \strokec5  #f5f3ff\cf9 \strokec9 ;\cf5 \strokec5  \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\
+\cb3     \cf2 \strokec2 .lesson-badge\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
+\cb3       \cf4 \strokec4 width:\cf5 \strokec5  \cf13 \strokec13 56px\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 height:\cf5 \strokec5  \cf13 \strokec13 56px\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 border-radius:\cf5 \strokec5  \cf13 \strokec13 50%\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3       \cf4 \strokec4 background:\cf5 \strokec5  \cf7 \strokec7 linear-gradient(\cf13 \strokec13 135deg\cf9 \strokec9 ,\cf5 \strokec5  #f97316 \cf13 \strokec13 0%\cf9 \strokec9 ,\cf5 \strokec5  #ea580c \cf13 \strokec13 100%\cf7 \strokec7 )\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3       \cf4 \strokec4 display:\cf5 \strokec5  \cf7 \strokec7 flex\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 align-items:\cf5 \strokec5  \cf7 \strokec7 center\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 justify-content:\cf5 \strokec5  \cf7 \strokec7 center\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3       \cf4 \strokec4 color:\cf5 \strokec5  \cf7 \strokec7 white\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 font-size:\cf5 \strokec5  \cf13 \strokec13 1.5rem\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 flex-shrink:\cf5 \strokec5  \cf13 \strokec13 0\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3     \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\cb3     \cf2 \strokec2 .obj-strip\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \strokec5  \cf4 \strokec4 position:\cf5 \strokec5  \cf7 \strokec7 sticky\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 top:\cf5 \strokec5  \cf13 \strokec13 0\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 z-index:\cf5 \strokec5  \cf13 \strokec13 30\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 backdrop-filter:\cf5 \strokec5  \cf7 \strokec7 saturate(\cf13 \strokec13 1.2\cf7 \strokec7 )\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 background:\cf5 \strokec5  \cf7 \strokec7 rgba(\cf13 \strokec13 255\cf9 \strokec9 ,\cf13 \strokec13 255\cf9 \strokec9 ,\cf13 \strokec13 255\cf9 \strokec9 ,\cf13 \strokec13 0.9\cf7 \strokec7 )\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 border-bottom:\cf5 \strokec5  \cf13 \strokec13 1px\cf5 \strokec5  \cf7 \strokec7 solid\cf5 \strokec5  #e5e7eb\cf9 \strokec9 ;\cf5 \strokec5  \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\cb3     \cb1 \
+\cb3     \cf2 \strokec2 textarea.answer\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
+\cb3       \cf4 \strokec4 width:\cf5 \strokec5  \cf13 \strokec13 100%\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 min-height:\cf5 \strokec5  \cf13 \strokec13 100px\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 border-radius:\cf5 \strokec5  \cf13 \strokec13 14px\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 border:\cf5 \strokec5  \cf13 \strokec13 1px\cf5 \strokec5  \cf7 \strokec7 solid\cf5 \strokec5  #e2e8f0\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3       \cf4 \strokec4 padding:\cf5 \strokec5  \cf13 \strokec13 .9rem\cf5 \strokec5  \cf13 \strokec13 1rem\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 outline:\cf5 \strokec5  \cf7 \strokec7 none\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 font-family:\cf5 \strokec5  \cf7 \strokec7 inherit\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 transition:\cf5 \strokec5  \cf7 \strokec7 border-color\cf5 \strokec5  \cf13 \strokec13 0.2s\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 resize:\cf5 \strokec5  \cf7 \strokec7 vertical\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3     \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\cb3     \cf2 \strokec2 textarea.answer:focus\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \strokec5  \cf4 \strokec4 border-color:\cf5 \strokec5  #3b82f6\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 box-shadow:\cf5 \strokec5  \cf13 \strokec13 0\cf5 \strokec5  \cf13 \strokec13 0\cf5 \strokec5  \cf13 \strokec13 0\cf5 \strokec5  \cf13 \strokec13 3px\cf5 \strokec5  \cf7 \strokec7 rgba(\cf13 \strokec13 59\cf9 \strokec9 ,\cf13 \strokec13 130\cf9 \strokec9 ,\cf13 \strokec13 246\cf9 \strokec9 ,\cf13 \strokec13 .18\cf7 \strokec7 )\cf9 \strokec9 ;\cf5 \strokec5  \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\
+\cb3     \cf2 \strokec2 .draggable\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
+\cb3       \cf4 \strokec4 cursor:\cf5 \strokec5  \cf7 \strokec7 grab\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 user-select:\cf5 \strokec5  \cf7 \strokec7 none\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 background:\cf5 \strokec5  \cf7 \strokec7 white\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 border:\cf5 \strokec5  \cf13 \strokec13 2px\cf5 \strokec5  \cf7 \strokec7 solid\cf5 \strokec5  #3b82f6\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 color:\cf5 \strokec5  #2563eb\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3       \cf4 \strokec4 padding:\cf5 \strokec5  \cf13 \strokec13 0.5rem\cf5 \strokec5  \cf13 \strokec13 1rem\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 border-radius:\cf5 \strokec5  \cf13 \strokec13 999px\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 font-weight:\cf5 \strokec5  \cf7 \strokec7 bold\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 box-shadow:\cf5 \strokec5  \cf13 \strokec13 0\cf5 \strokec5  \cf13 \strokec13 2px\cf5 \strokec5  \cf13 \strokec13 5px\cf5 \strokec5  \cf7 \strokec7 rgba(\cf13 \strokec13 0\cf9 \strokec9 ,\cf13 \strokec13 0\cf9 \strokec9 ,\cf13 \strokec13 0\cf9 \strokec9 ,\cf13 \strokec13 0.1\cf7 \strokec7 )\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3       \cf4 \strokec4 touch-action:\cf5 \strokec5  \cf7 \strokec7 none\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 margin:\cf5 \strokec5  \cf13 \strokec13 4px\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3     \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\cb3     \cf2 \strokec2 .draggable:active\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \strokec5  \cf4 \strokec4 cursor:\cf5 \strokec5  \cf7 \strokec7 grabbing\cf9 \strokec9 ;\cf5 \strokec5  \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\cb3     \cf2 \strokec2 .draggable.matched\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \strokec5  \cf4 \strokec4 background:\cf5 \strokec5  #dcfce7\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 border-color:\cf5 \strokec5  #22c55e\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 color:\cf5 \strokec5  #15803d\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 cursor:\cf5 \strokec5  \cf7 \strokec7 default\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 pointer-events:\cf5 \strokec5  \cf7 \strokec7 none\cf9 \strokec9 ;\cf5 \strokec5  \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\cb3     \cb1 \
+\cb3     \cf2 \strokec2 .drop-zone\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
+\cb3       \cf4 \strokec4 border:\cf5 \strokec5  \cf13 \strokec13 2px\cf5 \strokec5  \cf7 \strokec7 dashed\cf5 \strokec5  #cbd5e1\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 background:\cf5 \strokec5  #f8fafc\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 border-radius:\cf5 \strokec5  \cf13 \strokec13 12px\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3       \cf4 \strokec4 min-height:\cf5 \strokec5  \cf13 \strokec13 60px\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 display:\cf5 \strokec5  \cf7 \strokec7 flex\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 align-items:\cf5 \strokec5  \cf7 \strokec7 center\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 justify-content:\cf5 \strokec5  \cf7 \strokec7 center\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3       \cf4 \strokec4 transition:\cf5 \strokec5  \cf7 \strokec7 all\cf5 \strokec5  \cf13 \strokec13 0.2s\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 position:\cf5 \strokec5  \cf7 \strokec7 relative\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 z-index:\cf5 \strokec5  \cf13 \strokec13 10\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3     \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\cb3     \cf2 \strokec2 .drop-zone.drag-over\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \strokec5  \cf4 \strokec4 background:\cf5 \strokec5  #eff6ff\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 border-color:\cf5 \strokec5  #3b82f6\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 transform:\cf5 \strokec5  \cf7 \strokec7 scale(\cf13 \strokec13 1.02\cf7 \strokec7 )\cf9 \strokec9 ;\cf5 \strokec5  \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\cb3     \cf2 \strokec2 .drop-zone.correct\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \strokec5  \cf4 \strokec4 border-style:\cf5 \strokec5  \cf7 \strokec7 solid\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 border-color:\cf5 \strokec5  #22c55e\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 background:\cf5 \strokec5  #f0fdf4\cf9 \strokec9 ;\cf5 \strokec5  \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\
+\cb3     \cf2 \strokec2 .quiz-opt\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
+\cb3         \cf4 \strokec4 width:\cf5 \strokec5  \cf13 \strokec13 100%\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 text-align:\cf5 \strokec5  \cf7 \strokec7 left\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 padding:\cf5 \strokec5  \cf13 \strokec13 1rem\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 margin-bottom:\cf5 \strokec5  \cf13 \strokec13 0.5rem\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3         \cf4 \strokec4 border:\cf5 \strokec5  \cf13 \strokec13 2px\cf5 \strokec5  \cf7 \strokec7 solid\cf5 \strokec5  #e2e8f0\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 border-radius:\cf5 \strokec5  \cf13 \strokec13 12px\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 font-weight:\cf5 \strokec5  \cf13 \strokec13 600\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 transition:\cf5 \strokec5  \cf7 \strokec7 all\cf5 \strokec5  \cf13 \strokec13 0.2s\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3     \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\cb3     \cf2 \strokec2 .quiz-opt:hover:not\cf5 \strokec5 (\cf2 \strokec2 :disabled\cf5 \strokec5 ) \cf9 \strokec9 \{\cf5 \strokec5  \cf4 \strokec4 background:\cf5 \strokec5  #f1f5f9\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 border-color:\cf5 \strokec5  #cbd5e1\cf9 \strokec9 ;\cf5 \strokec5  \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\cb3     \cf2 \strokec2 .quiz-opt.correct\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \strokec5  \cf4 \strokec4 background:\cf5 \strokec5  #dcfce7\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 border-color:\cf5 \strokec5  #22c55e\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 color:\cf5 \strokec5  #14532d\cf9 \strokec9 ;\cf5 \strokec5  \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\cb3     \cf2 \strokec2 .quiz-opt.wrong\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \strokec5  \cf4 \strokec4 background:\cf5 \strokec5  #fee2e2\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 border-color:\cf5 \strokec5  #ef4444\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 color:\cf5 \strokec5  #7f1d1d\cf9 \strokec9 ;\cf5 \strokec5  \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\
+\cb3     \cf2 \strokec2 .vocab-helper\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \strokec5  \cf4 \strokec4 position:\cf5 \strokec5  \cf7 \strokec7 fixed\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 bottom:\cf5 \strokec5  \cf13 \strokec13 20px\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 right:\cf5 \strokec5  \cf13 \strokec13 20px\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 z-index:\cf5 \strokec5  \cf13 \strokec13 1000\cf9 \strokec9 ;\cf5 \strokec5  \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\cb3     \cf2 \strokec2 .vocab-button\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
+\cb3       \cf4 \strokec4 width:\cf5 \strokec5  \cf13 \strokec13 60px\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 height:\cf5 \strokec5  \cf13 \strokec13 60px\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 border-radius:\cf5 \strokec5  \cf13 \strokec13 50%\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 background:\cf5 \strokec5  #f97316\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 color:\cf5 \strokec5  \cf7 \strokec7 white\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 border:\cf5 \strokec5  \cf7 \strokec7 none\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3       \cf4 \strokec4 font-size:\cf5 \strokec5  \cf13 \strokec13 1.5rem\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 cursor:\cf5 \strokec5  \cf7 \strokec7 pointer\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 box-shadow:\cf5 \strokec5  \cf13 \strokec13 0\cf5 \strokec5  \cf13 \strokec13 4px\cf5 \strokec5  \cf13 \strokec13 12px\cf5 \strokec5  \cf7 \strokec7 rgba(\cf13 \strokec13 249\cf9 \strokec9 ,\cf5 \strokec5  \cf13 \strokec13 115\cf9 \strokec9 ,\cf5 \strokec5  \cf13 \strokec13 22\cf9 \strokec9 ,\cf5 \strokec5  \cf13 \strokec13 0.3\cf7 \strokec7 )\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3       \cf4 \strokec4 display:\cf5 \strokec5  \cf7 \strokec7 flex\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 align-items:\cf5 \strokec5  \cf7 \strokec7 center\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 justify-content:\cf5 \strokec5  \cf7 \strokec7 center\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 transition:\cf5 \strokec5  \cf7 \strokec7 transform\cf5 \strokec5  \cf13 \strokec13 0.2s\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3     \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\cb3     \cf2 \strokec2 .vocab-button:hover\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \strokec5  \cf4 \strokec4 transform:\cf5 \strokec5  \cf7 \strokec7 scale(\cf13 \strokec13 1.1\cf7 \strokec7 )\cf9 \strokec9 ;\cf5 \strokec5  \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\cb3     \cf2 \strokec2 .vocab-panel\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
+\cb3       \cf4 \strokec4 position:\cf5 \strokec5  \cf7 \strokec7 absolute\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 bottom:\cf5 \strokec5  \cf13 \strokec13 80px\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 right:\cf5 \strokec5  \cf13 \strokec13 0\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 width:\cf5 \strokec5  \cf13 \strokec13 300px\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 max-height:\cf5 \strokec5  \cf13 \strokec13 400px\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 background:\cf5 \strokec5  \cf7 \strokec7 white\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3       \cf4 \strokec4 border-radius:\cf5 \strokec5  \cf13 \strokec13 16px\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 box-shadow:\cf5 \strokec5  \cf13 \strokec13 0\cf5 \strokec5  \cf13 \strokec13 10px\cf5 \strokec5  \cf13 \strokec13 25px\cf5 \strokec5  \cf7 \strokec7 rgba(\cf13 \strokec13 0\cf9 \strokec9 ,\cf13 \strokec13 0\cf9 \strokec9 ,\cf13 \strokec13 0\cf9 \strokec9 ,\cf13 \strokec13 0.15\cf7 \strokec7 )\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 transform:\cf5 \strokec5  \cf7 \strokec7 translateY(\cf13 \strokec13 20px\cf7 \strokec7 )\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 opacity:\cf5 \strokec5  \cf13 \strokec13 0\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3       \cf4 \strokec4 pointer-events:\cf5 \strokec5  \cf7 \strokec7 none\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 transition:\cf5 \strokec5  \cf7 \strokec7 all\cf5 \strokec5  \cf13 \strokec13 0.3s\cf5 \strokec5  \cf7 \strokec7 ease\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 display:\cf5 \strokec5  \cf7 \strokec7 flex\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 flex-direction:\cf5 \strokec5  \cf7 \strokec7 column\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 overflow:\cf5 \strokec5  \cf7 \strokec7 hidden\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3     \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\cb3     \cf2 \strokec2 .vocab-panel.show\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \strokec5  \cf4 \strokec4 transform:\cf5 \strokec5  \cf7 \strokec7 translateY(\cf13 \strokec13 0\cf7 \strokec7 )\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 opacity:\cf5 \strokec5  \cf13 \strokec13 1\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 pointer-events:\cf5 \strokec5  \cf7 \strokec7 all\cf9 \strokec9 ;\cf5 \strokec5  \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\cb3     \cf2 \strokec2 .hidden\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \strokec5  \cf4 \strokec4 display:\cf5 \strokec5  \cf7 \strokec7 none\cf5 \strokec5  \cf11 \strokec11 !important\cf9 \strokec9 ;\cf5 \strokec5  \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\cb3     \cb1 \
+\cb3     \cf8 \strokec8 /* AI Response Box */\cf5 \cb1 \strokec5 \
+\cb3     \cf2 \strokec2 .ai-response\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
+\cb3         \cf4 \strokec4 background:\cf5 \strokec5  #f0fdfa\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 border:\cf5 \strokec5  \cf13 \strokec13 1px\cf5 \strokec5  \cf7 \strokec7 solid\cf5 \strokec5  #ccfbf1\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 color:\cf5 \strokec5  #115e59\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3         \cf4 \strokec4 padding:\cf5 \strokec5  \cf13 \strokec13 1rem\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 border-radius:\cf5 \strokec5  \cf13 \strokec13 0.75rem\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 margin-top:\cf5 \strokec5  \cf13 \strokec13 1rem\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 font-size:\cf5 \strokec5  \cf13 \strokec13 0.95rem\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3         \cf4 \strokec4 white-space:\cf5 \strokec5  \cf7 \strokec7 pre-line\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3     \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\cb3     \cb1 \
+\cb3     \cf2 \strokec2 .custom-scroll::-webkit-scrollbar\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \strokec5  \cf4 \strokec4 width:\cf5 \strokec5  \cf13 \strokec13 6px\cf9 \strokec9 ;\cf5 \strokec5  \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\cb3     \cf2 \strokec2 .custom-scroll::-webkit-scrollbar-track\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \strokec5  \cf4 \strokec4 background:\cf5 \strokec5  #f1f1f1\cf9 \strokec9 ;\cf5 \strokec5  \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\cb3     \cf2 \strokec2 .custom-scroll::-webkit-scrollbar-thumb\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \strokec5  \cf4 \strokec4 background:\cf5 \strokec5  #d1d5db\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 border-radius:\cf5 \strokec5  \cf13 \strokec13 3px\cf9 \strokec9 ;\cf5 \strokec5  \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\cb3     \cf2 \strokec2 .custom-scroll::-webkit-scrollbar-thumb:hover\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \strokec5  \cf4 \strokec4 background:\cf5 \strokec5  #9ca3af\cf9 \strokec9 ;\cf5 \strokec5  \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\cb3     \cb1 \
+\cb3     \cf2 \strokec2 .animate-fade-in\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \strokec5  \cf4 \strokec4 animation:\cf5 \strokec5  \cf7 \strokec7 fadeIn\cf5 \strokec5  \cf13 \strokec13 0.5s\cf5 \strokec5  \cf7 \strokec7 ease-out\cf9 \strokec9 ;\cf5 \strokec5  \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\cb3     \cf11 \strokec11 @keyframes\cf5 \strokec5  \cf7 \strokec7 fadeIn\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \strokec5  \cf7 \strokec7 from\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \strokec5  \cf4 \strokec4 opacity:\cf5 \strokec5  \cf13 \strokec13 0\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 transform:\cf5 \strokec5  \cf7 \strokec7 translateY(\cf13 \strokec13 10px\cf7 \strokec7 )\cf9 \strokec9 ;\cf5 \strokec5  \cf9 \strokec9 \}\cf5 \strokec5  \cf7 \strokec7 to\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \strokec5  \cf4 \strokec4 opacity:\cf5 \strokec5  \cf13 \strokec13 1\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 transform:\cf5 \strokec5  \cf7 \strokec7 translateY(\cf13 \strokec13 0\cf7 \strokec7 )\cf9 \strokec9 ;\cf5 \strokec5  \cf9 \strokec9 \}\cf5 \strokec5  \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\cb3     \cb1 \
+\cb3     \cf2 \strokec2 .thinking-dots::after\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \strokec5  \cf4 \strokec4 content:\cf5 \strokec5  \cf10 \strokec10 ' .'\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 animation:\cf5 \strokec5  \cf7 \strokec7 dots\cf5 \strokec5  \cf13 \strokec13 1s\cf5 \strokec5  \cf7 \strokec7 steps(\cf13 \strokec13 5\cf9 \strokec9 ,\cf5 \strokec5  \cf7 \strokec7 end)\cf5 \strokec5  \cf7 \strokec7 infinite\cf9 \strokec9 ;\cf5 \strokec5  \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\cb3     \cf11 \strokec11 @keyframes\cf5 \strokec5  \cf7 \strokec7 dots\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \strokec5  \cb1 \
+\cb3         \cf13 \strokec13 0%\cf9 \strokec9 ,\cf5 \strokec5  \cf13 \strokec13 20%\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \strokec5  \cf4 \strokec4 color:\cf5 \strokec5  \cf7 \strokec7 rgba(\cf13 \strokec13 255\cf9 \strokec9 ,\cf13 \strokec13 255\cf9 \strokec9 ,\cf13 \strokec13 255\cf9 \strokec9 ,\cf13 \strokec13 0\cf7 \strokec7 )\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 text-shadow:\cf5 \strokec5  \cf13 \strokec13 .25em\cf5 \strokec5  \cf13 \strokec13 0\cf5 \strokec5  \cf13 \strokec13 0\cf5 \strokec5  \cf7 \strokec7 rgba(\cf13 \strokec13 0\cf9 \strokec9 ,\cf13 \strokec13 0\cf9 \strokec9 ,\cf13 \strokec13 0\cf9 \strokec9 ,\cf13 \strokec13 0\cf7 \strokec7 )\cf9 \strokec9 ,\cf5 \strokec5  \cf13 \strokec13 .5em\cf5 \strokec5  \cf13 \strokec13 0\cf5 \strokec5  \cf13 \strokec13 0\cf5 \strokec5  \cf7 \strokec7 rgba(\cf13 \strokec13 0\cf9 \strokec9 ,\cf13 \strokec13 0\cf9 \strokec9 ,\cf13 \strokec13 0\cf9 \strokec9 ,\cf13 \strokec13 0\cf7 \strokec7 )\cf9 \strokec9 ;\}\cf5 \strokec5  \cb1 \
+\cb3         \cf13 \strokec13 40%\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \strokec5  \cf4 \strokec4 color:\cf5 \strokec5  \cf7 \strokec7 white\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 text-shadow:\cf5 \strokec5  \cf13 \strokec13 .25em\cf5 \strokec5  \cf13 \strokec13 0\cf5 \strokec5  \cf13 \strokec13 0\cf5 \strokec5  \cf7 \strokec7 rgba(\cf13 \strokec13 0\cf9 \strokec9 ,\cf13 \strokec13 0\cf9 \strokec9 ,\cf13 \strokec13 0\cf9 \strokec9 ,\cf13 \strokec13 0\cf7 \strokec7 )\cf9 \strokec9 ,\cf5 \strokec5  \cf13 \strokec13 .5em\cf5 \strokec5  \cf13 \strokec13 0\cf5 \strokec5  \cf13 \strokec13 0\cf5 \strokec5  \cf7 \strokec7 rgba(\cf13 \strokec13 0\cf9 \strokec9 ,\cf13 \strokec13 0\cf9 \strokec9 ,\cf13 \strokec13 0\cf9 \strokec9 ,\cf13 \strokec13 0\cf7 \strokec7 )\cf9 \strokec9 ;\}\cf5 \strokec5  \cb1 \
+\cb3         \cf13 \strokec13 60%\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \strokec5  \cf4 \strokec4 text-shadow:\cf5 \strokec5  \cf13 \strokec13 .25em\cf5 \strokec5  \cf13 \strokec13 0\cf5 \strokec5  \cf13 \strokec13 0\cf5 \strokec5  \cf7 \strokec7 white\cf9 \strokec9 ,\cf5 \strokec5  \cf13 \strokec13 .5em\cf5 \strokec5  \cf13 \strokec13 0\cf5 \strokec5  \cf13 \strokec13 0\cf5 \strokec5  \cf7 \strokec7 rgba(\cf13 \strokec13 0\cf9 \strokec9 ,\cf13 \strokec13 0\cf9 \strokec9 ,\cf13 \strokec13 0\cf9 \strokec9 ,\cf13 \strokec13 0\cf7 \strokec7 )\cf9 \strokec9 ;\}\cf5 \strokec5  \cb1 \
+\cb3         \cf13 \strokec13 80%\cf9 \strokec9 ,\cf5 \strokec5  \cf13 \strokec13 100%\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \strokec5  \cf4 \strokec4 text-shadow:\cf5 \strokec5  \cf13 \strokec13 .25em\cf5 \strokec5  \cf13 \strokec13 0\cf5 \strokec5  \cf13 \strokec13 0\cf5 \strokec5  \cf7 \strokec7 white\cf9 \strokec9 ,\cf5 \strokec5  \cf13 \strokec13 .5em\cf5 \strokec5  \cf13 \strokec13 0\cf5 \strokec5  \cf13 \strokec13 0\cf5 \strokec5  \cf7 \strokec7 white\cf9 \strokec9 ;\}\cf5 \strokec5  \cb1 \
+\cb3     \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\
+\cb3     \cf8 \strokec8 /* Camera Input Styling */\cf5 \cb1 \strokec5 \
+\cb3     \cf2 \strokec2 .file-upload-wrapper\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
+\cb3         \cf4 \strokec4 position:\cf5 \strokec5  \cf7 \strokec7 relative\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3         \cf4 \strokec4 width:\cf5 \strokec5  \cf13 \strokec13 100%\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3         \cf4 \strokec4 height:\cf5 \strokec5  \cf13 \strokec13 120px\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3         \cf4 \strokec4 border:\cf5 \strokec5  \cf13 \strokec13 2px\cf5 \strokec5  \cf7 \strokec7 dashed\cf5 \strokec5  #cbd5e1\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3         \cf4 \strokec4 border-radius:\cf5 \strokec5  \cf13 \strokec13 1rem\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3         \cf4 \strokec4 display:\cf5 \strokec5  \cf7 \strokec7 flex\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3         \cf4 \strokec4 flex-direction:\cf5 \strokec5  \cf7 \strokec7 column\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3         \cf4 \strokec4 align-items:\cf5 \strokec5  \cf7 \strokec7 center\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3         \cf4 \strokec4 justify-content:\cf5 \strokec5  \cf7 \strokec7 center\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3         \cf4 \strokec4 background:\cf5 \strokec5  #f8fafc\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3         \cf4 \strokec4 transition:\cf5 \strokec5  \cf7 \strokec7 all\cf5 \strokec5  \cf13 \strokec13 0.3s\cf5 \strokec5  \cf7 \strokec7 ease\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3         \cf4 \strokec4 overflow:\cf5 \strokec5  \cf7 \strokec7 hidden\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3         \cf4 \strokec4 cursor:\cf5 \strokec5  \cf7 \strokec7 pointer\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3     \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\cb3     \cf2 \strokec2 .file-upload-wrapper:hover\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \strokec5  \cf4 \strokec4 background:\cf5 \strokec5  #eff6ff\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 border-color:\cf5 \strokec5  #3b82f6\cf9 \strokec9 ;\cf5 \strokec5  \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\cb3     \cf2 \strokec2 .file-upload-wrapper\cf5 \strokec5  \cf2 \strokec2 input\cf9 \strokec9 [\cf7 \strokec7 type\cf9 \strokec9 =\cf10 \strokec10 "file"\cf9 \strokec9 ]\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
+\cb3         \cf4 \strokec4 position:\cf5 \strokec5  \cf7 \strokec7 absolute\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 width:\cf5 \strokec5  \cf13 \strokec13 100%\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 height:\cf5 \strokec5  \cf13 \strokec13 100%\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 top:\cf5 \strokec5  \cf13 \strokec13 0\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 left:\cf5 \strokec5  \cf13 \strokec13 0\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 opacity:\cf5 \strokec5  \cf13 \strokec13 0\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 cursor:\cf5 \strokec5  \cf7 \strokec7 pointer\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3     \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\
+\cb3     \cf8 \strokec8 /* Modal Styles */\cf5 \cb1 \strokec5 \
+\cb3     \cf2 \strokec2 .modal-overlay\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
+\cb3         \cf4 \strokec4 position:\cf5 \strokec5  \cf7 \strokec7 fixed\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 top:\cf5 \strokec5  \cf13 \strokec13 0\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 left:\cf5 \strokec5  \cf13 \strokec13 0\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 width:\cf5 \strokec5  \cf13 \strokec13 100%\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 height:\cf5 \strokec5  \cf13 \strokec13 100%\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3         \cf4 \strokec4 background:\cf5 \strokec5  \cf7 \strokec7 rgba(\cf13 \strokec13 0\cf9 \strokec9 ,\cf13 \strokec13 0\cf9 \strokec9 ,\cf13 \strokec13 0\cf9 \strokec9 ,\cf13 \strokec13 0.6\cf7 \strokec7 )\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 z-index:\cf5 \strokec5  \cf13 \strokec13 2000\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3         \cf4 \strokec4 display:\cf5 \strokec5  \cf7 \strokec7 flex\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 align-items:\cf5 \strokec5  \cf7 \strokec7 center\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 justify-content:\cf5 \strokec5  \cf7 \strokec7 center\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3         \cf4 \strokec4 opacity:\cf5 \strokec5  \cf13 \strokec13 0\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 pointer-events:\cf5 \strokec5  \cf7 \strokec7 none\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 transition:\cf5 \strokec5  \cf7 \strokec7 opacity\cf5 \strokec5  \cf13 \strokec13 0.3s\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3         \cf4 \strokec4 backdrop-filter:\cf5 \strokec5  \cf7 \strokec7 blur(\cf13 \strokec13 4px\cf7 \strokec7 )\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3     \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\cb3     \cf2 \strokec2 .modal-overlay.show\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \strokec5  \cf4 \strokec4 opacity:\cf5 \strokec5  \cf13 \strokec13 1\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 pointer-events:\cf5 \strokec5  \cf7 \strokec7 auto\cf9 \strokec9 ;\cf5 \strokec5  \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\cb3     \cf2 \strokec2 .modal-box\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
+\cb3         \cf4 \strokec4 background:\cf5 \strokec5  \cf7 \strokec7 white\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 padding:\cf5 \strokec5  \cf13 \strokec13 2rem\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 width:\cf5 \strokec5  \cf13 \strokec13 90%\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 max-width:\cf5 \strokec5  \cf13 \strokec13 400px\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3         \cf4 \strokec4 box-shadow:\cf5 \strokec5  \cf13 \strokec13 0\cf5 \strokec5  \cf13 \strokec13 20px\cf5 \strokec5  \cf13 \strokec13 25px\cf5 \strokec5  \cf13 \strokec13 -5px\cf5 \strokec5  \cf7 \strokec7 rgba(\cf13 \strokec13 0\cf9 \strokec9 ,\cf13 \strokec13 0\cf9 \strokec9 ,\cf13 \strokec13 0\cf9 \strokec9 ,\cf13 \strokec13 0.1\cf7 \strokec7 )\cf9 \strokec9 ,\cf5 \strokec5  \cf13 \strokec13 0\cf5 \strokec5  \cf13 \strokec13 10px\cf5 \strokec5  \cf13 \strokec13 10px\cf5 \strokec5  \cf13 \strokec13 -5px\cf5 \strokec5  \cf7 \strokec7 rgba(\cf13 \strokec13 0\cf9 \strokec9 ,\cf13 \strokec13 0\cf9 \strokec9 ,\cf13 \strokec13 0\cf9 \strokec9 ,\cf13 \strokec13 0.04\cf7 \strokec7 )\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3         \cf4 \strokec4 border-radius:\cf5 \strokec5  \cf13 \strokec13 1.5rem\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 text-align:\cf5 \strokec5  \cf7 \strokec7 center\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3     \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\
+\cb3     \cf8 \strokec8 /* Comparison Slide Styles */\cf5 \cb1 \strokec5 \
+\cb3     \cf2 \strokec2 .diff-del\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \strokec5  \cf4 \strokec4 background-color:\cf5 \strokec5  #fee2e2\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 text-decoration:\cf5 \strokec5  \cf7 \strokec7 line-through\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 color:\cf5 \strokec5  #991b1b\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 padding:\cf5 \strokec5  \cf13 \strokec13 0\cf5 \strokec5  \cf13 \strokec13 2px\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 border-radius:\cf5 \strokec5  \cf13 \strokec13 2px\cf9 \strokec9 ;\cf5 \strokec5  \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\cb3     \cf2 \strokec2 .diff-add\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \strokec5  \cf4 \strokec4 background-color:\cf5 \strokec5  #dcfce7\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 font-weight:\cf5 \strokec5  \cf7 \strokec7 bold\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 color:\cf5 \strokec5  #166534\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 padding:\cf5 \strokec5  \cf13 \strokec13 0\cf5 \strokec5  \cf13 \strokec13 2px\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 border-radius:\cf5 \strokec5  \cf13 \strokec13 2px\cf9 \strokec9 ;\cf5 \strokec5  \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\cb3     \cf2 \strokec2 .arrow-divider\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \strokec5  \cf4 \strokec4 display:\cf5 \strokec5  \cf7 \strokec7 flex\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 align-items:\cf5 \strokec5  \cf7 \strokec7 center\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 justify-content:\cf5 \strokec5  \cf7 \strokec7 center\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 font-size:\cf5 \strokec5  \cf13 \strokec13 2rem\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 color:\cf5 \strokec5  #cbd5e1\cf9 \strokec9 ;\cf5 \strokec5  \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\cb3     @\cf2 \strokec2 media\cf5 \strokec5  (\cf2 \strokec2 min-width:\cf5 \strokec5  768\cf2 \strokec2 px\cf5 \strokec5 ) \cf9 \strokec9 \{\cf5 \strokec5  .arrow-divider \{ \cf4 \strokec4 transform:\cf5 \strokec5  \cf7 \strokec7 rotate(\cf13 \strokec13 0deg\cf7 \strokec7 )\cf9 \strokec9 ;\cf5 \strokec5  \cf9 \strokec9 \}\cf5 \strokec5  \}\cb1 \
+\cb3     @\cf2 \strokec2 media\cf5 \strokec5  (\cf2 \strokec2 max-width:\cf5 \strokec5  767\cf2 \strokec2 px\cf5 \strokec5 ) \cf9 \strokec9 \{\cf5 \strokec5  .arrow-divider \{ \cf4 \strokec4 transform:\cf5 \strokec5  \cf7 \strokec7 rotate(\cf13 \strokec13 90deg\cf7 \strokec7 )\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 margin:\cf5 \strokec5  \cf13 \strokec13 10px\cf5 \strokec5  \cf13 \strokec13 0\cf9 \strokec9 ;\cf5 \strokec5  \cf9 \strokec9 \}\cf5 \strokec5  \}\cb1 \
+\cb3     \cb1 \
+\cb3     \cf8 \strokec8 /* Tab Styles */\cf5 \cb1 \strokec5 \
+\cb3     \cf2 \strokec2 .tab-btn\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \strokec5  \cf4 \strokec4 padding:\cf5 \strokec5  \cf13 \strokec13 0.5rem\cf5 \strokec5  \cf13 \strokec13 1rem\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 border-bottom:\cf5 \strokec5  \cf13 \strokec13 2px\cf5 \strokec5  \cf7 \strokec7 solid\cf5 \strokec5  \cf7 \strokec7 transparent\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 font-weight:\cf5 \strokec5  \cf13 \strokec13 600\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 color:\cf5 \strokec5  #64748b\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 transition:\cf5 \strokec5  \cf7 \strokec7 all\cf5 \strokec5  \cf13 \strokec13 0.2s\cf9 \strokec9 ;\cf5 \strokec5  \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\cb3     \cf2 \strokec2 .tab-btn.active\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \strokec5  \cf4 \strokec4 border-bottom-color:\cf5 \strokec5  #3b82f6\cf9 \strokec9 ;\cf5 \strokec5  \cf4 \strokec4 color:\cf5 \strokec5  #3b82f6\cf9 \strokec9 ;\cf5 \strokec5  \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\cb3   \cf6 \strokec6 </\cf2 \strokec2 style\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\pard\pardeftab720\partightenfactor0
+\cf6 \cb3 \strokec6 </\cf2 \strokec2 head\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cf6 \cb3 \strokec6 <\cf2 \strokec2 body\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "bg-gray-50 flex flex-col h-screen overflow-hidden"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\
+\pard\pardeftab720\partightenfactor0
+\cf5 \cb3   \cf8 \strokec8 <!-- Navbar -->\cf5 \cb1 \strokec5 \
+\cb3   \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "obj-strip flex-none"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3     \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "mx-auto px-6 py-3 max-w-[1200px] flex items-center justify-between"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3       \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "flex items-center gap-3"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3           \cf6 \strokec6 <\cf2 \strokec2 span\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "lesson-badge text-xl"\cf6 \strokec6 >\cf5 \strokec5 \uc0\u55356 \u57300 \u65039 \cf6 \strokec6 </\cf2 \strokec2 span\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3           \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "overflow-hidden"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3               \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "font-bold text-sm sm:text-base truncate"\cf6 \strokec6 >\cf5 \strokec5 Bahasa Melayu: Plot Cerita\cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3               \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf7 \strokec7 "saveStatus"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-xs text-green-600 font-semibold hidden"\cf6 \strokec6 ><\cf2 \strokec2 i\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "fas fa-check-circle"\cf6 \strokec6 ></\cf2 \strokec2 i\cf6 \strokec6 >\cf5 \strokec5  Disimpan\cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3           \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3       \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3       \cf6 \strokec6 <\cf2 \strokec2 button\cf5 \strokec5  \cf4 \strokec4 type\cf6 \strokec6 =\cf7 \strokec7 "button"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-sm font-bold text-blue-600 whitespace-nowrap"\cf5 \strokec5  \cf4 \strokec4 onclick\cf6 \strokec6 =\cf7 \strokec7 "document.getElementById('objContent').classList.toggle('hidden')"\cf6 \strokec6 >\cf5 \strokec5 Objektif \uc0\u9660 \cf6 \strokec6 </\cf2 \strokec2 button\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3     \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3     \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf7 \strokec7 "objContent"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "hidden bg-white border-b border-gray-200 pb-4 px-6 max-w-[1200px] mx-auto text-sm transition-all"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3        \cf6 \strokec6 <\cf2 \strokec2 ul\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "list-disc pl-5 space-y-1 mt-2 text-gray-700"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3          \cf6 \strokec6 <\cf2 \strokec2 li\cf6 \strokec6 >\cf5 \strokec5 Mentakrifkan maksud plot.\cf6 \strokec6 </\cf2 \strokec2 li\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3          \cf6 \strokec6 <\cf2 \strokec2 li\cf6 \strokec6 >\cf5 \strokec5 Menyusun 5 elemen plot pada Piramid Freytag.\cf6 \strokec6 </\cf2 \strokec2 li\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3          \cf6 \strokec6 <\cf2 \strokec2 li\cf6 \strokec6 >\cf5 \strokec5 Menganalisis cerita pendek.\cf6 \strokec6 </\cf2 \strokec2 li\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3        \cf6 \strokec6 </\cf2 \strokec2 ul\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3     \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3   \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\
+\cb3   \cf8 \strokec8 <!-- Main Content -->\cf5 \cb1 \strokec5 \
+\cb3   \cf6 \strokec6 <\cf2 \strokec2 main\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "flex-1 overflow-y-auto relative scroll-smooth"\cf5 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf7 \strokec7 "mainScroll"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3     \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "mx-auto px-4 sm:px-6 py-8 pb-32 max-w-[1200px]"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3       \cf6 \strokec6 <\cf2 \strokec2 section\cf5 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf7 \strokec7 "stage"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "transition-opacity duration-300"\cf6 \strokec6 ></\cf2 \strokec2 section\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3     \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3   \cf6 \strokec6 </\cf2 \strokec2 main\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\
+\cb3   \cf8 \strokec8 <!-- Footer Navigation (FIXED position for mobile compatibility) -->\cf5 \cb1 \strokec5 \
+\cb3   \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "fixed bottom-0 left-0 right-0 w-full bg-white border-t border-gray-200 p-4 z-50 shadow-2xl"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3     \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "mx-auto max-w-[1200px] flex items-center justify-between gap-4"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3         \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "flex gap-2"\cf5 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf7 \strokec7 "dots"\cf6 \strokec6 ></\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3         \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "flex gap-3"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 <\cf2 \strokec2 button\cf5 \strokec5  \cf4 \strokec4 type\cf6 \strokec6 =\cf7 \strokec7 "button"\cf5 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf7 \strokec7 "prevBtn"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "btn btn-ghost"\cf5 \strokec5  \cf4 \strokec4 onclick\cf6 \strokec6 =\cf7 \strokec7 "changeSlide(-1)"\cf5 \strokec5  \cf4 \strokec4 title\cf6 \strokec6 =\cf7 \strokec7 "Tekan kekunci Kiri"\cf6 \strokec6 >\cf5 \strokec5 \uc0\u8592 \cf6 \strokec6 </\cf2 \strokec2 button\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 <\cf2 \strokec2 button\cf5 \strokec5  \cf4 \strokec4 type\cf6 \strokec6 =\cf7 \strokec7 "button"\cf5 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf7 \strokec7 "nextBtn"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "btn btn-primary"\cf5 \strokec5  \cf4 \strokec4 onclick\cf6 \strokec6 =\cf7 \strokec7 "changeSlide(1)"\cf5 \strokec5  \cf4 \strokec4 title\cf6 \strokec6 =\cf7 \strokec7 "Tekan kekunci Kanan"\cf6 \strokec6 >\cf5 \strokec5 Seterusnya \uc0\u8594 \cf6 \strokec6 </\cf2 \strokec2 button\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3         \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3     \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3   \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\
+\cb3   \cf8 \strokec8 <!-- Vocab Helper -->\cf5 \cb1 \strokec5 \
+\cb3   \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "vocab-helper"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3     \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf7 \strokec7 "vocabPanel"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "vocab-panel"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3       \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "flex bg-gray-100 text-xs font-bold text-gray-500 border-b"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3         \cf6 \strokec6 <\cf2 \strokec2 button\cf5 \strokec5  \cf4 \strokec4 type\cf6 \strokec6 =\cf7 \strokec7 "button"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "flex-1 p-3 hover:bg-white hover:text-orange-500 transition"\cf5 \strokec5  \cf4 \strokec4 onclick\cf6 \strokec6 =\cf7 \strokec7 "renderVocab('istilah')"\cf6 \strokec6 >\cf5 \strokec5 ISTILAH\cf6 \strokec6 </\cf2 \strokec2 button\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3         \cf6 \strokec6 <\cf2 \strokec2 button\cf5 \strokec5  \cf4 \strokec4 type\cf6 \strokec6 =\cf7 \strokec7 "button"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "flex-1 p-3 hover:bg-white hover:text-orange-500 transition"\cf5 \strokec5  \cf4 \strokec4 onclick\cf6 \strokec6 =\cf7 \strokec7 "renderVocab('kata_kunci')"\cf6 \strokec6 >\cf5 \strokec5 KATA KUNCI\cf6 \strokec6 </\cf2 \strokec2 button\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3       \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3       \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf7 \strokec7 "vocabList"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "p-4 overflow-y-auto flex-1 space-y-2 text-sm h-64"\cf6 \strokec6 ></\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3     \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3     \cf6 \strokec6 <\cf2 \strokec2 button\cf5 \strokec5  \cf4 \strokec4 type\cf6 \strokec6 =\cf7 \strokec7 "button"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "vocab-button"\cf5 \strokec5  \cf4 \strokec4 onclick\cf6 \strokec6 =\cf7 \strokec7 "toggleVocab()"\cf5 \strokec5  \cf4 \strokec4 aria-label\cf6 \strokec6 =\cf7 \strokec7 "Buka Kamus"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3         \cf6 \strokec6 <\cf2 \strokec2 i\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "fas fa-book-open"\cf6 \strokec6 ></\cf2 \strokec2 i\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3     \cf6 \strokec6 </\cf2 \strokec2 button\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3   \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\
+\cb3   \cf8 \strokec8 <!-- API Key Modal -->\cf5 \cb1 \strokec5 \
+\cb3   \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf7 \strokec7 "apiKeyModal"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "modal-overlay"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3       \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "modal-box animate-fade-in"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3           \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-4xl mb-4 bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto text-purple-600"\cf6 \strokec6 >\cf5 \strokec5 \uc0\u55357 \u56593 \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3           \cf6 \strokec6 <\cf2 \strokec2 h3\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-xl font-bold mb-2 text-gray-800"\cf6 \strokec6 >\cf5 \strokec5 API Key Diperlukan\cf6 \strokec6 </\cf2 \strokec2 h3\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3           \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-gray-500 mb-6 text-sm leading-relaxed"\cf6 \strokec6 >\cf5 \strokec5 Untuk menggunakan ciri AI Pintar ini, sila masukkan Google Gemini API Key anda.\cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3           \cf6 \strokec6 <\cf2 \strokec2 input\cf5 \strokec5  \cf4 \strokec4 type\cf6 \strokec6 =\cf7 \strokec7 "password"\cf5 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf7 \strokec7 "modalKeyInput"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "w-full p-4 border-2 border-gray-200 rounded-xl mb-4 text-sm font-mono focus:border-purple-500 outline-none transition"\cf5 \strokec5  \cf4 \strokec4 placeholder\cf6 \strokec6 =\cf7 \strokec7 "Tampal API Key di sini..."\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3           \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "flex gap-3 justify-center"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3               \cf6 \strokec6 <\cf2 \strokec2 button\cf5 \strokec5  \cf4 \strokec4 onclick\cf6 \strokec6 =\cf7 \strokec7 "closeApiKeyModal()"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "btn btn-ghost text-gray-500 hover:bg-gray-100 w-full"\cf6 \strokec6 >\cf5 \strokec5 Batal\cf6 \strokec6 </\cf2 \strokec2 button\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3               \cf6 \strokec6 <\cf2 \strokec2 button\cf5 \strokec5  \cf4 \strokec4 onclick\cf6 \strokec6 =\cf7 \strokec7 "saveApiKeyFromModal()"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "btn btn-primary bg-purple-600 hover:bg-purple-700 w-full shadow-lg text-white"\cf6 \strokec6 >\cf5 \strokec5 Simpan\cf6 \strokec6 </\cf2 \strokec2 button\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3           \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3       \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3   \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\
+\cb3   \cf6 \strokec6 <\cf2 \strokec2 script\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3     \cf8 \strokec8 // AI Config\cf5 \cb1 \strokec5 \
+\cb3     \cf11 \strokec11 let\cf5 \strokec5  apiKey \cf9 \strokec9 =\cf5 \strokec5  \cf10 \strokec10 "AIzaSyAY77Tlhy4xa5E5V3ltI1TPKvGtcf_BJmE"\cf9 \strokec9 ;\cf5 \strokec5  \cb1 \
+\cb3     \cb1 \
+\cb3     \cf11 \strokec11 const\cf5 \strokec5  \cf12 \strokec12 GOOGLE_SCRIPT_URL\cf5 \strokec5  \cf9 \strokec9 =\cf5 \strokec5  \cf10 \strokec10 ""\cf9 \strokec9 ;\cf5 \strokec5  \cb1 \
+\
+\cb3     \cf11 \strokec11 let\cf5 \strokec5  state \cf9 \strokec9 =\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
+\cb3       slideIdx\cf9 \strokec9 :\cf5 \strokec5  \cf14 \strokec14 0\cf9 \strokec9 ,\cf5 \cb1 \strokec5 \
+\cb3       name\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 ''\cf9 \strokec9 ,\cf5 \cb1 \strokec5 \
+\cb3       answers\cf9 \strokec9 :\cf5 \strokec5  \cf9 \strokec9 \{\},\cf5 \cb1 \strokec5 \
+\cb3       dragScore\cf9 \strokec9 :\cf5 \strokec5  \cf14 \strokec14 0\cf9 \strokec9 ,\cf5 \cb1 \strokec5 \
+\cb3       uploadedImageBase64\cf9 \strokec9 :\cf5 \strokec5  \cf11 \strokec11 null\cf9 \strokec9 ,\cf5 \cb1 \strokec5 \
+\cb3       scannedText\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 ""\cf9 \strokec9 ,\cf5 \cb1 \strokec5 \
+\cb3       studioTab\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 'bina'\cf5 \strokec5  \cf8 \strokec8 // 'bina' or 'bedah'\cf5 \cb1 \strokec5 \
+\cb3     \cf9 \strokec9 \};\cf5 \cb1 \strokec5 \
+\cb3     \cb1 \
+\cb3     \cf11 \strokec11 const\cf5 \strokec5  saved \cf9 \strokec9 =\cf5 \strokec5  localStorage\cf9 \strokec9 .\cf5 \strokec5 getItem\cf9 \strokec9 (\cf10 \strokec10 'plot_lesson_data'\cf9 \strokec9 );\cf5 \cb1 \strokec5 \
+\cb3     \cf11 \strokec11 if\cf9 \strokec9 (\cf5 \strokec5 saved\cf9 \strokec9 )\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
+\cb3         \cf11 \strokec11 try\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \strokec5  \cb1 \
+\cb3             state \cf9 \strokec9 =\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \strokec5  \cf9 \strokec9 ...\cf5 \strokec5 state\cf9 \strokec9 ,\cf5 \strokec5  \cf9 \strokec9 ...\cf12 \strokec12 JSON\cf9 \strokec9 .\cf5 \strokec5 parse\cf9 \strokec9 (\cf5 \strokec5 saved\cf9 \strokec9 )\cf5 \strokec5  \cf9 \strokec9 \};\cf5 \strokec5  \cb1 \
+\cb3             state\cf9 \strokec9 .\cf5 \strokec5 slideIdx \cf9 \strokec9 =\cf5 \strokec5  \cf14 \strokec14 0\cf9 \strokec9 ;\cf5 \strokec5  \cb1 \
+\cb3         \cf9 \strokec9 \}\cf5 \strokec5  \cf11 \strokec11 catch\cf9 \strokec9 (\cf5 \strokec5 e\cf9 \strokec9 )\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \strokec5  console\cf9 \strokec9 .\cf5 \strokec5 error\cf9 \strokec9 (\cf10 \strokec10 'Error loading save'\cf9 \strokec9 );\cf5 \strokec5  \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\cb3     \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\
+\cb3     \cf11 \strokec11 function\cf5 \strokec5  updateApiKey\cf9 \strokec9 (\cf5 \strokec5 val\cf9 \strokec9 )\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
+\cb3         apiKey \cf9 \strokec9 =\cf5 \strokec5  val\cf9 \strokec9 .\cf5 \strokec5 trim\cf9 \strokec9 ();\cf5 \cb1 \strokec5 \
+\cb3         localStorage\cf9 \strokec9 .\cf5 \strokec5 setItem\cf9 \strokec9 (\cf10 \strokec10 'gemini_api_key'\cf9 \strokec9 ,\cf5 \strokec5  apiKey\cf9 \strokec9 );\cf5 \cb1 \strokec5 \
+\cb3     \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\
+\cb3     \cf11 \strokec11 const\cf5 \strokec5  slides \cf9 \strokec9 =\cf5 \strokec5  \cf9 \strokec9 [\cf5 \cb1 \strokec5 \
+\cb3       \cf8 \strokec8 // 0: Intro (SLIDE 1)\cf5 \cb1 \strokec5 \
+\cb3       \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
+\cb3         type\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 'title'\cf9 \strokec9 ,\cf5 \cb1 \strokec5 \
+\cb3         title\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 'Memahami Plot Cerita'\cf9 \strokec9 ,\cf5 \cb1 \strokec5 \
+\cb3         subtitle\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 'Pelajaran Interaktif Bahasa Melayu'\cf9 \strokec9 ,\cf5 \cb1 \strokec5 \
+\cb3         doNow\cf9 \strokec9 :\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
+\cb3           title\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 '\uc0\u9201 \u65039  Do Now: Set Induksi (2 Minit)'\cf9 \strokec9 ,\cf5 \cb1 \strokec5 \
+\cb3           prompt\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 'Fikirkan satu filem atau novel kegemaran anda. Apakah babak atau peristiwa paling cemas (Klimaks) dalam cerita tersebut?'\cf9 \strokec9 ,\cf5 \cb1 \strokec5 \
+\cb3           imageSrc\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 'assets/Thanos_really_snapped_his_fing.png'\cf5 \strokec5  \cb1 \
+\cb3         \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\cb3       \cf9 \strokec9 \},\cf5 \cb1 \strokec5 \
+\cb3       \cf8 \strokec8 // 1: Quiz (SLIDE 2)\cf5 \cb1 \strokec5 \
+\cb3       \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
+\cb3         type\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 'content_quiz'\cf9 \strokec9 ,\cf5 \cb1 \strokec5 \
+\cb3         title\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 'Apa itu Plot?'\cf9 \strokec9 ,\cf5 \cb1 \strokec5 \
+\cb3         content\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 'Plot ialah susunan peristiwa dalam cerita yang dikaitkan oleh sebab dan akibat. Tanpa plot, tiada cerita, hanya koleksi kejadian rawak.'\cf9 \strokec9 ,\cf5 \cb1 \strokec5 \
+\cb3         quiz\cf9 \strokec9 :\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
+\cb3           q\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 'Manakah antara berikut merupakan definisi plot yang paling tepat?'\cf9 \strokec9 ,\cf5 \cb1 \strokec5 \
+\cb3           options\cf9 \strokec9 :\cf5 \strokec5  \cf9 \strokec9 [\cf10 \strokec10 'Nama watak dalam cerita'\cf9 \strokec9 ,\cf5 \strokec5  \cf10 \strokec10 'Tempat kejadian cerita'\cf9 \strokec9 ,\cf5 \strokec5  \cf10 \strokec10 'Susunan peristiwa cerita'\cf9 \strokec9 ,\cf5 \strokec5  \cf10 \strokec10 'Tajuk sebuah buku'\cf9 \strokec9 ],\cf5 \cb1 \strokec5 \
+\cb3           ans\cf9 \strokec9 :\cf5 \strokec5  \cf14 \strokec14 2\cf5 \cb1 \strokec5 \
+\cb3         \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\cb3       \cf9 \strokec9 \},\cf5 \cb1 \strokec5 \
+\cb3       \cf8 \strokec8 // 2: Drag Drop (SLIDE 3)\cf5 \cb1 \strokec5 \
+\cb3       \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
+\cb3         type\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 'drag_drop'\cf9 \strokec9 ,\cf5 \cb1 \strokec5 \
+\cb3         title\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 'Bina Piramid Plot'\cf9 \strokec9 ,\cf5 \cb1 \strokec5 \
+\cb3         desc\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 'Seret label ke kotak yang betul untuk melengkapkan graf plot cerita.'\cf9 \strokec9 ,\cf5 \cb1 \strokec5 \
+\cb3         items\cf9 \strokec9 :\cf5 \strokec5  \cf9 \strokec9 [\cf5 \cb1 \strokec5 \
+\cb3             \cf9 \strokec9 \{\cf5 \strokec5  id\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 'permulaan'\cf9 \strokec9 ,\cf5 \strokec5  label\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 'Permulaan'\cf9 \strokec9 ,\cf5 \strokec5  target\cf9 \strokec9 :\cf5 \strokec5  \cf14 \strokec14 1\cf5 \strokec5  \cf9 \strokec9 \},\cf5 \cb1 \strokec5 \
+\cb3             \cf9 \strokec9 \{\cf5 \strokec5  id\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 'perkembangan'\cf9 \strokec9 ,\cf5 \strokec5  label\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 'Perkembangan'\cf9 \strokec9 ,\cf5 \strokec5  target\cf9 \strokec9 :\cf5 \strokec5  \cf14 \strokec14 2\cf5 \strokec5  \cf9 \strokec9 \},\cf5 \cb1 \strokec5 \
+\cb3             \cf9 \strokec9 \{\cf5 \strokec5  id\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 'konflik'\cf9 \strokec9 ,\cf5 \strokec5  label\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 'Konflik'\cf9 \strokec9 ,\cf5 \strokec5  target\cf9 \strokec9 :\cf5 \strokec5  \cf14 \strokec14 3\cf5 \strokec5  \cf9 \strokec9 \},\cf5 \cb1 \strokec5 \
+\cb3             \cf9 \strokec9 \{\cf5 \strokec5  id\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 'kemuncak'\cf9 \strokec9 ,\cf5 \strokec5  label\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 'Kemuncak'\cf9 \strokec9 ,\cf5 \strokec5  target\cf9 \strokec9 :\cf5 \strokec5  \cf14 \strokec14 4\cf5 \strokec5  \cf9 \strokec9 \},\cf5 \cb1 \strokec5 \
+\cb3             \cf9 \strokec9 \{\cf5 \strokec5  id\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 'peleraian'\cf9 \strokec9 ,\cf5 \strokec5  label\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 'Peleraian'\cf9 \strokec9 ,\cf5 \strokec5  target\cf9 \strokec9 :\cf5 \strokec5  \cf14 \strokec14 5\cf5 \strokec5  \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\cb3         \cf9 \strokec9 ]\cf5 \cb1 \strokec5 \
+\cb3       \cf9 \strokec9 \},\cf5 \cb1 \strokec5 \
+\cb3       \cf8 \strokec8 // 3: Video (SLIDE 4)\cf5 \cb1 \strokec5 \
+\cb3       \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
+\cb3         type\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 'video'\cf9 \strokec9 ,\cf5 \cb1 \strokec5 \
+\cb3         title\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 'Contoh Plot dalam Video'\cf9 \strokec9 ,\cf5 \cb1 \strokec5 \
+\cb3         videoSrc\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 'assets/video_plot.mp4'\cf9 \strokec9 ,\cf5 \strokec5  \cb1 \
+\cb3         desc\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 'Tonton dan cuba kenal pasti bila konflik bermula.'\cf5 \cb1 \strokec5 \
+\cb3       \cf9 \strokec9 \},\cf5 \cb1 \strokec5 \
+\cb3       \cf8 \strokec8 // 4: Case Study (SLIDE 5)\cf5 \cb1 \strokec5 \
+\cb3       \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
+\cb3         type\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 'case_study'\cf9 \strokec9 ,\cf5 \cb1 \strokec5 \
+\cb3         title\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 'Plot Iklan \'93Giving\'94 \'96 TrueMove H'\cf9 \strokec9 ,\cf5 \cb1 \strokec5 \
+\cb3         points\cf9 \strokec9 :\cf5 \strokec5  \cf9 \strokec9 [\cf5 \cb1 \strokec5 \
+\cb3             \cf9 \strokec9 \{\cf5 \strokec5  title\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 '1. Permulaan'\cf9 \strokec9 ,\cf5 \strokec5  text\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 'Seorang budak lelaki kecil ditangkap mencuri ubat dari sebuah farmasi. Pemilik kedai marah dan ingin menghukumnya. Seorang lelaki pemilik kedai makanan (kedai sup) melihat kejadian itu, membayar harga ubat tersebut dan memberikannya kepada budak itu.'\cf5 \strokec5  \cf9 \strokec9 \},\cf5 \cb1 \strokec5 \
+\cb3             \cf9 \strokec9 \{\cf5 \strokec5  title\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 '2. Perkembangan'\cf9 \strokec9 ,\cf5 \strokec5  text\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 'Budak itu menerima bantuan tanpa berkata apa-apa. Lelaki pemilik kedai makanan terus melakukan kebaikan tanpa mengharapkan balasan. Masa berlalu selama 30 tahun.'\cf5 \strokec5  \cf9 \strokec9 \},\cf5 \cb1 \strokec5 \
+\cb3             \cf9 \strokec9 \{\cf5 \strokec5  title\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 '3. Konflik'\cf9 \strokec9 ,\cf5 \strokec5  text\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 'Lelaki itu tiba-tiba rebah dan masuk hospital. Bil rawatan sangat tinggi. Anak perempuannya buntu dan sedih kerana tidak mampu membayar.'\cf5 \strokec5  \cf9 \strokec9 \},\cf5 \cb1 \strokec5 \
+\cb3             \cf9 \strokec9 \{\cf5 \strokec5  title\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 '4. Kemuncak'\cf9 \strokec9 ,\cf5 \strokec5  text\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 'Anak perempuan menerima bil baharu yang tertulis: \'93Paid 30 years ago\'85 with a bowl of soup and kindness.\'94 Doktor yang merawat ayahnya ialah budak yang pernah dibantunya.'\cf5 \strokec5  \cf9 \strokec9 \},\cf5 \cb1 \strokec5 \
+\cb3             \cf9 \strokec9 \{\cf5 \strokec5  title\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 '5. Peleraian'\cf9 \strokec9 ,\cf5 \strokec5  text\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 'Ayahnya sedar. Iklan menutup dengan mesej: \'93Giving is the best communication.\'94 Kebaikan kembali dalam bentuk yang lebih besar.'\cf5 \strokec5  \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\cb3         \cf9 \strokec9 ]\cf5 \cb1 \strokec5 \
+\cb3       \cf9 \strokec9 \},\cf5 \cb1 \strokec5 \
+\cb3       \cf8 \strokec8 // 5: NEW VIDEO SLIDE (SLIDE 6)\cf5 \cb1 \strokec5 \
+\cb3       \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
+\cb3         type\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 'video'\cf9 \strokec9 ,\cf5 \cb1 \strokec5 \
+\cb3         title\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 'Tontonan Kritikal: Smoke Kills'\cf9 \strokec9 ,\cf5 \cb1 \strokec5 \
+\cb3         videoSrc\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 'assets/smoke_kills.mp4'\cf9 \strokec9 ,\cf5 \strokec5  \cf8 \strokec8 // Placeholder file name\cf5 \cb1 \strokec5 \
+\cb3         desc\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 'Tonton iklan ini dan kenal pasti MESEJ TEMA yang ingin disampaikan oleh pengarah.'\cf9 \strokec9 ,\cf5 \cb1 \strokec5 \
+\cb3       \cf9 \strokec9 \},\cf5 \cb1 \strokec5 \
+\cb3       \cf8 \strokec8 // 6: CREATIVE STUDIO (SLIDE 7) -- DITUKAR KEPADA SENARIO LIF ROSAK\cf5 \cb1 \strokec5 \
+\cb3       \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
+\cb3         type\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 'creative_studio'\cf9 \strokec9 ,\cf5 \cb1 \strokec5 \
+\cb3         title\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 '\uc0\u9997 \u65039  Studio Penulisan Kreatif'\cf9 \strokec9 ,\cf5 \cb1 \strokec5 \
+\cb3         desc\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 'Pilih mod: Bina cerita anda sendiri ATAU bedah cerita sedia ada menggunakan AI.'\cf9 \strokec9 ,\cf5 \cb1 \strokec5 \
+\cb3         scenarioTitle\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 'Situasi: "Terperangkap!"'\cf9 \strokec9 ,\cf5 \strokec5  \cf8 \strokec8 // DIUBAH\cf5 \cb1 \strokec5 \
+\cb3         scenarioDesc\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 'Anda lewat ke sekolah dan tergesa-gesa masuk ke dalam lif. Malang tidak berbau, guru disiplin paling garang juga masuk. Tiba-tiba, lif terhenti dan lampu padam. Bateri telefon anda pula "mati".'\cf9 \strokec9 ,\cf5 \strokec5  \cf8 \strokec8 // DIUBAH\cf5 \cb1 \strokec5 \
+\cb3         inputs\cf9 \strokec9 :\cf5 \strokec5  \cf9 \strokec9 [\cf5 \cb1 \strokec5 \
+\cb3             \cf9 \strokec9 \{\cf5 \strokec5  id\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 'cw_permulaan'\cf9 \strokec9 ,\cf5 \strokec5  label\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 '1. Permulaan'\cf9 \strokec9 ,\cf5 \strokec5  placeholder\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 'Gambarkan suasana janggal di dalam lif sebelum lampu padam...'\cf5 \strokec5  \cf9 \strokec9 \},\cf5 \cb1 \strokec5 \
+\cb3             \cf9 \strokec9 \{\cf5 \strokec5  id\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 'cw_perkembangan'\cf9 \strokec9 ,\cf5 \strokec5  label\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 '2. Perkembangan'\cf9 \strokec9 ,\cf5 \strokec5  placeholder\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 'Apa reaksi awal anda dan guru itu? Siapa yang mula panik?'\cf5 \strokec5  \cf9 \strokec9 \},\cf5 \cb1 \strokec5 \
+\cb3             \cf9 \strokec9 \{\cf5 \strokec5  id\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 'cw_konflik'\cf9 \strokec9 ,\cf5 \strokec5  label\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 '3. Konflik'\cf9 \strokec9 ,\cf5 \strokec5  placeholder\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 'Apakah masalah yang timbul? (Cth: Panas, sesak nafas, atau mula bertengkar?)'\cf5 \strokec5  \cf9 \strokec9 \},\cf5 \cb1 \strokec5 \
+\cb3             \cf9 \strokec9 \{\cf5 \strokec5  id\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 'cw_kemuncak'\cf9 \strokec9 ,\cf5 \strokec5  label\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 '4. Klimaks'\cf9 \strokec9 ,\cf5 \strokec5  placeholder\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 'Detik paling cemas! Apa yang anda terpaksa lakukan untuk melepaskan diri?'\cf5 \strokec5  \cf9 \strokec9 \},\cf5 \cb1 \strokec5 \
+\cb3             \cf9 \strokec9 \{\cf5 \strokec5  id\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 'cw_peleraian'\cf9 \strokec9 ,\cf5 \strokec5  label\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 '5. Peleraian'\cf9 \strokec9 ,\cf5 \strokec5  placeholder\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 'Bagaimana anda keluar? Adakah hubungan dengan guru itu berubah?'\cf5 \strokec5  \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\cb3         \cf9 \strokec9 ]\cf5 \cb1 \strokec5 \
+\cb3       \cf9 \strokec9 \},\cf5 \cb1 \strokec5 \
+\cb3       \cf8 \strokec8 // 7: Camera Scan (SLIDE 8)\cf5 \cb1 \strokec5 \
+\cb3       \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
+\cb3         type\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 'camera_scan'\cf9 \strokec9 ,\cf5 \cb1 \strokec5 \
+\cb3         title\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 '\uc0\u55357 \u56568  Semakan Cikgu AI (Kamera)'\cf9 \strokec9 ,\cf5 \cb1 \strokec5 \
+\cb3         desc\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 'Ambil gambar karangan tulisan tangan anda. AI akan membaca teks (OCR) dan menyemak kesalahan.'\cf9 \strokec9 ,\cf5 \cb1 \strokec5 \
+\cb3       \cf9 \strokec9 \},\cf5 \cb1 \strokec5 \
+\cb3       \cf8 \strokec8 // 8: Comparison Slide (SLIDE 9)\cf5 \cb1 \strokec5 \
+\cb3       \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
+\cb3         type\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 'comparison'\cf9 \strokec9 ,\cf5 \cb1 \strokec5 \
+\cb3         title\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 '\uc0\u10024  Analisis & Pemurnian'\cf9 \strokec9 ,\cf5 \cb1 \strokec5 \
+\cb3         desc\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 'Lihat bagaimana AI memurnikan ayat anda daripada Slaid 6 atau 7. Bandingkan draf asal dengan versi yang telah diperbaiki.'\cf9 \strokec9 ,\cf5 \cb1 \strokec5 \
+\cb3       \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\cb3     \cf9 \strokec9 ];\cf5 \cb1 \strokec5 \
+\
+\cb3     \cf11 \strokec11 const\cf5 \strokec5  vocabData \cf9 \strokec9 =\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
+\cb3       istilah\cf9 \strokec9 :\cf5 \strokec5  \cf9 \strokec9 [[\cf10 \strokec10 'Plot'\cf9 \strokec9 ,\cf10 \strokec10 'Jalan cerita'\cf9 \strokec9 ],\cf5 \strokec5  \cf9 \strokec9 [\cf10 \strokec10 'Konflik'\cf9 \strokec9 ,\cf10 \strokec10 'Masalah watak'\cf9 \strokec9 ],\cf5 \strokec5  \cf9 \strokec9 [\cf10 \strokec10 'Klimaks'\cf9 \strokec9 ,\cf10 \strokec10 'Puncak ketegangan'\cf9 \strokec9 ]],\cf5 \cb1 \strokec5 \
+\cb3       kata_kunci\cf9 \strokec9 :\cf5 \strokec5  \cf9 \strokec9 [\cf10 \strokec10 'Menganalisis'\cf9 \strokec9 ,\cf5 \strokec5  \cf10 \strokec10 'Menghuraikan'\cf9 \strokec9 ,\cf5 \strokec5  \cf10 \strokec10 'Sebab & Akibat'\cf9 \strokec9 ,\cf5 \strokec5  \cf10 \strokec10 'Dilema'\cf9 \strokec9 ,\cf5 \strokec5  \cf10 \strokec10 'Integriti'\cf9 \strokec9 ]\cf5 \cb1 \strokec5 \
+\cb3     \cf9 \strokec9 \};\cf5 \cb1 \strokec5 \
+\
+\cb3     \cf8 \strokec8 /* --- CORE FUNCTIONS --- */\cf5 \cb1 \strokec5 \
+\cb3     \cb1 \
+\cb3     \cf11 \strokec11 function\cf5 \strokec5  init\cf9 \strokec9 ()\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
+\cb3         \cf11 \strokec11 const\cf5 \strokec5  storedKey \cf9 \strokec9 =\cf5 \strokec5  localStorage\cf9 \strokec9 .\cf5 \strokec5 getItem\cf9 \strokec9 (\cf10 \strokec10 'gemini_api_key'\cf9 \strokec9 );\cf5 \cb1 \strokec5 \
+\cb3         \cf11 \strokec11 if\cf9 \strokec9 (\cf5 \strokec5 storedKey \cf9 \strokec9 &&\cf5 \strokec5  storedKey\cf9 \strokec9 .\cf5 \strokec5 length \cf9 \strokec9 >\cf5 \strokec5  \cf14 \strokec14 10\cf9 \strokec9 )\cf5 \strokec5  apiKey \cf9 \strokec9 =\cf5 \strokec5  storedKey\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\
+\cb3         renderSlide\cf9 \strokec9 ();\cf5 \cb1 \strokec5 \
+\cb3         renderVocab\cf9 \strokec9 (\cf10 \strokec10 'istilah'\cf9 \strokec9 );\cf5 \cb1 \strokec5 \
+\cb3         \cf11 \strokec11 if\cf9 \strokec9 (\cf5 \strokec5 state\cf9 \strokec9 .\cf5 \strokec5 name\cf9 \strokec9 )\cf5 \strokec5  document\cf9 \strokec9 .\cf5 \strokec5 getElementById\cf9 \strokec9 (\cf10 \strokec10 'saveStatus'\cf9 \strokec9 ).\cf5 \strokec5 classList\cf9 \strokec9 .\cf5 \strokec5 remove\cf9 \strokec9 (\cf10 \strokec10 'hidden'\cf9 \strokec9 );\cf5 \cb1 \strokec5 \
+\cb3     \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\
+\cb3     \cf11 \strokec11 function\cf5 \strokec5  saveProgress\cf9 \strokec9 ()\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
+\cb3         localStorage\cf9 \strokec9 .\cf5 \strokec5 setItem\cf9 \strokec9 (\cf10 \strokec10 'plot_lesson_data'\cf9 \strokec9 ,\cf5 \strokec5  \cf12 \strokec12 JSON\cf9 \strokec9 .\cf5 \strokec5 stringify\cf9 \strokec9 (\cf5 \strokec5 state\cf9 \strokec9 ));\cf5 \cb1 \strokec5 \
+\cb3         \cf11 \strokec11 const\cf5 \strokec5  status \cf9 \strokec9 =\cf5 \strokec5  document\cf9 \strokec9 .\cf5 \strokec5 getElementById\cf9 \strokec9 (\cf10 \strokec10 'saveStatus'\cf9 \strokec9 );\cf5 \cb1 \strokec5 \
+\cb3         status\cf9 \strokec9 .\cf5 \strokec5 classList\cf9 \strokec9 .\cf5 \strokec5 remove\cf9 \strokec9 (\cf10 \strokec10 'hidden'\cf9 \strokec9 );\cf5 \cb1 \strokec5 \
+\cb3         status\cf9 \strokec9 .\cf5 \strokec5 innerHTML \cf9 \strokec9 =\cf5 \strokec5  \cf10 \strokec10 '<i class="fas fa-sync fa-spin"></i> Menyimpan...'\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3         setTimeout\cf9 \strokec9 (()\cf5 \strokec5  \cf9 \strokec9 =>\cf5 \strokec5  status\cf9 \strokec9 .\cf5 \strokec5 innerHTML \cf9 \strokec9 =\cf5 \strokec5  \cf10 \strokec10 '<i class="fas fa-check-circle"></i> Disimpan'\cf9 \strokec9 ,\cf5 \strokec5  \cf14 \strokec14 800\cf9 \strokec9 );\cf5 \cb1 \strokec5 \
+\cb3     \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\
+\cb3     \cf11 \strokec11 function\cf5 \strokec5  resetData\cf9 \strokec9 ()\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
+\cb3         \cf11 \strokec11 if\cf9 \strokec9 (\cf5 \strokec5 confirm\cf9 \strokec9 (\cf10 \strokec10 'Adakah anda pasti? Semua jawapan akan dipadam.'\cf9 \strokec9 ))\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
+\cb3             localStorage\cf9 \strokec9 .\cf5 \strokec5 removeItem\cf9 \strokec9 (\cf10 \strokec10 'plot_lesson_data'\cf9 \strokec9 );\cf5 \cb1 \strokec5 \
+\cb3             state\cf9 \strokec9 .\cf5 \strokec5 answers \cf9 \strokec9 =\cf5 \strokec5  \cf9 \strokec9 \{\};\cf5 \cb1 \strokec5 \
+\cb3             state\cf9 \strokec9 .\cf5 \strokec5 name \cf9 \strokec9 =\cf5 \strokec5  \cf10 \strokec10 ''\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3             state\cf9 \strokec9 .\cf5 \strokec5 uploadedImageBase64 \cf9 \strokec9 =\cf5 \strokec5  \cf11 \strokec11 null\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3             state\cf9 \strokec9 .\cf5 \strokec5 scannedText \cf9 \strokec9 =\cf5 \strokec5  \cf10 \strokec10 ""\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3             location\cf9 \strokec9 .\cf5 \strokec5 reload\cf9 \strokec9 ();\cf5 \cb1 \strokec5 \
+\cb3         \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\cb3     \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\
+\cb3     \cf11 \strokec11 function\cf5 \strokec5  changeSlide\cf9 \strokec9 (\cf5 \strokec5 dir\cf9 \strokec9 )\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
+\cb3         \cf11 \strokec11 const\cf5 \strokec5  newIdx \cf9 \strokec9 =\cf5 \strokec5  state\cf9 \strokec9 .\cf5 \strokec5 slideIdx \cf9 \strokec9 +\cf5 \strokec5  dir\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3         \cf11 \strokec11 if\cf9 \strokec9 (\cf5 \strokec5 newIdx \cf9 \strokec9 >=\cf5 \strokec5  \cf14 \strokec14 0\cf5 \strokec5  \cf9 \strokec9 &&\cf5 \strokec5  newIdx \cf9 \strokec9 <\cf5 \strokec5  slides\cf9 \strokec9 .\cf5 \strokec5 length\cf9 \strokec9 )\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
+\cb3             state\cf9 \strokec9 .\cf5 \strokec5 slideIdx \cf9 \strokec9 =\cf5 \strokec5  newIdx\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3             saveProgress\cf9 \strokec9 ();\cf5 \cb1 \strokec5 \
+\cb3             renderSlide\cf9 \strokec9 ();\cf5 \cb1 \strokec5 \
+\cb3             document\cf9 \strokec9 .\cf5 \strokec5 getElementById\cf9 \strokec9 (\cf10 \strokec10 'mainScroll'\cf9 \strokec9 ).\cf5 \strokec5 scrollTop \cf9 \strokec9 =\cf5 \strokec5  \cf14 \strokec14 0\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3         \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\cb3     \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\
+\cb3     window\cf9 \strokec9 .\cf5 \strokec5 addEventListener\cf9 \strokec9 (\cf10 \strokec10 'keydown'\cf9 \strokec9 ,\cf5 \strokec5  \cf9 \strokec9 (\cf5 \strokec5 e\cf9 \strokec9 )\cf5 \strokec5  \cf9 \strokec9 =>\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
+\cb3         \cf11 \strokec11 if\cf9 \strokec9 ([\cf10 \strokec10 'INPUT'\cf9 \strokec9 ,\cf5 \strokec5  \cf10 \strokec10 'TEXTAREA'\cf9 \strokec9 ].\cf5 \strokec5 includes\cf9 \strokec9 (\cf5 \strokec5 document\cf9 \strokec9 .\cf5 \strokec5 activeElement\cf9 \strokec9 .\cf5 \strokec5 tagName\cf9 \strokec9 ))\cf5 \strokec5  \cf11 \strokec11 return\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3         \cf11 \strokec11 if\cf9 \strokec9 (\cf5 \strokec5 e\cf9 \strokec9 .\cf5 \strokec5 key \cf9 \strokec9 ===\cf5 \strokec5  \cf10 \strokec10 'ArrowLeft'\cf9 \strokec9 )\cf5 \strokec5  changeSlide\cf9 \strokec9 (-\cf14 \strokec14 1\cf9 \strokec9 );\cf5 \cb1 \strokec5 \
+\cb3         \cf11 \strokec11 else\cf5 \strokec5  \cf11 \strokec11 if\cf9 \strokec9 (\cf5 \strokec5 e\cf9 \strokec9 .\cf5 \strokec5 key \cf9 \strokec9 ===\cf5 \strokec5  \cf10 \strokec10 'ArrowRight'\cf9 \strokec9 )\cf5 \strokec5  changeSlide\cf9 \strokec9 (\cf14 \strokec14 1\cf9 \strokec9 );\cf5 \cb1 \strokec5 \
+\cb3     \cf9 \strokec9 \});\cf5 \cb1 \strokec5 \
+\
+\cb3     \cf8 \strokec8 /* --- MODAL FUNCTIONS --- */\cf5 \cb1 \strokec5 \
+\cb3     \cf11 \strokec11 function\cf5 \strokec5  closeApiKeyModal\cf9 \strokec9 ()\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \strokec5  document\cf9 \strokec9 .\cf5 \strokec5 getElementById\cf9 \strokec9 (\cf10 \strokec10 'apiKeyModal'\cf9 \strokec9 ).\cf5 \strokec5 classList\cf9 \strokec9 .\cf5 \strokec5 remove\cf9 \strokec9 (\cf10 \strokec10 'show'\cf9 \strokec9 );\cf5 \strokec5  \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\cb3     \cf11 \strokec11 function\cf5 \strokec5  showApiKeyModal\cf9 \strokec9 ()\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \strokec5  document\cf9 \strokec9 .\cf5 \strokec5 getElementById\cf9 \strokec9 (\cf10 \strokec10 'apiKeyModal'\cf9 \strokec9 ).\cf5 \strokec5 classList\cf9 \strokec9 .\cf5 \strokec5 add\cf9 \strokec9 (\cf10 \strokec10 'show'\cf9 \strokec9 );\cf5 \strokec5  setTimeout\cf9 \strokec9 (()\cf5 \strokec5  \cf9 \strokec9 =>\cf5 \strokec5  document\cf9 \strokec9 .\cf5 \strokec5 getElementById\cf9 \strokec9 (\cf10 \strokec10 'modalKeyInput'\cf9 \strokec9 ).\cf5 \strokec5 focus\cf9 \strokec9 (),\cf5 \strokec5  \cf14 \strokec14 100\cf9 \strokec9 );\cf5 \strokec5  \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\cb3     \cf11 \strokec11 function\cf5 \strokec5  saveApiKeyFromModal\cf9 \strokec9 ()\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
+\cb3         \cf11 \strokec11 const\cf5 \strokec5  input \cf9 \strokec9 =\cf5 \strokec5  document\cf9 \strokec9 .\cf5 \strokec5 getElementById\cf9 \strokec9 (\cf10 \strokec10 'modalKeyInput'\cf9 \strokec9 );\cf5 \cb1 \strokec5 \
+\cb3         \cf11 \strokec11 const\cf5 \strokec5  val \cf9 \strokec9 =\cf5 \strokec5  input\cf9 \strokec9 .\cf5 \strokec5 value\cf9 \strokec9 .\cf5 \strokec5 trim\cf9 \strokec9 ();\cf5 \cb1 \strokec5 \
+\cb3         \cf11 \strokec11 if\cf9 \strokec9 (\cf5 \strokec5 val\cf9 \strokec9 .\cf5 \strokec5 length \cf9 \strokec9 >\cf5 \strokec5  \cf14 \strokec14 5\cf9 \strokec9 )\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
+\cb3             updateApiKey\cf9 \strokec9 (\cf5 \strokec5 val\cf9 \strokec9 );\cf5 \cb1 \strokec5 \
+\cb3             closeApiKeyModal\cf9 \strokec9 ();\cf5 \cb1 \strokec5 \
+\cb3             alert\cf9 \strokec9 (\cf10 \strokec10 "API Key disimpan! Sila tekan butang AI sekali lagi."\cf9 \strokec9 );\cf5 \cb1 \strokec5 \
+\cb3         \cf9 \strokec9 \}\cf5 \strokec5  \cf11 \strokec11 else\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
+\cb3             alert\cf9 \strokec9 (\cf10 \strokec10 "Sila masukkan key yang sah."\cf9 \strokec9 );\cf5 \cb1 \strokec5 \
+\cb3         \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\cb3     \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\
+\cb3     \cf8 \strokec8 /* --- AI FUNCTIONS (GEMINI) --- */\cf5 \cb1 \strokec5 \
+\cb3     \cb1 \
+\cb3     \cf11 \strokec11 async\cf5 \strokec5  \cf11 \strokec11 function\cf5 \strokec5  callGeminiAPI\cf9 \strokec9 (\cf5 \strokec5 prompt\cf9 \strokec9 ,\cf5 \strokec5  btnId\cf9 \strokec9 ,\cf5 \strokec5  outputDivId \cf9 \strokec9 =\cf5 \strokec5  \cf11 \strokec11 null\cf9 \strokec9 ,\cf5 \strokec5  isAppend \cf9 \strokec9 =\cf5 \strokec5  \cf11 \strokec11 false\cf9 \strokec9 ,\cf5 \strokec5  imageBase64 \cf9 \strokec9 =\cf5 \strokec5  \cf11 \strokec11 null\cf9 \strokec9 )\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
+\cb3         \cf11 \strokec11 let\cf5 \strokec5  currentKey \cf9 \strokec9 =\cf5 \strokec5  apiKey\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3         \cf11 \strokec11 if\cf5 \strokec5  \cf9 \strokec9 (!\cf5 \strokec5 currentKey \cf9 \strokec9 ||\cf5 \strokec5  currentKey\cf9 \strokec9 .\cf5 \strokec5 trim\cf9 \strokec9 ()\cf5 \strokec5  \cf9 \strokec9 ===\cf5 \strokec5  \cf10 \strokec10 ""\cf5 \strokec5  \cf9 \strokec9 ||\cf5 \strokec5  currentKey \cf9 \strokec9 ===\cf5 \strokec5  \cf10 \strokec10 "TAMPAL_KEY_DI_SINI"\cf9 \strokec9 )\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \strokec5  showApiKeyModal\cf9 \strokec9 ();\cf5 \strokec5  \cf11 \strokec11 return\cf5 \strokec5  \cf11 \strokec11 null\cf9 \strokec9 ;\cf5 \strokec5  \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\
+\cb3         \cf11 \strokec11 const\cf5 \strokec5  btn \cf9 \strokec9 =\cf5 \strokec5  document\cf9 \strokec9 .\cf5 \strokec5 getElementById\cf9 \strokec9 (\cf5 \strokec5 btnId\cf9 \strokec9 );\cf5 \cb1 \strokec5 \
+\cb3         \cf11 \strokec11 const\cf5 \strokec5  originalText \cf9 \strokec9 =\cf5 \strokec5  btn\cf9 \strokec9 .\cf5 \strokec5 innerHTML\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3         btn\cf9 \strokec9 .\cf5 \strokec5 innerHTML \cf9 \strokec9 =\cf5 \strokec5  \cf10 \strokec10 '<i class="fas fa-spinner fa-spin"></i> <span class="thinking-dots">Memproses</span>'\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3         btn\cf9 \strokec9 .\cf5 \strokec5 disabled \cf9 \strokec9 =\cf5 \strokec5  \cf11 \strokec11 true\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\
+\cb3         \cf11 \strokec11 const\cf5 \strokec5  modelsToTry \cf9 \strokec9 =\cf5 \strokec5  \cf9 \strokec9 [\cf10 \strokec10 'gemini-2.5-flash-preview-09-2025'\cf9 \strokec9 ,\cf10 \strokec10 'gemini-1.5-flash'\cf9 \strokec9 ];\cf5 \cb1 \strokec5 \
+\cb3         \cb1 \
+\cb3         \cf11 \strokec11 try\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
+\cb3             \cf11 \strokec11 let\cf5 \strokec5  success \cf9 \strokec9 =\cf5 \strokec5  \cf11 \strokec11 false\cf9 \strokec9 ;\cf5 \strokec5  \cf11 \strokec11 let\cf5 \strokec5  resultText \cf9 \strokec9 =\cf5 \strokec5  \cf10 \strokec10 ""\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3             \cf11 \strokec11 const\cf5 \strokec5  parts \cf9 \strokec9 =\cf5 \strokec5  \cf9 \strokec9 [\{\cf5 \strokec5  text\cf9 \strokec9 :\cf5 \strokec5  prompt \cf9 \strokec9 \}];\cf5 \cb1 \strokec5 \
+\cb3             \cf11 \strokec11 if\cf5 \strokec5  \cf9 \strokec9 (\cf5 \strokec5 imageBase64\cf9 \strokec9 )\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
+\cb3                 \cf11 \strokec11 const\cf5 \strokec5  base64Data \cf9 \strokec9 =\cf5 \strokec5  imageBase64\cf9 \strokec9 .\cf5 \strokec5 includes\cf9 \strokec9 (\cf10 \strokec10 ','\cf9 \strokec9 )\cf5 \strokec5  \cf9 \strokec9 ?\cf5 \strokec5  imageBase64\cf9 \strokec9 .\cf5 \strokec5 split\cf9 \strokec9 (\cf10 \strokec10 ','\cf9 \strokec9 )[\cf14 \strokec14 1\cf9 \strokec9 ]\cf5 \strokec5  \cf9 \strokec9 :\cf5 \strokec5  imageBase64\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3                 parts\cf9 \strokec9 .\cf5 \strokec5 push\cf9 \strokec9 (\{\cf5 \strokec5  inlineData\cf9 \strokec9 :\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \strokec5  mimeType\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "image/jpeg"\cf9 \strokec9 ,\cf5 \strokec5  data\cf9 \strokec9 :\cf5 \strokec5  base64Data \cf9 \strokec9 \}\cf5 \strokec5  \cf9 \strokec9 \});\cf5 \cb1 \strokec5 \
+\cb3             \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\
+\cb3             \cf11 \strokec11 for\cf5 \strokec5  \cf9 \strokec9 (\cf11 \strokec11 const\cf5 \strokec5  model \cf11 \strokec11 of\cf5 \strokec5  modelsToTry\cf9 \strokec9 )\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
+\cb3                 \cf11 \strokec11 if\cf5 \strokec5  \cf9 \strokec9 (\cf5 \strokec5 success\cf9 \strokec9 )\cf5 \strokec5  \cf11 \strokec11 break\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3                 \cf11 \strokec11 try\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
+\cb3                     \cf11 \strokec11 const\cf5 \strokec5  response \cf9 \strokec9 =\cf5 \strokec5  \cf11 \strokec11 await\cf5 \strokec5  fetch\cf9 \strokec9 (\cf10 \strokec10 `https://generativelanguage.googleapis.com/v1beta/models/\cf9 \strokec9 $\{\cf5 \strokec5 model\cf9 \strokec9 \}\cf10 \strokec10 :generateContent?key=\cf9 \strokec9 $\{\cf5 \strokec5 currentKey\cf9 \strokec9 \}\cf10 \strokec10 `\cf9 \strokec9 ,\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
+\cb3                         method\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 'POST'\cf9 \strokec9 ,\cf5 \strokec5  headers\cf9 \strokec9 :\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \strokec5  \cf10 \strokec10 'Content-Type'\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 'application/json'\cf5 \strokec5  \cf9 \strokec9 \},\cf5 \strokec5  body\cf9 \strokec9 :\cf5 \strokec5  \cf12 \strokec12 JSON\cf9 \strokec9 .\cf5 \strokec5 stringify\cf9 \strokec9 (\{\cf5 \strokec5  contents\cf9 \strokec9 :\cf5 \strokec5  \cf9 \strokec9 [\{\cf5 \strokec5  parts\cf9 \strokec9 :\cf5 \strokec5  parts \cf9 \strokec9 \}]\cf5 \strokec5  \cf9 \strokec9 \})\cf5 \cb1 \strokec5 \
+\cb3                     \cf9 \strokec9 \});\cf5 \cb1 \strokec5 \
+\cb3                     \cf11 \strokec11 const\cf5 \strokec5  data \cf9 \strokec9 =\cf5 \strokec5  \cf11 \strokec11 await\cf5 \strokec5  response\cf9 \strokec9 .\cf5 \strokec5 json\cf9 \strokec9 ();\cf5 \cb1 \strokec5 \
+\cb3                     \cf11 \strokec11 if\cf5 \strokec5  \cf9 \strokec9 (\cf5 \strokec5 data\cf9 \strokec9 .\cf5 \strokec5 error\cf9 \strokec9 )\cf5 \strokec5  \cf11 \strokec11 throw\cf5 \strokec5  \cf11 \strokec11 new\cf5 \strokec5  \cf12 \strokec12 Error\cf9 \strokec9 (\cf5 \strokec5 data\cf9 \strokec9 .\cf5 \strokec5 error\cf9 \strokec9 .\cf5 \strokec5 message\cf9 \strokec9 );\cf5 \cb1 \strokec5 \
+\cb3                     resultText \cf9 \strokec9 =\cf5 \strokec5  data\cf9 \strokec9 .\cf5 \strokec5 candidates\cf9 \strokec9 ?.[\cf14 \strokec14 0\cf9 \strokec9 ]?.\cf5 \strokec5 content\cf9 \strokec9 ?.\cf5 \strokec5 parts\cf9 \strokec9 ?.[\cf14 \strokec14 0\cf9 \strokec9 ]?.\cf5 \strokec5 text\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3                     \cf11 \strokec11 if\cf5 \strokec5  \cf9 \strokec9 (\cf5 \strokec5 resultText\cf9 \strokec9 )\cf5 \strokec5  success \cf9 \strokec9 =\cf5 \strokec5  \cf11 \strokec11 true\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3                 \cf9 \strokec9 \}\cf5 \strokec5  \cf11 \strokec11 catch\cf5 \strokec5  \cf9 \strokec9 (\cf5 \strokec5 err\cf9 \strokec9 )\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \strokec5  \cf11 \strokec11 if\cf9 \strokec9 (\cf5 \strokec5 err\cf9 \strokec9 .\cf5 \strokec5 message\cf9 \strokec9 .\cf5 \strokec5 includes\cf9 \strokec9 (\cf10 \strokec10 "API key"\cf9 \strokec9 ))\cf5 \strokec5  \cf11 \strokec11 throw\cf5 \strokec5  err\cf9 \strokec9 ;\cf5 \strokec5  \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\cb3             \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\
+\cb3             \cf11 \strokec11 if\cf5 \strokec5  \cf9 \strokec9 (!\cf5 \strokec5 success\cf9 \strokec9 )\cf5 \strokec5  \cf11 \strokec11 throw\cf5 \strokec5  \cf11 \strokec11 new\cf5 \strokec5  \cf12 \strokec12 Error\cf9 \strokec9 (\cf10 \strokec10 "Gagal memproses. Sila cuba lagi."\cf9 \strokec9 );\cf5 \cb1 \strokec5 \
+\
+\cb3             \cf11 \strokec11 if\cf9 \strokec9 (\cf5 \strokec5 outputDivId\cf9 \strokec9 )\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
+\cb3                  \cf11 \strokec11 const\cf5 \strokec5  outDiv \cf9 \strokec9 =\cf5 \strokec5  document\cf9 \strokec9 .\cf5 \strokec5 getElementById\cf9 \strokec9 (\cf5 \strokec5 outputDivId\cf9 \strokec9 );\cf5 \cb1 \strokec5 \
+\cb3                  \cf11 \strokec11 if\cf9 \strokec9 (\cf5 \strokec5 isAppend \cf9 \strokec9 &&\cf5 \strokec5  outDiv\cf9 \strokec9 .\cf5 \strokec5 value \cf9 \strokec9 !==\cf5 \strokec5  \cf11 \strokec11 undefined\cf9 \strokec9 )\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
+\cb3                     \cf11 \strokec11 const\cf5 \strokec5  cur \cf9 \strokec9 =\cf5 \strokec5  outDiv\cf9 \strokec9 .\cf5 \strokec5 value\cf9 \strokec9 .\cf5 \strokec5 trim\cf9 \strokec9 ();\cf5 \cb1 \strokec5 \
+\cb3                     outDiv\cf9 \strokec9 .\cf5 \strokec5 value \cf9 \strokec9 =\cf5 \strokec5  cur \cf9 \strokec9 ?\cf5 \strokec5  cur \cf9 \strokec9 +\cf5 \strokec5  \cf10 \strokec10 "\\n\\n"\cf5 \strokec5  \cf9 \strokec9 +\cf5 \strokec5  resultText\cf9 \strokec9 .\cf5 \strokec5 trim\cf9 \strokec9 ()\cf5 \strokec5  \cf9 \strokec9 :\cf5 \strokec5  resultText\cf9 \strokec9 .\cf5 \strokec5 trim\cf9 \strokec9 ();\cf5 \cb1 \strokec5 \
+\cb3                     saveAnswer\cf9 \strokec9 (\cf5 \strokec5 outputDivId\cf9 \strokec9 .\cf5 \strokec5 replace\cf9 \strokec9 (\cf10 \strokec10 'text-'\cf9 \strokec9 ,\cf10 \strokec10 ''\cf9 \strokec9 ),\cf5 \strokec5  outDiv\cf9 \strokec9 .\cf5 \strokec5 value\cf9 \strokec9 );\cf5 \cb1 \strokec5 \
+\cb3                  \cf9 \strokec9 \}\cf5 \strokec5  \cf11 \strokec11 else\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
+\cb3                     outDiv\cf9 \strokec9 .\cf5 \strokec5 innerHTML \cf9 \strokec9 =\cf5 \strokec5  resultText\cf9 \strokec9 .\cf5 \strokec5 replace\cf9 \strokec9 (\cf15 \strokec15 /\\n/\cf11 \strokec11 g\cf9 \strokec9 ,\cf5 \strokec5  \cf10 \strokec10 '<br>'\cf9 \strokec9 ).\cf5 \strokec5 replace\cf9 \strokec9 (\cf15 \strokec15 /\\*\\*(.*?)\\*\\*/\cf11 \strokec11 g\cf9 \strokec9 ,\cf5 \strokec5  \cf10 \strokec10 '<strong>$1</strong>'\cf9 \strokec9 );\cf5 \cb1 \strokec5 \
+\cb3                     outDiv\cf9 \strokec9 .\cf5 \strokec5 classList\cf9 \strokec9 .\cf5 \strokec5 remove\cf9 \strokec9 (\cf10 \strokec10 'hidden'\cf9 \strokec9 );\cf5 \cb1 \strokec5 \
+\cb3                  \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\cb3             \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\cb3             btn\cf9 \strokec9 .\cf5 \strokec5 innerHTML \cf9 \strokec9 =\cf5 \strokec5  originalText\cf9 \strokec9 ;\cf5 \strokec5  btn\cf9 \strokec9 .\cf5 \strokec5 disabled \cf9 \strokec9 =\cf5 \strokec5  \cf11 \strokec11 false\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3             \cf11 \strokec11 return\cf5 \strokec5  resultText\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\
+\cb3         \cf9 \strokec9 \}\cf5 \strokec5  \cf11 \strokec11 catch\cf5 \strokec5  \cf9 \strokec9 (\cf5 \strokec5 error\cf9 \strokec9 )\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
+\cb3             alert\cf9 \strokec9 (\cf10 \strokec10 "Ralat AI: "\cf5 \strokec5  \cf9 \strokec9 +\cf5 \strokec5  error\cf9 \strokec9 .\cf5 \strokec5 message\cf9 \strokec9 );\cf5 \cb1 \strokec5 \
+\cb3             btn\cf9 \strokec9 .\cf5 \strokec5 innerHTML \cf9 \strokec9 =\cf5 \strokec5  originalText\cf9 \strokec9 ;\cf5 \strokec5  btn\cf9 \strokec9 .\cf5 \strokec5 disabled \cf9 \strokec9 =\cf5 \strokec5  \cf11 \strokec11 false\cf9 \strokec9 ;\cf5 \strokec5  \cf11 \strokec11 return\cf5 \strokec5  \cf11 \strokec11 null\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3         \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\cb3     \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\
+\cb3     \cf8 \strokec8 /* --- SLIDE 6: CREATIVE STUDIO FUNCTIONS --- */\cf5 \cb1 \strokec5 \
+\cb3     \cf11 \strokec11 function\cf5 \strokec5  askGemini\cf9 \strokec9 (\cf5 \strokec5 label\cf9 \strokec9 ,\cf5 \strokec5  inputId\cf9 \strokec9 )\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
+\cb3         \cf11 \strokec11 const\cf5 \strokec5  prompt \cf9 \strokec9 =\cf5 \strokec5  \cf10 \strokec10 `Kamu adalah pembantu penulisan kreatif. Tajuk: "Terperangkap!". Tugasan: Berikan satu idea pendek (maksimum 2 ayat) untuk "\cf9 \strokec9 $\{\cf5 \strokec5 label\cf9 \strokec9 \}\cf10 \strokec10 ". Bahasa: Bahasa Melayu.`\cf9 \strokec9 ;\cf5 \strokec5  \cf8 \strokec8 // PROMPT DIUBAH\cf5 \cb1 \strokec5 \
+\cb3         callGeminiAPI\cf9 \strokec9 (\cf5 \strokec5 prompt\cf9 \strokec9 ,\cf5 \strokec5  \cf10 \strokec10 `btn-ai-\cf9 \strokec9 $\{\cf5 \strokec5 inputId\cf9 \strokec9 \}\cf10 \strokec10 `\cf9 \strokec9 ,\cf5 \strokec5  \cf10 \strokec10 `text-\cf9 \strokec9 $\{\cf5 \strokec5 inputId\cf9 \strokec9 \}\cf10 \strokec10 `\cf9 \strokec9 ,\cf5 \strokec5  \cf11 \strokec11 true\cf9 \strokec9 );\cf5 \cb1 \strokec5 \
+\cb3     \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\
+\cb3     \cf11 \strokec11 function\cf5 \strokec5  checkMyStory\cf9 \strokec9 ()\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
+\cb3         \cf11 \strokec11 const\cf5 \strokec5  inputs \cf9 \strokec9 =\cf5 \strokec5  \cf9 \strokec9 [\cf10 \strokec10 'permulaan'\cf9 \strokec9 ,\cf10 \strokec10 'perkembangan'\cf9 \strokec9 ,\cf10 \strokec10 'konflik'\cf9 \strokec9 ,\cf10 \strokec10 'kemuncak'\cf9 \strokec9 ,\cf10 \strokec10 'peleraian'\cf9 \strokec9 ].\cf5 \strokec5 map\cf9 \strokec9 (\cf5 \strokec5 id \cf9 \strokec9 =>\cf5 \strokec5  document\cf9 \strokec9 .\cf5 \strokec5 getElementById\cf9 \strokec9 (\cf10 \strokec10 'text-cw_'\cf9 \strokec9 +\cf5 \strokec5 id\cf9 \strokec9 )?.\cf5 \strokec5 value \cf9 \strokec9 ||\cf5 \strokec5  \cf10 \strokec10 "(Tiada)"\cf9 \strokec9 ).\cf5 \strokec5 join\cf9 \strokec9 (\cf10 \strokec10 '\\n'\cf9 \strokec9 );\cf5 \cb1 \strokec5 \
+\cb3         \cf11 \strokec11 if\cf9 \strokec9 (\cf5 \strokec5 inputs\cf9 \strokec9 .\cf5 \strokec5 length \cf9 \strokec9 <\cf5 \strokec5  \cf14 \strokec14 20\cf9 \strokec9 )\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \strokec5  alert\cf9 \strokec9 (\cf10 \strokec10 "Tulis cerita dahulu."\cf9 \strokec9 );\cf5 \strokec5  \cf11 \strokec11 return\cf9 \strokec9 ;\cf5 \strokec5  \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\cb3         \cf8 \strokec8 // Update scannedText for Slide 8 usage\cf5 \cb1 \strokec5 \
+\cb3         state\cf9 \strokec9 .\cf5 \strokec5 scannedText \cf9 \strokec9 =\cf5 \strokec5  inputs\cf9 \strokec9 ;\cf5 \strokec5  \cb1 \
+\cb3         saveProgress\cf9 \strokec9 ();\cf5 \cb1 \strokec5 \
+\cb3         \cf11 \strokec11 const\cf5 \strokec5  prompt \cf9 \strokec9 =\cf5 \strokec5  \cf10 \strokec10 `Semak plot cerita pelajar ini (Piramid Freytag):\\n\cf9 \strokec9 $\{\cf5 \strokec5 inputs\cf9 \strokec9 \}\cf10 \strokec10 \\nBerikan komen ringkas dalam BM.`\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3         callGeminiAPI\cf9 \strokec9 (\cf5 \strokec5 prompt\cf9 \strokec9 ,\cf5 \strokec5  \cf10 \strokec10 'btn-check-story'\cf9 \strokec9 ,\cf5 \strokec5  \cf10 \strokec10 'story-feedback'\cf9 \strokec9 );\cf5 \cb1 \strokec5 \
+\cb3     \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\
+\cb3     \cf11 \strokec11 function\cf5 \strokec5  switchStudioTab\cf9 \strokec9 (\cf5 \strokec5 tab\cf9 \strokec9 )\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
+\cb3         state\cf9 \strokec9 .\cf5 \strokec5 studioTab \cf9 \strokec9 =\cf5 \strokec5  tab\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3         document\cf9 \strokec9 .\cf5 \strokec5 getElementById\cf9 \strokec9 (\cf10 \strokec10 'tab-bina'\cf9 \strokec9 ).\cf5 \strokec5 classList\cf9 \strokec9 .\cf5 \strokec5 toggle\cf9 \strokec9 (\cf10 \strokec10 'active'\cf9 \strokec9 ,\cf5 \strokec5  tab\cf9 \strokec9 ===\cf10 \strokec10 'bina'\cf9 \strokec9 );\cf5 \cb1 \strokec5 \
+\cb3         document\cf9 \strokec9 .\cf5 \strokec5 getElementById\cf9 \strokec9 (\cf10 \strokec10 'tab-bedah'\cf9 \strokec9 ).\cf5 \strokec5 classList\cf9 \strokec9 .\cf5 \strokec5 toggle\cf9 \strokec9 (\cf10 \strokec10 'active'\cf9 \strokec9 ,\cf5 \strokec5  tab\cf9 \strokec9 ===\cf10 \strokec10 'bedah'\cf9 \strokec9 );\cf5 \cb1 \strokec5 \
+\cb3         document\cf9 \strokec9 .\cf5 \strokec5 getElementById\cf9 \strokec9 (\cf10 \strokec10 'content-bina'\cf9 \strokec9 ).\cf5 \strokec5 classList\cf9 \strokec9 .\cf5 \strokec5 toggle\cf9 \strokec9 (\cf10 \strokec10 'hidden'\cf9 \strokec9 ,\cf5 \strokec5  tab\cf9 \strokec9 !==\cf10 \strokec10 'bina'\cf9 \strokec9 );\cf5 \cb1 \strokec5 \
+\cb3         document\cf9 \strokec9 .\cf5 \strokec5 getElementById\cf9 \strokec9 (\cf10 \strokec10 'content-bedah'\cf9 \strokec9 ).\cf5 \strokec5 classList\cf9 \strokec9 .\cf5 \strokec5 toggle\cf9 \strokec9 (\cf10 \strokec10 'hidden'\cf9 \strokec9 ,\cf5 \strokec5  tab\cf9 \strokec9 !==\cf10 \strokec10 'bedah'\cf9 \strokec9 );\cf5 \cb1 \strokec5 \
+\cb3     \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\
+\cb3     \cf11 \strokec11 function\cf5 \strokec5  analyzeStoryStudio\cf9 \strokec9 ()\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
+\cb3         \cf11 \strokec11 const\cf5 \strokec5  text \cf9 \strokec9 =\cf5 \strokec5  document\cf9 \strokec9 .\cf5 \strokec5 getElementById\cf9 \strokec9 (\cf10 \strokec10 'analyze-text'\cf9 \strokec9 ).\cf5 \strokec5 value\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3         \cf11 \strokec11 if\cf9 \strokec9 (!\cf5 \strokec5 text \cf9 \strokec9 ||\cf5 \strokec5  text\cf9 \strokec9 .\cf5 \strokec5 length \cf9 \strokec9 <\cf5 \strokec5  \cf14 \strokec14 10\cf9 \strokec9 )\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \strokec5  alert\cf9 \strokec9 (\cf10 \strokec10 "Sila masukkan teks cerita."\cf9 \strokec9 );\cf5 \strokec5  \cf11 \strokec11 return\cf9 \strokec9 ;\cf5 \strokec5  \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\cb3         \cf8 \strokec8 // Update scannedText for Slide 8 usage\cf5 \cb1 \strokec5 \
+\cb3         state\cf9 \strokec9 .\cf5 \strokec5 scannedText \cf9 \strokec9 =\cf5 \strokec5  text\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3         saveProgress\cf9 \strokec9 ();\cf5 \cb1 \strokec5 \
+\cb3         \cf11 \strokec11 const\cf5 \strokec5  prompt \cf9 \strokec9 =\cf5 \strokec5  \cf10 \strokec10 `Analisis cerita pendek berikut kepada 5 elemen plot (Permulaan, Perkembangan, Konflik, Kemuncak, Peleraian). Format HTML <ul>. Gunakan Bahasa Melayu.\\nTeks: "\cf9 \strokec9 $\{\cf5 \strokec5 text\cf9 \strokec9 \}\cf10 \strokec10 "`\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3         callGeminiAPI\cf9 \strokec9 (\cf5 \strokec5 prompt\cf9 \strokec9 ,\cf5 \strokec5  \cf10 \strokec10 'btn-analyze-studio'\cf9 \strokec9 ,\cf5 \strokec5  \cf10 \strokec10 'studio-result'\cf9 \strokec9 );\cf5 \cb1 \strokec5 \
+\cb3     \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\
+\cb3     \cf8 \strokec8 /* --- SLIDE 7: CAMERA FUNCTIONS --- */\cf5 \cb1 \strokec5 \
+\cb3     \cf11 \strokec11 function\cf5 \strokec5  handleImageUpload\cf9 \strokec9 (\cf5 \strokec5 event\cf9 \strokec9 )\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
+\cb3         \cf11 \strokec11 const\cf5 \strokec5  file \cf9 \strokec9 =\cf5 \strokec5  event\cf9 \strokec9 .\cf5 \strokec5 target\cf9 \strokec9 .\cf5 \strokec5 files\cf9 \strokec9 [\cf14 \strokec14 0\cf9 \strokec9 ];\cf5 \cb1 \strokec5 \
+\cb3         \cf11 \strokec11 if\cf5 \strokec5  \cf9 \strokec9 (\cf5 \strokec5 file\cf9 \strokec9 )\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
+\cb3             \cf11 \strokec11 const\cf5 \strokec5  reader \cf9 \strokec9 =\cf5 \strokec5  \cf11 \strokec11 new\cf5 \strokec5  \cf12 \strokec12 FileReader\cf9 \strokec9 ();\cf5 \cb1 \strokec5 \
+\cb3             reader\cf9 \strokec9 .\cf5 \strokec5 onload \cf9 \strokec9 =\cf5 \strokec5  \cf11 \strokec11 function\cf9 \strokec9 (\cf5 \strokec5 e\cf9 \strokec9 )\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
+\cb3                 document\cf9 \strokec9 .\cf5 \strokec5 getElementById\cf9 \strokec9 (\cf10 \strokec10 'img-preview'\cf9 \strokec9 ).\cf5 \strokec5 src \cf9 \strokec9 =\cf5 \strokec5  e\cf9 \strokec9 .\cf5 \strokec5 target\cf9 \strokec9 .\cf5 \strokec5 result\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3                 document\cf9 \strokec9 .\cf5 \strokec5 getElementById\cf9 \strokec9 (\cf10 \strokec10 'img-preview'\cf9 \strokec9 ).\cf5 \strokec5 classList\cf9 \strokec9 .\cf5 \strokec5 remove\cf9 \strokec9 (\cf10 \strokec10 'hidden'\cf9 \strokec9 );\cf5 \cb1 \strokec5 \
+\cb3                 document\cf9 \strokec9 .\cf5 \strokec5 getElementById\cf9 \strokec9 (\cf10 \strokec10 'img-placeholder'\cf9 \strokec9 ).\cf5 \strokec5 classList\cf9 \strokec9 .\cf5 \strokec5 add\cf9 \strokec9 (\cf10 \strokec10 'hidden'\cf9 \strokec9 );\cf5 \cb1 \strokec5 \
+\cb3                 state\cf9 \strokec9 .\cf5 \strokec5 uploadedImageBase64 \cf9 \strokec9 =\cf5 \strokec5  e\cf9 \strokec9 .\cf5 \strokec5 target\cf9 \strokec9 .\cf5 \strokec5 result\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3             \cf9 \strokec9 \};\cf5 \cb1 \strokec5 \
+\cb3             reader\cf9 \strokec9 .\cf5 \strokec5 readAsDataURL\cf9 \strokec9 (\cf5 \strokec5 file\cf9 \strokec9 );\cf5 \cb1 \strokec5 \
+\cb3         \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\cb3     \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\
+\cb3     \cf11 \strokec11 async\cf5 \strokec5  \cf11 \strokec11 function\cf5 \strokec5  checkGrammarFromImage\cf9 \strokec9 ()\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
+\cb3         \cf11 \strokec11 if\cf5 \strokec5  \cf9 \strokec9 (!\cf5 \strokec5 state\cf9 \strokec9 .\cf5 \strokec5 uploadedImageBase64\cf9 \strokec9 )\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \strokec5  alert\cf9 \strokec9 (\cf10 \strokec10 "Sila ambil gambar dahulu."\cf9 \strokec9 );\cf5 \strokec5  \cf11 \strokec11 return\cf9 \strokec9 ;\cf5 \strokec5  \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\cb3         \cb1 \
+\cb3         \cf11 \strokec11 const\cf5 \strokec5  prompt \cf9 \strokec9 =\cf5 \strokec5  \cf10 \strokec10 `\cf5 \cb1 \strokec5 \
+\pard\pardeftab720\partightenfactor0
+\cf10 \cb3 \strokec10         1. Baca teks dalam imej ini (OCR) dan berikan teks mentah sahaja dahulu.\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10         2. Kemudian, di bawahnya, senaraikan kesalahan tatabahasa/ejaan dalam format HTML list <ul>.\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10         3. Gunakan pemisah "---PEMISAH---" antara teks mentah dan analisis.\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10         `\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\pard\pardeftab720\partightenfactor0
+\cf5 \cb3         \cb1 \
+\cb3         \cf11 \strokec11 const\cf5 \strokec5  fullResult \cf9 \strokec9 =\cf5 \strokec5  \cf11 \strokec11 await\cf5 \strokec5  callGeminiAPI\cf9 \strokec9 (\cf5 \strokec5 prompt\cf9 \strokec9 ,\cf5 \strokec5  \cf10 \strokec10 'btn-check-image'\cf9 \strokec9 ,\cf5 \strokec5  \cf11 \strokec11 null\cf9 \strokec9 ,\cf5 \strokec5  \cf11 \strokec11 false\cf9 \strokec9 ,\cf5 \strokec5  state\cf9 \strokec9 .\cf5 \strokec5 uploadedImageBase64\cf9 \strokec9 );\cf5 \cb1 \strokec5 \
+\cb3         \cb1 \
+\cb3         \cf11 \strokec11 if\cf9 \strokec9 (\cf5 \strokec5 fullResult\cf9 \strokec9 )\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
+\cb3             \cf11 \strokec11 const\cf5 \strokec5  parts \cf9 \strokec9 =\cf5 \strokec5  fullResult\cf9 \strokec9 .\cf5 \strokec5 split\cf9 \strokec9 (\cf10 \strokec10 "---PEMISAH---"\cf9 \strokec9 );\cf5 \cb1 \strokec5 \
+\cb3             \cf11 \strokec11 let\cf5 \strokec5  rawText \cf9 \strokec9 =\cf5 \strokec5  parts\cf9 \strokec9 [\cf14 \strokec14 0\cf9 \strokec9 ].\cf5 \strokec5 trim\cf9 \strokec9 ().\cf5 \strokec5 replace\cf9 \strokec9 (\cf15 \strokec15 /```/\cf11 \strokec11 g\cf9 \strokec9 ,\cf5 \strokec5  \cf10 \strokec10 ''\cf9 \strokec9 );\cf5 \cb1 \strokec5 \
+\cb3             \cf11 \strokec11 let\cf5 \strokec5  analysis \cf9 \strokec9 =\cf5 \strokec5  parts\cf9 \strokec9 [\cf14 \strokec14 1\cf9 \strokec9 ]\cf5 \strokec5  \cf9 \strokec9 ?\cf5 \strokec5  parts\cf9 \strokec9 [\cf14 \strokec14 1\cf9 \strokec9 ].\cf5 \strokec5 trim\cf9 \strokec9 ()\cf5 \strokec5  \cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 "Tiada analisis dikesan."\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3             \cb1 \
+\cb3             \cf8 \strokec8 // Update scannedText for Slide 8\cf5 \cb1 \strokec5 \
+\cb3             state\cf9 \strokec9 .\cf5 \strokec5 scannedText \cf9 \strokec9 =\cf5 \strokec5  rawText\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3             document\cf9 \strokec9 .\cf5 \strokec5 getElementById\cf9 \strokec9 (\cf10 \strokec10 'scanned-text-area'\cf9 \strokec9 ).\cf5 \strokec5 value \cf9 \strokec9 =\cf5 \strokec5  rawText\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3             document\cf9 \strokec9 .\cf5 \strokec5 getElementById\cf9 \strokec9 (\cf10 \strokec10 'ocr-result'\cf9 \strokec9 ).\cf5 \strokec5 innerHTML \cf9 \strokec9 =\cf5 \strokec5  analysis\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3             document\cf9 \strokec9 .\cf5 \strokec5 getElementById\cf9 \strokec9 (\cf10 \strokec10 'ocr-result'\cf9 \strokec9 ).\cf5 \strokec5 classList\cf9 \strokec9 .\cf5 \strokec5 remove\cf9 \strokec9 (\cf10 \strokec10 'hidden'\cf9 \strokec9 );\cf5 \cb1 \strokec5 \
+\cb3             saveProgress\cf9 \strokec9 ();\cf5 \cb1 \strokec5 \
+\cb3         \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\cb3     \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\
+\cb3     \cf11 \strokec11 function\cf5 \strokec5  updateScannedText\cf9 \strokec9 (\cf5 \strokec5 val\cf9 \strokec9 )\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
+\cb3         state\cf9 \strokec9 .\cf5 \strokec5 scannedText \cf9 \strokec9 =\cf5 \strokec5  val\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3         saveProgress\cf9 \strokec9 ();\cf5 \cb1 \strokec5 \
+\cb3     \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\
+\cb3     \cf8 \strokec8 /* --- SLIDE 8: COMPARISON --- */\cf5 \cb1 \strokec5 \
+\cb3     \cf11 \strokec11 async\cf5 \strokec5  \cf11 \strokec11 function\cf5 \strokec5  generateComparison\cf9 \strokec9 ()\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
+\cb3         \cf11 \strokec11 if\cf9 \strokec9 (!\cf5 \strokec5 state\cf9 \strokec9 .\cf5 \strokec5 scannedText \cf9 \strokec9 ||\cf5 \strokec5  state\cf9 \strokec9 .\cf5 \strokec5 scannedText\cf9 \strokec9 .\cf5 \strokec5 length \cf9 \strokec9 <\cf5 \strokec5  \cf14 \strokec14 5\cf9 \strokec9 )\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
+\cb3             alert\cf9 \strokec9 (\cf10 \strokec10 "Tiada teks dikesan. Sila tulis cerita di Slaid 6 atau imbas gambar di Slaid 7."\cf9 \strokec9 );\cf5 \cb1 \strokec5 \
+\cb3             \cf11 \strokec11 return\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3         \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\
+\cb3         \cf11 \strokec11 const\cf5 \strokec5  prompt \cf9 \strokec9 =\cf5 \strokec5  \cf10 \strokec10 `\cf5 \cb1 \strokec5 \
+\pard\pardeftab720\partightenfactor0
+\cf10 \cb3 \strokec10         Bertindak sebagai Cikgu Bahasa Melayu.\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10         Berikut adalah karangan pelajar: "\cf9 \strokec9 $\{\cf5 \strokec5 state\cf9 \strokec9 .\cf5 \strokec5 scannedText\cf9 \strokec9 \}\cf10 \strokec10 "\cf5 \cb1 \strokec5 \
+\
+\cf10 \cb3 \strokec10         Tugasan 1: Tulis semula karangan ini supaya menjadi gramatis, matang, dan menarik (Versi Sempurna).\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10         Tugasan 2: Sediakan versi "Diff" dalam format HTML sahaja. \cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10            - Bungkus perkataan yang dibuang/salah dengan <span class="diff-del">...</span>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10            - Bungkus perkataan yang ditambah/dibetulkan dengan <span class="diff-add">...</span>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10         \cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10         Format Jawapan (Wajib ikut ini):\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10         ---VERSI_SEMPURNA---\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10         [Teks sempurna di sini]\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10         ---VERSI_DIFF---\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10         [HTML Diff di sini]\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10         `\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\
+\pard\pardeftab720\partightenfactor0
+\cf5 \cb3         \cf11 \strokec11 const\cf5 \strokec5  res \cf9 \strokec9 =\cf5 \strokec5  \cf11 \strokec11 await\cf5 \strokec5  callGeminiAPI\cf9 \strokec9 (\cf5 \strokec5 prompt\cf9 \strokec9 ,\cf5 \strokec5  \cf10 \strokec10 'btn-generate-comparison'\cf9 \strokec9 );\cf5 \cb1 \strokec5 \
+\cb3         \cf11 \strokec11 if\cf9 \strokec9 (\cf5 \strokec5 res\cf9 \strokec9 )\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
+\cb3             \cf11 \strokec11 const\cf5 \strokec5  parts \cf9 \strokec9 =\cf5 \strokec5  res\cf9 \strokec9 .\cf5 \strokec5 split\cf9 \strokec9 (\cf15 \strokec15 /---VERSI_SEMPURNA---|---VERSI_DIFF---/\cf9 \strokec9 );\cf5 \cb1 \strokec5 \
+\cb3             \cf11 \strokec11 if\cf9 \strokec9 (\cf5 \strokec5 parts\cf9 \strokec9 .\cf5 \strokec5 length \cf9 \strokec9 >=\cf5 \strokec5  \cf14 \strokec14 3\cf9 \strokec9 )\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
+\cb3                 \cf11 \strokec11 const\cf5 \strokec5  diffHtml \cf9 \strokec9 =\cf5 \strokec5  parts\cf9 \strokec9 [\cf14 \strokec14 2\cf9 \strokec9 ].\cf5 \strokec5 trim\cf9 \strokec9 ().\cf5 \strokec5 replace\cf9 \strokec9 (\cf15 \strokec15 /```html|```/\cf11 \strokec11 g\cf9 \strokec9 ,\cf5 \strokec5  \cf10 \strokec10 ''\cf9 \strokec9 );\cf5 \strokec5  \cb1 \
+\cb3                 document\cf9 \strokec9 .\cf5 \strokec5 getElementById\cf9 \strokec9 (\cf10 \strokec10 'comp-before'\cf9 \strokec9 ).\cf5 \strokec5 innerHTML \cf9 \strokec9 =\cf5 \strokec5  state\cf9 \strokec9 .\cf5 \strokec5 scannedText\cf9 \strokec9 ;\cf5 \strokec5  \cb1 \
+\cb3                 document\cf9 \strokec9 .\cf5 \strokec5 getElementById\cf9 \strokec9 (\cf10 \strokec10 'comp-after'\cf9 \strokec9 ).\cf5 \strokec5 innerHTML \cf9 \strokec9 =\cf5 \strokec5  diffHtml\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3                 document\cf9 \strokec9 .\cf5 \strokec5 getElementById\cf9 \strokec9 (\cf10 \strokec10 'comp-container'\cf9 \strokec9 ).\cf5 \strokec5 classList\cf9 \strokec9 .\cf5 \strokec5 remove\cf9 \strokec9 (\cf10 \strokec10 'hidden'\cf9 \strokec9 );\cf5 \cb1 \strokec5 \
+\cb3             \cf9 \strokec9 \}\cf5 \strokec5  \cf11 \strokec11 else\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
+\cb3                 alert\cf9 \strokec9 (\cf10 \strokec10 "Format jawapan AI tidak lengkap. Sila cuba lagi."\cf9 \strokec9 );\cf5 \cb1 \strokec5 \
+\cb3             \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\cb3         \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\cb3     \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\
+\cb3     \cf8 \strokec8 /* --- RENDERERS --- */\cf5 \cb1 \strokec5 \
+\
+\cb3     \cf11 \strokec11 function\cf5 \strokec5  renderSlide\cf9 \strokec9 ()\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
+\cb3         \cf11 \strokec11 const\cf5 \strokec5  s \cf9 \strokec9 =\cf5 \strokec5  slides\cf9 \strokec9 [\cf5 \strokec5 state\cf9 \strokec9 .\cf5 \strokec5 slideIdx\cf9 \strokec9 ];\cf5 \cb1 \strokec5 \
+\cb3         \cf11 \strokec11 const\cf5 \strokec5  stage \cf9 \strokec9 =\cf5 \strokec5  document\cf9 \strokec9 .\cf5 \strokec5 getElementById\cf9 \strokec9 (\cf10 \strokec10 'stage'\cf9 \strokec9 );\cf5 \cb1 \strokec5 \
+\cb3         \cf11 \strokec11 const\cf5 \strokec5  prevBtn \cf9 \strokec9 =\cf5 \strokec5  document\cf9 \strokec9 .\cf5 \strokec5 getElementById\cf9 \strokec9 (\cf10 \strokec10 'prevBtn'\cf9 \strokec9 );\cf5 \cb1 \strokec5 \
+\cb3         \cf11 \strokec11 const\cf5 \strokec5  nextBtn \cf9 \strokec9 =\cf5 \strokec5  document\cf9 \strokec9 .\cf5 \strokec5 getElementById\cf9 \strokec9 (\cf10 \strokec10 'nextBtn'\cf9 \strokec9 );\cf5 \cb1 \strokec5 \
+\cb3         \cf11 \strokec11 const\cf5 \strokec5  dots \cf9 \strokec9 =\cf5 \strokec5  document\cf9 \strokec9 .\cf5 \strokec5 getElementById\cf9 \strokec9 (\cf10 \strokec10 'dots'\cf9 \strokec9 );\cf5 \cb1 \strokec5 \
+\
+\cb3         prevBtn\cf9 \strokec9 .\cf5 \strokec5 disabled \cf9 \strokec9 =\cf5 \strokec5  state\cf9 \strokec9 .\cf5 \strokec5 slideIdx \cf9 \strokec9 ===\cf5 \strokec5  \cf14 \strokec14 0\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3         \cf8 \strokec8 // The total number of slides is 9 (index 0 to 8).\cf5 \cb1 \strokec5 \
+\cb3         nextBtn\cf9 \strokec9 .\cf5 \strokec5 innerText \cf9 \strokec9 =\cf5 \strokec5  state\cf9 \strokec9 .\cf5 \strokec5 slideIdx \cf9 \strokec9 ===\cf5 \strokec5  slides\cf9 \strokec9 .\cf5 \strokec5 length \cf9 \strokec9 -\cf5 \strokec5  \cf14 \strokec14 1\cf5 \strokec5  \cf9 \strokec9 ?\cf5 \strokec5  \cf10 \strokec10 'Tamat'\cf5 \strokec5  \cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 'Seterusnya \uc0\u8594 '\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3         dots\cf9 \strokec9 .\cf5 \strokec5 innerHTML \cf9 \strokec9 =\cf5 \strokec5  slides\cf9 \strokec9 .\cf5 \strokec5 map\cf9 \strokec9 ((\cf5 \strokec5 _\cf9 \strokec9 ,\cf5 \strokec5  i\cf9 \strokec9 )\cf5 \strokec5  \cf9 \strokec9 =>\cf5 \strokec5  \cf10 \strokec10 `<div class="w-2.5 h-2.5 rounded-full \cf9 \strokec9 $\{\cf5 \strokec5 i \cf9 \strokec9 ===\cf5 \strokec5  state\cf9 \strokec9 .\cf5 \strokec5 slideIdx \cf9 \strokec9 ?\cf5 \strokec5  \cf10 \strokec10 'bg-blue-600'\cf5 \strokec5  \cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 'bg-gray-300'\cf9 \strokec9 \}\cf10 \strokec10 "></div>`\cf9 \strokec9 ).\cf5 \strokec5 join\cf9 \strokec9 (\cf10 \strokec10 ''\cf9 \strokec9 );\cf5 \cb1 \strokec5 \
+\
+\cb3         \cf11 \strokec11 let\cf5 \strokec5  html \cf9 \strokec9 =\cf5 \strokec5  \cf10 \strokec10 ''\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\
+\cb3         \cf11 \strokec11 if\cf9 \strokec9 (\cf5 \strokec5 s\cf9 \strokec9 .\cf5 \strokec5 type \cf9 \strokec9 ===\cf5 \strokec5  \cf10 \strokec10 'title'\cf9 \strokec9 )\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
+\cb3              html \cf9 \strokec9 =\cf5 \strokec5  \cf10 \strokec10 `\cf5 \cb1 \strokec5 \
+\pard\pardeftab720\partightenfactor0
+\cf10 \cb3 \strokec10             <div class="text-center py-6 animate-fade-in max-w-3xl mx-auto">\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                 <div class="lesson-badge mx-auto mb-4 w-20 h-20 text-3xl shadow-lg">\uc0\u55356 \u57300 \u65039 </div>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                 <h1 class="title text-slate-800 mb-2 text-4xl tracking-tight">\cf9 \strokec9 $\{\cf5 \strokec5 s\cf9 \strokec9 .\cf5 \strokec5 title\cf9 \strokec9 \}\cf10 \strokec10 </h1>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                 <p class="text-lg text-slate-500 mb-6 font-medium">\cf9 \strokec9 $\{\cf5 \strokec5 s\cf9 \strokec9 .\cf5 \strokec5 subtitle\cf9 \strokec9 \}\cf10 \strokec10 </p>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                 <div class="mb-6 max-w-md mx-auto">\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                     <label class="block text-xs font-bold text-gray-500 uppercase mb-1 text-left ml-1">Nama Murid:</label>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                     <input type="text" class="w-full p-4 border border-gray-300 rounded-xl bg-white focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition shadow-sm text-lg" \cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                         placeholder="Taip nama penuh anda..." value="\cf9 \strokec9 $\{\cf5 \strokec5 state\cf9 \strokec9 .\cf5 \strokec5 name\cf9 \strokec9 \}\cf10 \strokec10 " oninput="state.name=this.value; saveProgress()">\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                 </div>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                 <!-- API Key Input Re-added -->\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                 <div class="mb-8 max-w-md mx-auto bg-gray-100 p-4 rounded-xl border border-gray-200">\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                     <label class="block text-xs font-bold text-gray-500 uppercase mb-1 text-left ml-1 flex justify-between"><span>Google AI API Key:</span><i class="fas fa-key text-gray-400"></i></label>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                     <input type="password" class="w-full p-3 border border-gray-300 rounded-lg bg-white text-gray-600 text-sm font-mono focus:border-blue-500 outline-none transition" value="\cf9 \strokec9 $\{\cf5 \strokec5 apiKey\cf9 \strokec9 \}\cf10 \strokec10 " oninput="updateApiKey(this.value)" placeholder="Masukkan API Key...">\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                     <div class="text-[10px] text-gray-400 text-left mt-1 italic">* Kunci diperlukan untuk ciri AI di Slaid 6, 7 & 8.</div>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                 </div>\cf5 \cb1 \strokec5 \
+\
+\cf10 \cb3 \strokec10                 <div class="bg-indigo-50 border-2 border-indigo-100 rounded-2xl p-6 text-left shadow-sm relative overflow-hidden">\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                     <div class="absolute top-0 right-0 bg-indigo-200 text-indigo-800 text-xs font-bold px-3 py-1 rounded-bl-xl">AKTIVITI WAJIB</div>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                     <h3 class="font-bold text-indigo-900 mb-2 flex items-center gap-2 text-lg">\cf9 \strokec9 $\{\cf5 \strokec5 s\cf9 \strokec9 .\cf5 \strokec5 doNow\cf9 \strokec9 .\cf5 \strokec5 title\cf9 \strokec9 \}\cf10 \strokec10 </h3>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                     <p class="text-indigo-800 text-base mb-4 leading-relaxed">\cf9 \strokec9 $\{\cf5 \strokec5 s\cf9 \strokec9 .\cf5 \strokec5 doNow\cf9 \strokec9 .\cf5 \strokec5 prompt\cf9 \strokec9 \}\cf10 \strokec10 </p>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                     <div class="w-full bg-white rounded-xl border border-indigo-200 overflow-hidden flex items-center justify-center min-h-[200px]"><img src="\cf9 \strokec9 $\{\cf5 \strokec5 s\cf9 \strokec9 .\cf5 \strokec5 doNow\cf9 \strokec9 .\cf5 \strokec5 imageSrc\cf9 \strokec9 \}\cf10 \strokec10 " class="w-full h-auto object-contain max-h-[300px]" alt="Do Now Image"></div>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                 </div>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10             </div>`\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\pard\pardeftab720\partightenfactor0
+\cf5 \cb3         \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\cb3         \cf11 \strokec11 else\cf5 \strokec5  \cf11 \strokec11 if\cf9 \strokec9 (\cf5 \strokec5 s\cf9 \strokec9 .\cf5 \strokec5 type \cf9 \strokec9 ===\cf5 \strokec5  \cf10 \strokec10 'content_quiz'\cf9 \strokec9 )\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
+\cb3              html \cf9 \strokec9 =\cf5 \strokec5  \cf10 \strokec10 `\cf5 \cb1 \strokec5 \
+\pard\pardeftab720\partightenfactor0
+\cf10 \cb3 \strokec10             <div class="max-w-4xl mx-auto animate-fade-in">\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                 <h2 class="title mb-6">\cf9 \strokec9 $\{\cf5 \strokec5 s\cf9 \strokec9 .\cf5 \strokec5 title\cf9 \strokec9 \}\cf10 \strokec10 </h2>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                 <div class="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-r-xl mb-8 shadow-sm"><p class="text-lg leading-relaxed text-blue-900 font-medium">\cf9 \strokec9 $\{\cf5 \strokec5 s\cf9 \strokec9 .\cf5 \strokec5 content\cf9 \strokec9 \}\cf10 \strokec10 </p></div>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                 <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-200">\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                     <div class="flex items-center gap-3 mb-4"><span class="bg-yellow-100 text-yellow-700 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wide">Kuiz Pantas</span><h3 class="font-bold text-lg">\uc0\u55358 \u56596  Uji Minda</h3></div>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                     <p class="mb-4 text-gray-700 font-medium text-lg">\cf9 \strokec9 $\{\cf5 \strokec5 s\cf9 \strokec9 .\cf5 \strokec5 quiz\cf9 \strokec9 .\cf5 \strokec5 q\cf9 \strokec9 \}\cf10 \strokec10 </p>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                     <div class="space-y-2">\cf9 \strokec9 $\{\cf5 \strokec5 s\cf9 \strokec9 .\cf5 \strokec5 quiz\cf9 \strokec9 .\cf5 \strokec5 options\cf9 \strokec9 .\cf5 \strokec5 map\cf9 \strokec9 ((\cf5 \strokec5 opt\cf9 \strokec9 ,\cf5 \strokec5  i\cf9 \strokec9 )\cf5 \strokec5  \cf9 \strokec9 =>\cf5 \strokec5  \cf10 \strokec10 `<button type="button" onclick="checkQuiz(this, \cf9 \strokec9 $\{\cf5 \strokec5 i\cf9 \strokec9 \}\cf10 \strokec10 , \cf9 \strokec9 $\{\cf5 \strokec5 s\cf9 \strokec9 .\cf5 \strokec5 quiz\cf9 \strokec9 .\cf5 \strokec5 ans\cf9 \strokec9 \}\cf10 \strokec10 )" class="quiz-opt text-left w-full text-base">\cf9 \strokec9 $\{\cf12 \strokec12 String\cf9 \strokec9 .\cf5 \strokec5 fromCharCode\cf9 \strokec9 (\cf14 \strokec14 65\cf9 \strokec9 +\cf5 \strokec5 i\cf9 \strokec9 )\}\cf10 \strokec10 . \cf9 \strokec9 $\{\cf5 \strokec5 opt\cf9 \strokec9 \}\cf10 \strokec10 </button>`\cf9 \strokec9 ).\cf5 \strokec5 join\cf9 \strokec9 (\cf10 \strokec10 ''\cf9 \strokec9 )\}\cf10 \strokec10 </div>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                     <p id="quizFeedback" class="mt-3 text-lg font-bold hidden"></p>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                 </div>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10             </div>`\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\pard\pardeftab720\partightenfactor0
+\cf5 \cb3         \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\cb3         \cf11 \strokec11 else\cf5 \strokec5  \cf11 \strokec11 if\cf9 \strokec9 (\cf5 \strokec5 s\cf9 \strokec9 .\cf5 \strokec5 type \cf9 \strokec9 ===\cf5 \strokec5  \cf10 \strokec10 'drag_drop'\cf9 \strokec9 )\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
+\cb3             \cf11 \strokec11 const\cf5 \strokec5  shuffledItems \cf9 \strokec9 =\cf5 \strokec5  \cf9 \strokec9 [...\cf5 \strokec5 s\cf9 \strokec9 .\cf5 \strokec5 items\cf9 \strokec9 ].\cf5 \strokec5 sort\cf9 \strokec9 (()\cf5 \strokec5  \cf9 \strokec9 =>\cf5 \strokec5  \cf12 \strokec12 Math\cf9 \strokec9 .\cf5 \strokec5 random\cf9 \strokec9 ()\cf5 \strokec5  \cf9 \strokec9 -\cf5 \strokec5  \cf14 \strokec14 0.5\cf9 \strokec9 );\cf5 \cb1 \strokec5 \
+\cb3             \cf11 \strokec11 const\cf5 \strokec5  offsetClasses \cf9 \strokec9 =\cf5 \strokec5  \cf9 \strokec9 [\cf10 \strokec10 'md:pb-0'\cf9 \strokec9 ,\cf5 \strokec5  \cf10 \strokec10 'md:pb-16'\cf9 \strokec9 ,\cf5 \strokec5  \cf10 \strokec10 'md:pb-32'\cf9 \strokec9 ,\cf5 \strokec5  \cf10 \strokec10 'md:pb-48'\cf9 \strokec9 ,\cf5 \strokec5  \cf10 \strokec10 'md:pb-0'\cf9 \strokec9 ];\cf5 \cb1 \strokec5 \
+\cb3             \cf11 \strokec11 const\cf5 \strokec5  polylinePoints \cf9 \strokec9 =\cf5 \strokec5  \cf10 \strokec10 "50,250 250,180 450,120 650,50 850,250"\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3             html \cf9 \strokec9 =\cf5 \strokec5  \cf10 \strokec10 `\cf5 \cb1 \strokec5 \
+\pard\pardeftab720\partightenfactor0
+\cf10 \cb3 \strokec10             <div class="text-center max-w-6xl mx-auto animate-fade-in h-full flex flex-col">\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                 <h2 class="title mb-2 text-2xl">\cf9 \strokec9 $\{\cf5 \strokec5 s\cf9 \strokec9 .\cf5 \strokec5 title\cf9 \strokec9 \}\cf10 \strokec10 </h2>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                 <p class="text-gray-500 mb-4">\cf9 \strokec9 $\{\cf5 \strokec5 s\cf9 \strokec9 .\cf5 \strokec5 desc\cf9 \strokec9 \}\cf10 \strokec10 </p>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                 <div class="flex flex-wrap justify-center gap-3 mb-4 p-4 bg-gray-50 rounded-xl border border-dashed border-gray-300 min-h-[70px]" id="dragSource">\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                     \cf9 \strokec9 $\{\cf5 \strokec5 shuffledItems\cf9 \strokec9 .\cf5 \strokec5 map\cf9 \strokec9 (\cf5 \strokec5 item \cf9 \strokec9 =>\cf5 \strokec5  \cf10 \strokec10 `<div draggable="true" ondragstart="drag(event)" id="\cf9 \strokec9 $\{\cf5 \strokec5 item\cf9 \strokec9 .\cf5 \strokec5 id\cf9 \strokec9 \}\cf10 \strokec10 " class="draggable text-sm md:text-base shadow-sm" data-target="\cf9 \strokec9 $\{\cf5 \strokec5 item\cf9 \strokec9 .\cf5 \strokec5 target\cf9 \strokec9 \}\cf10 \strokec10 ">\cf9 \strokec9 $\{\cf5 \strokec5 item\cf9 \strokec9 .\cf5 \strokec5 label\cf9 \strokec9 \}\cf10 \strokec10 </div>`\cf9 \strokec9 ).\cf5 \strokec5 join\cf9 \strokec9 (\cf10 \strokec10 ''\cf9 \strokec9 )\}\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                 </div>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                 <div class="relative flex-1 min-h-[350px] mt-4">\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                     <svg class="absolute bottom-[60px] left-0 w-full h-full -z-10 opacity-30 hidden md:block" preserveAspectRatio="none" viewBox="0 0 900 300">\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                         <polyline points="\cf9 \strokec9 $\{\cf5 \strokec5 polylinePoints\cf9 \strokec9 \}\cf10 \strokec10 " fill="none" stroke="#3b82f6" stroke-width="4" stroke-dasharray="10,5"/>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                     </svg>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                     <div class="grid grid-cols-2 md:grid-cols-5 gap-2 md:gap-4 items-end h-full pb-4 relative z-10">\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                         \cf9 \strokec9 $\{[\cf14 \strokec14 1\cf9 \strokec9 ,\cf14 \strokec14 2\cf9 \strokec9 ,\cf14 \strokec14 3\cf9 \strokec9 ,\cf14 \strokec14 4\cf9 \strokec9 ,\cf14 \strokec14 5\cf9 \strokec9 ].\cf5 \strokec5 map\cf9 \strokec9 ((\cf5 \strokec5 num\cf9 \strokec9 ,\cf5 \strokec5  i\cf9 \strokec9 )\cf5 \strokec5  \cf9 \strokec9 =>\cf5 \strokec5  \cf10 \strokec10 `<div class="flex flex-col gap-2 h-full justify-end \cf9 \strokec9 $\{\cf5 \strokec5 offsetClasses\cf9 \strokec9 [\cf5 \strokec5 i\cf9 \strokec9 ]\}\cf10 \strokec10  transition-all duration-500"><div class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-1">FASA \cf9 \strokec9 $\{\cf5 \strokec5 i\cf9 \strokec9 +\cf14 \strokec14 1\cf9 \strokec9 \}\cf10 \strokec10 </div><div class="drop-zone w-full bg-white/90 backdrop-blur shadow-sm border-2 border-slate-200" ondrop="drop(event)" ondragover="allowDrop(event)" data-zone="\cf9 \strokec9 $\{\cf5 \strokec5 num\cf9 \strokec9 \}\cf10 \strokec10 "><span class="text-gray-300 text-2xl font-bold pointer-events-none">\cf9 \strokec9 $\{\cf5 \strokec5 num\cf9 \strokec9 \}\cf10 \strokec10 </span></div><div class="h-4 w-0.5 bg-gray-300 mx-auto md:hidden \cf9 \strokec9 $\{\cf5 \strokec5 i\cf9 \strokec9 ===\cf14 \strokec14 4\cf5 \strokec5  \cf9 \strokec9 ?\cf5 \strokec5  \cf10 \strokec10 'hidden'\cf9 \strokec9 :\cf10 \strokec10 ''\cf9 \strokec9 \}\cf10 \strokec10 "></div></div>`\cf9 \strokec9 ).\cf5 \strokec5 join\cf9 \strokec9 (\cf10 \strokec10 ''\cf9 \strokec9 )\}\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                     </div>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                 </div>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                 <p class="text-xs text-gray-400 mt-4 italic block md:hidden">* Paparan carta optimum pada skrin komputer.</p>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10             </div>`\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\pard\pardeftab720\partightenfactor0
+\cf5 \cb3         \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\cb3         \cf11 \strokec11 else\cf5 \strokec5  \cf11 \strokec11 if\cf9 \strokec9 (\cf5 \strokec5 s\cf9 \strokec9 .\cf5 \strokec5 type \cf9 \strokec9 ===\cf5 \strokec5  \cf10 \strokec10 'video'\cf9 \strokec9 )\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
+\cb3              \cf11 \strokec11 let\cf5 \strokec5  playerHtml \cf9 \strokec9 =\cf5 \strokec5  s\cf9 \strokec9 .\cf5 \strokec5 videoId \cf9 \strokec9 ?\cf5 \strokec5  \cf10 \strokec10 `<iframe class="w-full h-full" src="https://www.youtube.com/embed/\cf9 \strokec9 $\{\cf5 \strokec5 s\cf9 \strokec9 .\cf5 \strokec5 videoId\cf9 \strokec9 \}\cf10 \strokec10 ?rel=0&modestbranding=1" frameborder="0" allowfullscreen></iframe>`\cf5 \strokec5  \cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 `<video class="w-full h-full object-contain bg-black" controls><source src="\cf9 \strokec9 $\{\cf5 \strokec5 s\cf9 \strokec9 .\cf5 \strokec5 videoSrc\cf9 \strokec9 \}\cf10 \strokec10 " type="video/mp4">Maaf, pelayar anda tidak menyokong video.</video>`\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3              \cb1 \
+\cb3              \cf11 \strokec11 if\cf5 \strokec5  \cf9 \strokec9 (\cf5 \strokec5 s\cf9 \strokec9 .\cf5 \strokec5 videoSrc\cf9 \strokec9 .\cf5 \strokec5 endsWith\cf9 \strokec9 (\cf10 \strokec10 '.mp4'\cf9 \strokec9 ))\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
+\cb3                  playerHtml \cf9 \strokec9 =\cf5 \strokec5  \cf10 \strokec10 `\cf5 \cb1 \strokec5 \
+\pard\pardeftab720\partightenfactor0
+\cf10 \cb3 \strokec10                     <video class="w-full h-full object-contain bg-black" controls>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                         <source src="\cf9 \strokec9 $\{\cf5 \strokec5 s\cf9 \strokec9 .\cf5 \strokec5 videoSrc\cf9 \strokec9 \}\cf10 \strokec10 " type="video/mp4">\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                         <div class="w-full h-full flex items-center justify-center bg-gray-900"><div class="text-white text-center p-4"><i class="fas fa-video text-6xl text-gray-400 mb-4"></i><p class="font-bold text-xl">VIDEO DI SINI: \cf9 \strokec9 $\{\cf5 \strokec5 s\cf9 \strokec9 .\cf5 \strokec5 videoSrc\cf9 \strokec9 \}\cf10 \strokec10 </p><p class="text-sm text-gray-400">Gantikan URL video ini dengan fail video sebenar.</p></div></div>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                     </video>`\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\pard\pardeftab720\partightenfactor0
+\cf5 \cb3              \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\cb3              \cb1 \
+\cb3              html \cf9 \strokec9 =\cf5 \strokec5  \cf10 \strokec10 `\cf5 \cb1 \strokec5 \
+\pard\pardeftab720\partightenfactor0
+\cf10 \cb3 \strokec10             <div class="text-center max-w-4xl mx-auto animate-fade-in">\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                 <h2 class="title mb-6">\cf9 \strokec9 $\{\cf5 \strokec5 s\cf9 \strokec9 .\cf5 \strokec5 title\cf9 \strokec9 \}\cf10 \strokec10 </h2>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                 <div class="aspect-video bg-black rounded-2xl mb-6 overflow-hidden shadow-xl border-4 border-gray-800 relative">\cf9 \strokec9 $\{\cf5 \strokec5 playerHtml\cf9 \strokec9 \}\cf10 \strokec10 </div>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                 <div class="bg-orange-50 p-4 rounded-xl text-left border border-orange-100 flex gap-4 items-start"><span class="text-2xl">\uc0\u55357 \u56384 </span><div><div class="font-bold text-orange-800 text-sm uppercase mb-1">Arahan:</div><p class="text-orange-900 font-medium">\cf9 \strokec9 $\{\cf5 \strokec5 s\cf9 \strokec9 .\cf5 \strokec5 desc\cf9 \strokec9 \}\cf10 \strokec10 </p></div></div>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10             </div>`\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\pard\pardeftab720\partightenfactor0
+\cf5 \cb3         \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\cb3         \cf11 \strokec11 else\cf5 \strokec5  \cf11 \strokec11 if\cf9 \strokec9 (\cf5 \strokec5 s\cf9 \strokec9 .\cf5 \strokec5 type \cf9 \strokec9 ===\cf5 \strokec5  \cf10 \strokec10 'case_study'\cf9 \strokec9 )\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
+\cb3             html \cf9 \strokec9 =\cf5 \strokec5  \cf10 \strokec10 `\cf5 \cb1 \strokec5 \
+\pard\pardeftab720\partightenfactor0
+\cf10 \cb3 \strokec10             <div class="max-w-5xl mx-auto h-full flex flex-col animate-fade-in">\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                 <div class="mb-6 text-center"><h2 class="title mb-2">\cf9 \strokec9 $\{\cf5 \strokec5 s\cf9 \strokec9 .\cf5 \strokec5 title\cf9 \strokec9 \}\cf10 \strokec10 </h2><p class="text-gray-500">Analisis struktur plot berdasarkan iklan tersebut.</p></div>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                 <div class="bg-white border border-gray-200 rounded-xl shadow-sm overflow-hidden flex flex-col flex-1">\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                     <div class="bg-indigo-50 p-4 border-b border-indigo-100 font-bold text-indigo-800 flex justify-between sticky top-0 z-10"><span>Jalan Cerita</span><span>\uc0\u55357 \u56541  5 Fasa Plot</span></div>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                     <div class="p-6 overflow-y-auto custom-scroll space-y-6">\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                         \cf9 \strokec9 $\{\cf5 \strokec5 s\cf9 \strokec9 .\cf5 \strokec5 points\cf9 \strokec9 .\cf5 \strokec5 map\cf9 \strokec9 ((\cf5 \strokec5 pt\cf9 \strokec9 ,\cf5 \strokec5  i\cf9 \strokec9 )\cf5 \strokec5  \cf9 \strokec9 =>\cf5 \strokec5  \cf10 \strokec10 `<div class="flex gap-4 items-start"><div class="flex-none w-10 h-10 md:w-12 md:h-12 rounded-full flex items-center justify-center font-bold text-white text-lg shadow-md \cf9 \strokec9 $\{\cf5 \strokec5 i\cf9 \strokec9 ===\cf14 \strokec14 0\cf9 \strokec9 ?\cf10 \strokec10 'bg-green-500'\cf9 \strokec9 :\cf5 \strokec5 i\cf9 \strokec9 ===\cf14 \strokec14 1\cf9 \strokec9 ?\cf10 \strokec10 'bg-blue-500'\cf9 \strokec9 :\cf5 \strokec5 i\cf9 \strokec9 ===\cf14 \strokec14 2\cf9 \strokec9 ?\cf10 \strokec10 'bg-red-500'\cf9 \strokec9 :\cf5 \strokec5 i\cf9 \strokec9 ===\cf14 \strokec14 3\cf9 \strokec9 ?\cf10 \strokec10 'bg-purple-500'\cf9 \strokec9 :\cf10 \strokec10 'bg-orange-500'\cf9 \strokec9 \}\cf10 \strokec10 ">\cf9 \strokec9 $\{\cf5 \strokec5 i\cf9 \strokec9 +\cf14 \strokec14 1\cf9 \strokec9 \}\cf10 \strokec10 </div><div><h4 class="font-bold text-gray-800 text-lg mb-1">\cf9 \strokec9 $\{\cf5 \strokec5 pt\cf9 \strokec9 .\cf5 \strokec5 title\cf9 \strokec9 \}\cf10 \strokec10 </h4><p class="text-gray-600 text-base leading-relaxed">\cf9 \strokec9 $\{\cf5 \strokec5 pt\cf9 \strokec9 .\cf5 \strokec5 text\cf9 \strokec9 \}\cf10 \strokec10 </p></div></div>`\cf9 \strokec9 ).\cf5 \strokec5 join\cf9 \strokec9 (\cf10 \strokec10 ''\cf9 \strokec9 )\}\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                     </div>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                 </div>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10             </div>`\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\pard\pardeftab720\partightenfactor0
+\cf5 \cb3         \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\cb3         \cf11 \strokec11 else\cf5 \strokec5  \cf11 \strokec11 if\cf9 \strokec9 (\cf5 \strokec5 s\cf9 \strokec9 .\cf5 \strokec5 type \cf9 \strokec9 ===\cf5 \strokec5  \cf10 \strokec10 'creative_studio'\cf9 \strokec9 )\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
+\cb3              \cf8 \strokec8 // MERGED SLIDE: Creative Writing + Text Lab\cf5 \cb1 \strokec5 \
+\cb3              html \cf9 \strokec9 =\cf5 \strokec5  \cf10 \strokec10 `\cf5 \cb1 \strokec5 \
+\pard\pardeftab720\partightenfactor0
+\cf10 \cb3 \strokec10              <div class="max-w-6xl mx-auto h-full flex flex-col animate-fade-in">\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                  <div class="text-center mb-4">\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                     <h2 class="title text-3xl mb-1">\cf9 \strokec9 $\{\cf5 \strokec5 s\cf9 \strokec9 .\cf5 \strokec5 title\cf9 \strokec9 \}\cf10 \strokec10 </h2>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                     <p class="text-gray-500">\cf9 \strokec9 $\{\cf5 \strokec5 s\cf9 \strokec9 .\cf5 \strokec5 desc\cf9 \strokec9 \}\cf10 \strokec10 </p>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                  </div>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                  \cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                  <div class="bg-white border border-gray-200 rounded-2xl shadow-sm flex flex-col flex-1 overflow-hidden">\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                      <!-- Tabs -->\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                      <div class="flex border-b border-gray-200 bg-gray-50">\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                          <button onclick="switchStudioTab('bina')" id="tab-bina" class="tab-btn \cf9 \strokec9 $\{\cf5 \strokec5 state\cf9 \strokec9 .\cf5 \strokec5 studioTab\cf9 \strokec9 ===\cf10 \strokec10 'bina'\cf9 \strokec9 ?\cf10 \strokec10 'active'\cf9 \strokec9 :\cf10 \strokec10 ''\cf9 \strokec9 \}\cf10 \strokec10  flex-1">\uc0\u55356 \u57303 \u65039  Bina Cerita (Piramid)</button>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                          <button onclick="switchStudioTab('bedah')" id="tab-bedah" class="tab-btn \cf9 \strokec9 $\{\cf5 \strokec5 state\cf9 \strokec9 .\cf5 \strokec5 studioTab\cf9 \strokec9 ===\cf10 \strokec10 'bedah'\cf9 \strokec9 ?\cf10 \strokec10 'active'\cf9 \strokec9 :\cf10 \strokec10 ''\cf9 \strokec9 \}\cf10 \strokec10  flex-1">\uc0\u55357 \u56620  Bedah Cerita (Teks Bebas)</button>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                      </div>\cf5 \cb1 \strokec5 \
+\
+\cf10 \cb3 \strokec10                      <!-- Content A: BINA (The old Creative Writing) -->\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                      <div id="content-bina" class="flex-1 overflow-y-auto custom-scroll p-6 \cf9 \strokec9 $\{\cf5 \strokec5 state\cf9 \strokec9 .\cf5 \strokec5 studioTab\cf9 \strokec9 ===\cf10 \strokec10 'bina'\cf9 \strokec9 ?\cf10 \strokec10 ''\cf9 \strokec9 :\cf10 \strokec10 'hidden'\cf9 \strokec9 \}\cf10 \strokec10 ">\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                         <div class="flex flex-col lg:flex-row gap-6">\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                             <!-- Scenario Card -->\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                             <div class="lg:w-1/3 flex-none">\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                                 <div class="bg-purple-600 text-white p-6 rounded-2xl shadow-lg relative overflow-hidden mb-4">\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                                     <div class="absolute top-0 right-0 opacity-10 transform translate-x-4 -translate-y-4"><i class="fas fa-elevator text-9xl"></i></div> <!-- IKON DIUBAH KEPADA LIF -->\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                                     <h3 class="font-bold text-xl mb-3 border-b border-purple-400 pb-2"><i class="fas fa-bolt mr-2"></i>\cf9 \strokec9 $\{\cf5 \strokec5 s\cf9 \strokec9 .\cf5 \strokec5 scenarioTitle\cf9 \strokec9 \}\cf10 \strokec10 </h3>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                                     <p class="text-purple-100 leading-relaxed text-base">\cf9 \strokec9 $\{\cf5 \strokec5 s\cf9 \strokec9 .\cf5 \strokec5 scenarioDesc\cf9 \strokec9 \}\cf10 \strokec10 </p>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                                 </div>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                                 <div class="bg-white p-4 rounded-xl border border-gray-200 shadow-sm text-center">\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                                     <p class="text-sm text-gray-500 mb-2">Dah siap? Minta AI semak plot anda.</p>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                                     <button id="btn-check-story" onclick="checkMyStory()" class="btn btn-ai-dark w-full py-3 shadow-md"><i class="fas fa-clipboard-check mr-2"></i> Semak Plot Saya</button>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                                     <div id="story-feedback" class="ai-response hidden text-left text-sm mt-3 bg-purple-50 border-purple-100 text-purple-900"></div>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                                 </div>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                             </div>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                             <!-- Inputs -->\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                             <div class="lg:w-2/3 space-y-6">\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                                 \cf9 \strokec9 $\{\cf5 \strokec5 s\cf9 \strokec9 .\cf5 \strokec5 inputs\cf9 \strokec9 .\cf5 \strokec5 map\cf9 \strokec9 ((\cf5 \strokec5 inp\cf9 \strokec9 ,\cf5 \strokec5  i\cf9 \strokec9 )\cf5 \strokec5  \cf9 \strokec9 =>\cf5 \strokec5  \cf10 \strokec10 `\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                                     <div class="relative group">\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                                         <div class="flex justify-between items-center mb-2">\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                                             <label class="block text-sm font-bold text-gray-700 uppercase flex items-center gap-2"><span class="bg-gray-200 text-gray-600 w-6 h-6 rounded-full flex items-center justify-center text-xs">\cf9 \strokec9 $\{\cf5 \strokec5 i\cf9 \strokec9 +\cf14 \strokec14 1\cf9 \strokec9 \}\cf10 \strokec10 </span>\cf9 \strokec9 $\{\cf5 \strokec5 inp\cf9 \strokec9 .\cf5 \strokec5 label\cf9 \strokec9 \}\cf10 \strokec10 </label>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                                             <button type="button" id="btn-ai-\cf9 \strokec9 $\{\cf5 \strokec5 inp\cf9 \strokec9 .\cf5 \strokec5 id\cf9 \strokec9 \}\cf10 \strokec10 " onclick="askGemini('\cf9 \strokec9 $\{\cf5 \strokec5 inp\cf9 \strokec9 .\cf5 \strokec5 label\cf9 \strokec9 \}\cf10 \strokec10 ', '\cf9 \strokec9 $\{\cf5 \strokec5 inp\cf9 \strokec9 .\cf5 \strokec5 id\cf9 \strokec9 \}\cf10 \strokec10 ')" class="btn-ai px-3 py-1.5 rounded-lg text-xs font-bold shadow-sm flex items-center gap-1"><i class="fas fa-magic"></i> <span>Idea AI</span></button>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                                         </div>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                                         <textarea id="text-\cf9 \strokec9 $\{\cf5 \strokec5 inp\cf9 \strokec9 .\cf5 \strokec5 id\cf9 \strokec9 \}\cf10 \strokec10 " class="answer w-full bg-gray-50 focus:bg-white border border-gray-300 focus:border-purple-500 rounded-xl p-4 text-base transition-all shadow-sm min-h-[100px] leading-relaxed" placeholder="\cf9 \strokec9 $\{\cf5 \strokec5 inp\cf9 \strokec9 .\cf5 \strokec5 placeholder\cf9 \strokec9 \}\cf10 \strokec10 " oninput="saveAnswer('\cf9 \strokec9 $\{\cf5 \strokec5 inp\cf9 \strokec9 .\cf5 \strokec5 id\cf9 \strokec9 \}\cf10 \strokec10 ', this.value)">\cf9 \strokec9 $\{\cf5 \strokec5 state\cf9 \strokec9 .\cf5 \strokec5 answers\cf9 \strokec9 [\cf5 \strokec5 inp\cf9 \strokec9 .\cf5 \strokec5 id\cf9 \strokec9 ]\cf5 \strokec5  \cf9 \strokec9 ||\cf5 \strokec5  \cf10 \strokec10 ''\cf9 \strokec9 \}\cf10 \strokec10 </textarea>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                                     </div>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                                 `\cf9 \strokec9 ).\cf5 \strokec5 join\cf9 \strokec9 (\cf10 \strokec10 ''\cf9 \strokec9 )\}\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                             </div>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                         </div>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                      </div>\cf5 \cb1 \strokec5 \
+\
+\cf10 \cb3 \strokec10                      <!-- Content B: BEDAH (The old AI Lab) -->\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                      <div id="content-bedah" class="flex-1 overflow-y-auto custom-scroll p-6 \cf9 \strokec9 $\{\cf5 \strokec5 state\cf9 \strokec9 .\cf5 \strokec5 studioTab\cf9 \strokec9 ===\cf10 \strokec10 'bedah'\cf9 \strokec9 ?\cf10 \strokec10 ''\cf9 \strokec9 :\cf10 \strokec10 'hidden'\cf9 \strokec9 \}\cf10 \strokec10 ">\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                         <div class="max-w-3xl mx-auto flex flex-col h-full">\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                              <div class="flex items-center gap-2 mb-2"><i class="fas fa-quote-left text-gray-300"></i><span class="font-bold text-gray-700 text-sm">TAMPAL CERITA PENDEK DI SINI:</span></div>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                              <textarea id="analyze-text" class="w-full flex-1 min-h-[300px] bg-slate-50 border border-slate-200 rounded-xl p-4 focus:border-blue-500 outline-none resize-none mb-4" placeholder="Contoh: Sang Kancil sedang berjalan di hutan apabila tiba-tiba..."></textarea>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                              <button id="btn-analyze-studio" onclick="analyzeStoryStudio()" class="btn btn-ai w-full py-3 text-lg shadow-lg mb-4"><i class="fas fa-microscope mr-2"></i> Analisis Struktur Plot</button>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                              <div id="studio-result" class="ai-response hidden min-h-[100px] border-dashed border-2 border-gray-300 bg-gray-50 text-gray-700"></div>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                         </div>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                      </div>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                  </div>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10              </div>`\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\pard\pardeftab720\partightenfactor0
+\cf5 \cb3         \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\cb3         \cf11 \strokec11 else\cf5 \strokec5  \cf11 \strokec11 if\cf9 \strokec9 (\cf5 \strokec5 s\cf9 \strokec9 .\cf5 \strokec5 type \cf9 \strokec9 ===\cf5 \strokec5  \cf10 \strokec10 'camera_scan'\cf9 \strokec9 )\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
+\cb3              \cf8 \strokec8 // STANDALONE CAMERA SLIDE\cf5 \cb1 \strokec5 \
+\cb3              html \cf9 \strokec9 =\cf5 \strokec5  \cf10 \strokec10 `\cf5 \cb1 \strokec5 \
+\pard\pardeftab720\partightenfactor0
+\cf10 \cb3 \strokec10              <div class="max-w-3xl mx-auto animate-fade-in h-full flex flex-col">\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                  <h2 class="title mb-2 text-center text-3xl">\cf9 \strokec9 $\{\cf5 \strokec5 s\cf9 \strokec9 .\cf5 \strokec5 title\cf9 \strokec9 \}\cf10 \strokec10 </h2>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                  <p class="text-center text-gray-500 mb-6 px-4">\cf9 \strokec9 $\{\cf5 \strokec5 s\cf9 \strokec9 .\cf5 \strokec5 desc\cf9 \strokec9 \}\cf10 \strokec10 </p>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                  \cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                  <div class="flex-1 bg-white p-6 rounded-2xl shadow-md border border-gray-200 flex flex-col gap-4">\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                     <div class="file-upload-wrapper" id="upload-zone">\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                         <div id="img-placeholder" class="text-center p-4">\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                             <i class="fas fa-camera text-4xl text-blue-300 mb-2"></i>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                             <p class="font-bold text-gray-500">Ketik untuk ambil gambar<br>atau pilih fail</p>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                         </div>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                         <img id="img-preview" class="preview-image hidden" />\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                         <input type="file" accept="image/*" capture="environment" onchange="handleImageUpload(event)">\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                     </div>\cf5 \cb1 \strokec5 \
+\
+\cf10 \cb3 \strokec10                     <button id="btn-check-image" onclick="checkGrammarFromImage()" class="btn btn-ai w-full py-4 text-lg shadow-lg">\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                         <i class="fas fa-wand-magic-sparkles mr-2"></i> Semak Kesalahan\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                     </button>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                     \cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                     <div class="mt-2">\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                         <label class="block text-xs font-bold text-gray-500 uppercase mb-1">Teks Hasil Imbasan (Boleh diedit):</label>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                         <textarea id="scanned-text-area" class="w-full p-3 border border-gray-300 rounded-lg text-sm bg-gray-50 h-32" oninput="updateScannedText(this.value)">\cf9 \strokec9 $\{\cf5 \strokec5 state\cf9 \strokec9 .\cf5 \strokec5 scannedText \cf9 \strokec9 ||\cf5 \strokec5  \cf10 \strokec10 ''\cf9 \strokec9 \}\cf10 \strokec10 </textarea>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                     </div>\cf5 \cb1 \strokec5 \
+\
+\cf10 \cb3 \strokec10                     <div id="ocr-result" class="ai-response hidden flex-1 min-h-[150px] border-dashed border-2 border-green-200 bg-green-50 text-gray-800 overflow-y-auto p-4 leading-relaxed text-sm"></div>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                  </div>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                  <div class="text-center mt-4">\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                     <button type="button" class="btn btn-danger text-sm py-2 px-4" onclick="resetData()"><i class="fas fa-trash-alt mr-2"></i> Mula Semula</button>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                  </div>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10              </div>`\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\pard\pardeftab720\partightenfactor0
+\cf5 \cb3         \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\cb3         \cf11 \strokec11 else\cf5 \strokec5  \cf11 \strokec11 if\cf9 \strokec9 (\cf5 \strokec5 s\cf9 \strokec9 .\cf5 \strokec5 type \cf9 \strokec9 ===\cf5 \strokec5  \cf10 \strokec10 'comparison'\cf9 \strokec9 )\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
+\cb3              \cf11 \strokec11 const\cf5 \strokec5  hasText \cf9 \strokec9 =\cf5 \strokec5  state\cf9 \strokec9 .\cf5 \strokec5 scannedText \cf9 \strokec9 &&\cf5 \strokec5  state\cf9 \strokec9 .\cf5 \strokec5 scannedText\cf9 \strokec9 .\cf5 \strokec5 length \cf9 \strokec9 >\cf5 \strokec5  \cf14 \strokec14 5\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3              html \cf9 \strokec9 =\cf5 \strokec5  \cf10 \strokec10 `\cf5 \cb1 \strokec5 \
+\pard\pardeftab720\partightenfactor0
+\cf10 \cb3 \strokec10              <div class="max-w-5xl mx-auto animate-fade-in h-full flex flex-col">\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                  <h2 class="title mb-2 text-center">\cf9 \strokec9 $\{\cf5 \strokec5 s\cf9 \strokec9 .\cf5 \strokec5 title\cf9 \strokec9 \}\cf10 \strokec10 </h2>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                  <p class="text-center text-gray-500 mb-6">\cf9 \strokec9 $\{\cf5 \strokec5 s\cf9 \strokec9 .\cf5 \strokec5 desc\cf9 \strokec9 \}\cf10 \strokec10 </p>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                  \cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                  \cf9 \strokec9 $\{!\cf5 \strokec5 hasText \cf9 \strokec9 ?\cf5 \strokec5  \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf5 \cb3                    \cf10 \strokec10 `<div class="text-center p-10 bg-yellow-50 border border-yellow-200 rounded-xl text-yellow-800">\cf5 \cb1 \strokec5 \
+\pard\pardeftab720\partightenfactor0
+\cf10 \cb3 \strokec10                       <i class="fas fa-exclamation-circle text-4xl mb-4"></i>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                       <p class="font-bold text-lg">Tiada Teks Dijumpai</p>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                       <p>Sila kembali ke <strong>Slaid 6 atau 7</strong> dan tulis/imbas cerita anda dahulu.</p>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                       <button onclick="changeSlide(-1)" class="btn btn-primary mt-4">Kembali</button>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                    </div>`\cf5 \strokec5  \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf5 \cb3                    \cf9 \strokec9 :\cf5 \strokec5  \cb1 \
+\cb3                    \cf10 \strokec10 `<div class="flex flex-col h-full gap-4">\cf5 \cb1 \strokec5 \
+\pard\pardeftab720\partightenfactor0
+\cf10 \cb3 \strokec10                         <div class="text-center">\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                             <button id="btn-generate-comparison" onclick="generateComparison()" class="btn btn-ai text-lg shadow-lg px-8 py-3">\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                                 <i class="fas fa-magic mr-2"></i> Jana Pemurnian AI\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                             </button>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                         </div>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                         \cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                         <div id="comp-container" class="hidden flex flex-col md:flex-row gap-6 flex-1 min-h-0">\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                              <!-- Before Box (Raw Text) -->\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                              <div class="flex-1 flex flex-col h-full overflow-hidden">\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                                  <div class="bg-red-100 text-red-800 px-4 py-2 rounded-t-xl font-bold text-sm border-b border-red-200 flex-none">\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                                      <i class="fas fa-pen-nib mr-2"></i> Versi Asal (Pelajar)\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                                  </div>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                                  <div id="comp-before" class="bg-red-50 p-6 rounded-b-xl border border-red-100 flex-1 text-base leading-relaxed shadow-sm text-gray-700 overflow-y-auto custom-scroll"></div>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                              </div>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10         \cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                              <!-- Arrow Divider -->\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                              <div class="arrow-divider flex-none">\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                                  <i class="fas fa-arrow-right"></i>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                              </div>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10         \cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                              <!-- After Box (Diff/Perfect) -->\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                              <div class="flex-1 flex flex-col h-full overflow-hidden">\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                                  <div class="bg-green-100 text-green-800 px-4 py-2 rounded-t-xl font-bold text-sm border-b border-green-200 flex-none">\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                                      <i class="fas fa-robot mr-2"></i> Versi Dimurnikan (AI)\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                                  </div>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                                  <div id="comp-after" class="bg-green-50 p-6 rounded-b-xl border border-green-100 flex-1 text-base leading-relaxed shadow-md text-gray-800 relative overflow-y-auto custom-scroll"></div>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                              </div>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                         </div>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                    </div>`\cf5 \cb1 \strokec5 \
+\pard\pardeftab720\partightenfactor0
+\cf5 \cb3                  \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\pard\pardeftab720\partightenfactor0
+\cf10 \cb3 \strokec10              </div>`\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\pard\pardeftab720\partightenfactor0
+\cf5 \cb3         \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\cb3         \cb1 \
+\cb3         \cf8 \strokec8 // This is the new slide type added\cf5 \cb1 \strokec5 \
+\cb3         \cf11 \strokec11 else\cf5 \strokec5  \cf11 \strokec11 if\cf9 \strokec9 (\cf5 \strokec5 s\cf9 \strokec9 .\cf5 \strokec5 type \cf9 \strokec9 ===\cf5 \strokec5  \cf10 \strokec10 'video'\cf9 \strokec9 )\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
+\cb3              \cf8 \strokec8 // Check if videoSrc contains .mp4 (local placeholder) or is a YouTube ID (not implemented yet, fallback to placeholder)\cf5 \cb1 \strokec5 \
+\cb3              \cf11 \strokec11 let\cf5 \strokec5  playerHtml \cf9 \strokec9 =\cf5 \strokec5  s\cf9 \strokec9 .\cf5 \strokec5 videoId \cf9 \strokec9 ?\cf5 \strokec5  \cf10 \strokec10 `<iframe class="w-full h-full" src="https://www.youtube.com/embed/\cf9 \strokec9 $\{\cf5 \strokec5 s\cf9 \strokec9 .\cf5 \strokec5 videoId\cf9 \strokec9 \}\cf10 \strokec10 ?rel=0&modestbranding=1" frameborder="0" allowfullscreen></iframe>`\cf5 \strokec5  \cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 `<div class="w-full h-full flex items-center justify-center bg-gray-900"><div class="text-white text-center p-4"><i class="fas fa-video text-6xl text-gray-400 mb-4"></i><p class="font-bold text-xl">VIDEO DI SINI: \cf9 \strokec9 $\{\cf5 \strokec5 s\cf9 \strokec9 .\cf5 \strokec5 videoSrc\cf9 \strokec9 \}\cf10 \strokec10 </p><p class="text-sm text-gray-400">Gantikan URL video ini dengan fail video sebenar.</p></div></div>`\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3              \cb1 \
+\cb3              \cf11 \strokec11 if\cf5 \strokec5  \cf9 \strokec9 (\cf5 \strokec5 s\cf9 \strokec9 .\cf5 \strokec5 videoSrc\cf9 \strokec9 .\cf5 \strokec5 endsWith\cf9 \strokec9 (\cf10 \strokec10 '.mp4'\cf9 \strokec9 ))\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
+\cb3                  playerHtml \cf9 \strokec9 =\cf5 \strokec5  \cf10 \strokec10 `\cf5 \cb1 \strokec5 \
+\pard\pardeftab720\partightenfactor0
+\cf10 \cb3 \strokec10                     <video class="w-full h-full object-contain bg-black" controls>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                         <source src="\cf9 \strokec9 $\{\cf5 \strokec5 s\cf9 \strokec9 .\cf5 \strokec5 videoSrc\cf9 \strokec9 \}\cf10 \strokec10 " type="video/mp4">\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                         <div class="w-full h-full flex items-center justify-center bg-gray-900"><div class="text-white text-center p-4"><i class="fas fa-video text-6xl text-gray-400 mb-4"></i><p class="font-bold text-xl">VIDEO DI SINI: \cf9 \strokec9 $\{\cf5 \strokec5 s\cf9 \strokec9 .\cf5 \strokec5 videoSrc\cf9 \strokec9 \}\cf10 \strokec10 </p><p class="text-sm text-gray-400">Gantikan URL video ini dengan fail video sebenar.</p></div></div>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                     </video>`\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\pard\pardeftab720\partightenfactor0
+\cf5 \cb3              \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\cb3              \cb1 \
+\cb3              html \cf9 \strokec9 =\cf5 \strokec5  \cf10 \strokec10 `\cf5 \cb1 \strokec5 \
+\pard\pardeftab720\partightenfactor0
+\cf10 \cb3 \strokec10             <div class="text-center max-w-4xl mx-auto animate-fade-in">\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                 <h2 class="title mb-6">\cf9 \strokec9 $\{\cf5 \strokec5 s\cf9 \strokec9 .\cf5 \strokec5 title\cf9 \strokec9 \}\cf10 \strokec10 </h2>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                 <div class="aspect-video bg-black rounded-2xl mb-6 overflow-hidden shadow-xl border-4 border-gray-800 relative">\cf9 \strokec9 $\{\cf5 \strokec5 playerHtml\cf9 \strokec9 \}\cf10 \strokec10 </div>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10                 <div class="bg-orange-50 p-4 rounded-xl text-left border border-orange-100 flex gap-4 items-start"><span class="text-2xl">\uc0\u55357 \u56384 </span><div><div class="font-bold text-orange-800 text-sm uppercase mb-1">Arahan:</div><p class="text-orange-900 font-medium">\cf9 \strokec9 $\{\cf5 \strokec5 s\cf9 \strokec9 .\cf5 \strokec5 desc\cf9 \strokec9 \}\cf10 \strokec10 </p></div></div>\cf5 \cb1 \strokec5 \
+\cf10 \cb3 \strokec10             </div>`\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\pard\pardeftab720\partightenfactor0
+\cf5 \cb3         \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\
+\
+\cb3         stage\cf9 \strokec9 .\cf5 \strokec5 innerHTML \cf9 \strokec9 =\cf5 \strokec5  html\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3         stage\cf9 \strokec9 .\cf5 \strokec5 style\cf9 \strokec9 .\cf5 \strokec5 opacity \cf9 \strokec9 =\cf5 \strokec5  \cf14 \strokec14 0\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3         \cf11 \strokec11 void\cf5 \strokec5  stage\cf9 \strokec9 .\cf5 \strokec5 offsetWidth\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3         stage\cf9 \strokec9 .\cf5 \strokec5 style\cf9 \strokec9 .\cf5 \strokec5 opacity \cf9 \strokec9 =\cf5 \strokec5  \cf14 \strokec14 1\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3     \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\
+\cb3     \cf11 \strokec11 function\cf5 \strokec5  checkQuiz\cf9 \strokec9 (\cf5 \strokec5 btn\cf9 \strokec9 ,\cf5 \strokec5  selectedIdx\cf9 \strokec9 ,\cf5 \strokec5  correctIdx\cf9 \strokec9 )\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
+\cb3         \cf11 \strokec11 const\cf5 \strokec5  feedback \cf9 \strokec9 =\cf5 \strokec5  document\cf9 \strokec9 .\cf5 \strokec5 getElementById\cf9 \strokec9 (\cf10 \strokec10 'quizFeedback'\cf9 \strokec9 );\cf5 \cb1 \strokec5 \
+\cb3         \cf11 \strokec11 const\cf5 \strokec5  allBtns \cf9 \strokec9 =\cf5 \strokec5  btn\cf9 \strokec9 .\cf5 \strokec5 parentElement\cf9 \strokec9 .\cf5 \strokec5 querySelectorAll\cf9 \strokec9 (\cf10 \strokec10 'button'\cf9 \strokec9 );\cf5 \cb1 \strokec5 \
+\cb3         allBtns\cf9 \strokec9 .\cf5 \strokec5 forEach\cf9 \strokec9 (\cf5 \strokec5 b \cf9 \strokec9 =>\cf5 \strokec5  b\cf9 \strokec9 .\cf5 \strokec5 disabled \cf9 \strokec9 =\cf5 \strokec5  \cf11 \strokec11 true\cf9 \strokec9 );\cf5 \cb1 \strokec5 \
+\cb3         \cf11 \strokec11 if\cf9 \strokec9 (\cf5 \strokec5 selectedIdx \cf9 \strokec9 ===\cf5 \strokec5  correctIdx\cf9 \strokec9 )\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
+\cb3             btn\cf9 \strokec9 .\cf5 \strokec5 classList\cf9 \strokec9 .\cf5 \strokec5 add\cf9 \strokec9 (\cf10 \strokec10 'correct'\cf9 \strokec9 );\cf5 \cb1 \strokec5 \
+\cb3             feedback\cf9 \strokec9 .\cf5 \strokec5 innerHTML \cf9 \strokec9 =\cf5 \strokec5  \cf10 \strokec10 "<i class='fas fa-check-circle'></i> Tepat sekali!"\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3             feedback\cf9 \strokec9 .\cf5 \strokec5 classList\cf9 \strokec9 .\cf5 \strokec5 remove\cf9 \strokec9 (\cf10 \strokec10 'hidden'\cf9 \strokec9 ,\cf5 \strokec5  \cf10 \strokec10 'text-red-600'\cf9 \strokec9 );\cf5 \strokec5  feedback\cf9 \strokec9 .\cf5 \strokec5 classList\cf9 \strokec9 .\cf5 \strokec5 add\cf9 \strokec9 (\cf10 \strokec10 'text-green-600'\cf9 \strokec9 );\cf5 \cb1 \strokec5 \
+\cb3         \cf9 \strokec9 \}\cf5 \strokec5  \cf11 \strokec11 else\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
+\cb3             btn\cf9 \strokec9 .\cf5 \strokec5 classList\cf9 \strokec9 .\cf5 \strokec5 add\cf9 \strokec9 (\cf10 \strokec10 'wrong'\cf9 \strokec9 );\cf5 \cb1 \strokec5 \
+\cb3             feedback\cf9 \strokec9 .\cf5 \strokec5 innerHTML \cf9 \strokec9 =\cf5 \strokec5  \cf10 \strokec10 "<i class='fas fa-times-circle'></i> Kurang tepat. Cuba ingat kata kunci 'Sebab dan Akibat'."\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3             feedback\cf9 \strokec9 .\cf5 \strokec5 classList\cf9 \strokec9 .\cf5 \strokec5 remove\cf9 \strokec9 (\cf10 \strokec10 'hidden'\cf9 \strokec9 ,\cf5 \strokec5  \cf10 \strokec10 'text-green-600'\cf9 \strokec9 );\cf5 \strokec5  feedback\cf9 \strokec9 .\cf5 \strokec5 classList\cf9 \strokec9 .\cf5 \strokec5 add\cf9 \strokec9 (\cf10 \strokec10 'text-red-600'\cf9 \strokec9 );\cf5 \cb1 \strokec5 \
+\cb3         \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\cb3     \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\
+\cb3     \cf11 \strokec11 function\cf5 \strokec5  allowDrop\cf9 \strokec9 (\cf5 \strokec5 ev\cf9 \strokec9 )\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \strokec5  ev\cf9 \strokec9 .\cf5 \strokec5 preventDefault\cf9 \strokec9 ();\cf5 \strokec5  ev\cf9 \strokec9 .\cf5 \strokec5 currentTarget\cf9 \strokec9 .\cf5 \strokec5 classList\cf9 \strokec9 .\cf5 \strokec5 add\cf9 \strokec9 (\cf10 \strokec10 'drag-over'\cf9 \strokec9 );\cf5 \strokec5  \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\cb3     \cf11 \strokec11 function\cf5 \strokec5  drag\cf9 \strokec9 (\cf5 \strokec5 ev\cf9 \strokec9 )\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \strokec5  \cf11 \strokec11 const\cf5 \strokec5  target \cf9 \strokec9 =\cf5 \strokec5  ev\cf9 \strokec9 .\cf5 \strokec5 target\cf9 \strokec9 .\cf5 \strokec5 closest\cf9 \strokec9 (\cf10 \strokec10 '.draggable'\cf9 \strokec9 );\cf5 \strokec5  ev\cf9 \strokec9 .\cf5 \strokec5 dataTransfer\cf9 \strokec9 .\cf5 \strokec5 setData\cf9 \strokec9 (\cf10 \strokec10 "text"\cf9 \strokec9 ,\cf5 \strokec5  target\cf9 \strokec9 .\cf5 \strokec5 id\cf9 \strokec9 );\cf5 \strokec5  ev\cf9 \strokec9 .\cf5 \strokec5 dataTransfer\cf9 \strokec9 .\cf5 \strokec5 effectAllowed \cf9 \strokec9 =\cf5 \strokec5  \cf10 \strokec10 "move"\cf9 \strokec9 ;\cf5 \strokec5  \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\cb3     \cf11 \strokec11 function\cf5 \strokec5  drop\cf9 \strokec9 (\cf5 \strokec5 ev\cf9 \strokec9 )\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
+\cb3         ev\cf9 \strokec9 .\cf5 \strokec5 preventDefault\cf9 \strokec9 ();\cf5 \cb1 \strokec5 \
+\cb3         \cf11 \strokec11 const\cf5 \strokec5  zone \cf9 \strokec9 =\cf5 \strokec5  ev\cf9 \strokec9 .\cf5 \strokec5 currentTarget\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3         zone\cf9 \strokec9 .\cf5 \strokec5 classList\cf9 \strokec9 .\cf5 \strokec5 remove\cf9 \strokec9 (\cf10 \strokec10 'drag-over'\cf9 \strokec9 );\cf5 \cb1 \strokec5 \
+\cb3         \cf11 \strokec11 const\cf5 \strokec5  data \cf9 \strokec9 =\cf5 \strokec5  ev\cf9 \strokec9 .\cf5 \strokec5 dataTransfer\cf9 \strokec9 .\cf5 \strokec5 getData\cf9 \strokec9 (\cf10 \strokec10 "text"\cf9 \strokec9 );\cf5 \cb1 \strokec5 \
+\cb3         \cf11 \strokec11 const\cf5 \strokec5  draggedElement \cf9 \strokec9 =\cf5 \strokec5  document\cf9 \strokec9 .\cf5 \strokec5 getElementById\cf9 \strokec9 (\cf5 \strokec5 data\cf9 \strokec9 );\cf5 \cb1 \strokec5 \
+\cb3         \cf11 \strokec11 if\cf9 \strokec9 (!\cf5 \strokec5 draggedElement\cf9 \strokec9 )\cf5 \strokec5  \cf11 \strokec11 return\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3         \cf11 \strokec11 const\cf5 \strokec5  correctTarget \cf9 \strokec9 =\cf5 \strokec5  draggedElement\cf9 \strokec9 .\cf5 \strokec5 getAttribute\cf9 \strokec9 (\cf10 \strokec10 'data-target'\cf9 \strokec9 );\cf5 \cb1 \strokec5 \
+\cb3         \cf11 \strokec11 const\cf5 \strokec5  zoneId \cf9 \strokec9 =\cf5 \strokec5  zone\cf9 \strokec9 .\cf5 \strokec5 getAttribute\cf9 \strokec9 (\cf10 \strokec10 'data-zone'\cf9 \strokec9 );\cf5 \cb1 \strokec5 \
+\
+\cb3         \cf11 \strokec11 if\cf9 \strokec9 (\cf5 \strokec5 correctTarget \cf9 \strokec9 ===\cf5 \strokec5  zoneId\cf9 \strokec9 )\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
+\cb3             zone\cf9 \strokec9 .\cf5 \strokec5 innerHTML \cf9 \strokec9 =\cf5 \strokec5  \cf10 \strokec10 ''\cf9 \strokec9 ;\cf5 \strokec5  zone\cf9 \strokec9 .\cf5 \strokec5 appendChild\cf9 \strokec9 (\cf5 \strokec5 draggedElement\cf9 \strokec9 );\cf5 \cb1 \strokec5 \
+\cb3             draggedElement\cf9 \strokec9 .\cf5 \strokec5 classList\cf9 \strokec9 .\cf5 \strokec5 add\cf9 \strokec9 (\cf10 \strokec10 'matched'\cf9 \strokec9 );\cf5 \strokec5  draggedElement\cf9 \strokec9 .\cf5 \strokec5 draggable \cf9 \strokec9 =\cf5 \strokec5  \cf11 \strokec11 false\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3             zone\cf9 \strokec9 .\cf5 \strokec5 classList\cf9 \strokec9 .\cf5 \strokec5 add\cf9 \strokec9 (\cf10 \strokec10 'correct'\cf9 \strokec9 );\cf5 \cb1 \strokec5 \
+\cb3             zone\cf9 \strokec9 .\cf5 \strokec5 animate\cf9 \strokec9 ([\{\cf5 \strokec5  transform\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 'scale(1)'\cf5 \strokec5  \cf9 \strokec9 \},\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \strokec5  transform\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 'scale(1.1)'\cf5 \strokec5  \cf9 \strokec9 \},\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \strokec5  transform\cf9 \strokec9 :\cf5 \strokec5  \cf10 \strokec10 'scale(1)'\cf5 \strokec5  \cf9 \strokec9 \}],\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \strokec5  duration\cf9 \strokec9 :\cf5 \strokec5  \cf14 \strokec14 300\cf5 \strokec5  \cf9 \strokec9 \});\cf5 \cb1 \strokec5 \
+\cb3             state\cf9 \strokec9 .\cf5 \strokec5 dragScore \cf9 \strokec9 =\cf5 \strokec5  \cf9 \strokec9 (\cf5 \strokec5 state\cf9 \strokec9 .\cf5 \strokec5 dragScore \cf9 \strokec9 ||\cf5 \strokec5  \cf14 \strokec14 0\cf9 \strokec9 )\cf5 \strokec5  \cf9 \strokec9 +\cf5 \strokec5  \cf14 \strokec14 1\cf9 \strokec9 ;\cf5 \strokec5  saveProgress\cf9 \strokec9 ();\cf5 \cb1 \strokec5 \
+\cb3         \cf9 \strokec9 \}\cf5 \strokec5  \cf11 \strokec11 else\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
+\cb3             zone\cf9 \strokec9 .\cf5 \strokec5 style\cf9 \strokec9 .\cf5 \strokec5 backgroundColor \cf9 \strokec9 =\cf5 \strokec5  \cf10 \strokec10 '#fee2e2'\cf9 \strokec9 ;\cf5 \strokec5  zone\cf9 \strokec9 .\cf5 \strokec5 style\cf9 \strokec9 .\cf5 \strokec5 borderColor \cf9 \strokec9 =\cf5 \strokec5  \cf10 \strokec10 '#ef4444'\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3             setTimeout\cf9 \strokec9 (()\cf5 \strokec5  \cf9 \strokec9 =>\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \strokec5  zone\cf9 \strokec9 .\cf5 \strokec5 style\cf9 \strokec9 .\cf5 \strokec5 backgroundColor \cf9 \strokec9 =\cf5 \strokec5  \cf10 \strokec10 ''\cf9 \strokec9 ;\cf5 \strokec5  zone\cf9 \strokec9 .\cf5 \strokec5 style\cf9 \strokec9 .\cf5 \strokec5 borderColor \cf9 \strokec9 =\cf5 \strokec5  \cf10 \strokec10 ''\cf9 \strokec9 ;\cf5 \strokec5  \cf9 \strokec9 \},\cf5 \strokec5  \cf14 \strokec14 500\cf9 \strokec9 );\cf5 \cb1 \strokec5 \
+\cb3         \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\cb3     \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\
+\cb3     \cf11 \strokec11 function\cf5 \strokec5  toggleVocab\cf9 \strokec9 ()\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \strokec5  document\cf9 \strokec9 .\cf5 \strokec5 getElementById\cf9 \strokec9 (\cf10 \strokec10 'vocabPanel'\cf9 \strokec9 ).\cf5 \strokec5 classList\cf9 \strokec9 .\cf5 \strokec5 toggle\cf9 \strokec9 (\cf10 \strokec10 'show'\cf9 \strokec9 );\cf5 \strokec5  \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\cb3     \cf11 \strokec11 function\cf5 \strokec5  renderVocab\cf9 \strokec9 (\cf5 \strokec5 type\cf9 \strokec9 )\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
+\cb3         \cf11 \strokec11 const\cf5 \strokec5  list \cf9 \strokec9 =\cf5 \strokec5  document\cf9 \strokec9 .\cf5 \strokec5 getElementById\cf9 \strokec9 (\cf10 \strokec10 'vocabList'\cf9 \strokec9 );\cf5 \cb1 \strokec5 \
+\cb3         \cf11 \strokec11 if\cf9 \strokec9 (\cf5 \strokec5 type \cf9 \strokec9 ===\cf5 \strokec5  \cf10 \strokec10 'istilah'\cf9 \strokec9 )\cf5 \strokec5  list\cf9 \strokec9 .\cf5 \strokec5 innerHTML \cf9 \strokec9 =\cf5 \strokec5  vocabData\cf9 \strokec9 .\cf5 \strokec5 istilah\cf9 \strokec9 .\cf5 \strokec5 map\cf9 \strokec9 (([\cf5 \strokec5 k\cf9 \strokec9 ,\cf5 \strokec5 v\cf9 \strokec9 ])\cf5 \strokec5  \cf9 \strokec9 =>\cf5 \strokec5  \cf10 \strokec10 `<div class="bg-gray-50 p-2 rounded border mb-2 cursor-pointer hover:bg-orange-50 transition" onclick="insertVocab('\cf9 \strokec9 $\{\cf5 \strokec5 k\cf9 \strokec9 \}\cf10 \strokec10 ')"><strong>\cf9 \strokec9 $\{\cf5 \strokec5 k\cf9 \strokec9 \}\cf10 \strokec10 </strong>: \cf9 \strokec9 $\{\cf5 \strokec5 v\cf9 \strokec9 \}\cf10 \strokec10 </div>`\cf9 \strokec9 ).\cf5 \strokec5 join\cf9 \strokec9 (\cf10 \strokec10 ''\cf9 \strokec9 );\cf5 \cb1 \strokec5 \
+\cb3         \cf11 \strokec11 else\cf5 \strokec5  list\cf9 \strokec9 .\cf5 \strokec5 innerHTML \cf9 \strokec9 =\cf5 \strokec5  vocabData\cf9 \strokec9 .\cf5 \strokec5 kata_kunci\cf9 \strokec9 .\cf5 \strokec5 map\cf9 \strokec9 (\cf5 \strokec5 k \cf9 \strokec9 =>\cf5 \strokec5  \cf10 \strokec10 `<div class="bg-gray-50 p-2 rounded border mb-2 cursor-pointer hover:bg-orange-50 transition" onclick="insertVocab('\cf9 \strokec9 $\{\cf5 \strokec5 k\cf9 \strokec9 \}\cf10 \strokec10 ')">\cf9 \strokec9 $\{\cf5 \strokec5 k\cf9 \strokec9 \}\cf10 \strokec10 </div>`\cf9 \strokec9 ).\cf5 \strokec5 join\cf9 \strokec9 (\cf10 \strokec10 ''\cf9 \strokec9 );\cf5 \cb1 \strokec5 \
+\cb3     \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\
+\cb3     \cf11 \strokec11 function\cf5 \strokec5  insertVocab\cf9 \strokec9 (\cf5 \strokec5 text\cf9 \strokec9 )\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
+\cb3         \cf11 \strokec11 const\cf5 \strokec5  active \cf9 \strokec9 =\cf5 \strokec5  document\cf9 \strokec9 .\cf5 \strokec5 querySelector\cf9 \strokec9 (\cf10 \strokec10 'textarea:focus'\cf9 \strokec9 );\cf5 \cb1 \strokec5 \
+\cb3         \cf11 \strokec11 if\cf9 \strokec9 (\cf5 \strokec5 active\cf9 \strokec9 )\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \cb1 \strokec5 \
+\cb3             \cf11 \strokec11 const\cf5 \strokec5  start \cf9 \strokec9 =\cf5 \strokec5  active\cf9 \strokec9 .\cf5 \strokec5 selectionStart\cf9 \strokec9 ;\cf5 \strokec5  \cf11 \strokec11 const\cf5 \strokec5  end \cf9 \strokec9 =\cf5 \strokec5  active\cf9 \strokec9 .\cf5 \strokec5 selectionEnd\cf9 \strokec9 ;\cf5 \strokec5  \cf11 \strokec11 const\cf5 \strokec5  val \cf9 \strokec9 =\cf5 \strokec5  active\cf9 \strokec9 .\cf5 \strokec5 value\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3             active\cf9 \strokec9 .\cf5 \strokec5 value \cf9 \strokec9 =\cf5 \strokec5  val\cf9 \strokec9 .\cf5 \strokec5 substring\cf9 \strokec9 (\cf14 \strokec14 0\cf9 \strokec9 ,\cf5 \strokec5  start\cf9 \strokec9 )\cf5 \strokec5  \cf9 \strokec9 +\cf5 \strokec5  text \cf9 \strokec9 +\cf5 \strokec5  \cf10 \strokec10 " "\cf5 \strokec5  \cf9 \strokec9 +\cf5 \strokec5  val\cf9 \strokec9 .\cf5 \strokec5 substring\cf9 \strokec9 (\cf5 \strokec5 end\cf9 \strokec9 );\cf5 \cb1 \strokec5 \
+\cb3             active\cf9 \strokec9 .\cf5 \strokec5 selectionStart \cf9 \strokec9 =\cf5 \strokec5  active\cf9 \strokec9 .\cf5 \strokec5 selectionEnd \cf9 \strokec9 =\cf5 \strokec5  start \cf9 \strokec9 +\cf5 \strokec5  text\cf9 \strokec9 .\cf5 \strokec5 length \cf9 \strokec9 +\cf5 \strokec5  \cf14 \strokec14 1\cf9 \strokec9 ;\cf5 \cb1 \strokec5 \
+\cb3             active\cf9 \strokec9 .\cf5 \strokec5 focus\cf9 \strokec9 ();\cf5 \cb1 \strokec5 \
+\cb3             saveAnswer\cf9 \strokec9 (\cf5 \strokec5 active\cf9 \strokec9 .\cf5 \strokec5 id\cf9 \strokec9 ,\cf5 \strokec5  active\cf9 \strokec9 .\cf5 \strokec5 value\cf9 \strokec9 );\cf5 \cb1 \strokec5 \
+\cb3         \cf9 \strokec9 \}\cf5 \strokec5  \cf11 \strokec11 else\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \strokec5  alert\cf9 \strokec9 (\cf10 \strokec10 "Sila klik pada kotak jawapan dahulu sebelum memilih perkataan."\cf9 \strokec9 );\cf5 \strokec5  \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\cb3     \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\
+\cb3     \cf11 \strokec11 function\cf5 \strokec5  saveAnswer\cf9 \strokec9 (\cf5 \strokec5 key\cf9 \strokec9 ,\cf5 \strokec5  val\cf9 \strokec9 )\cf5 \strokec5  \cf9 \strokec9 \{\cf5 \strokec5  state\cf9 \strokec9 .\cf5 \strokec5 answers\cf9 \strokec9 [\cf5 \strokec5 key\cf9 \strokec9 ]\cf5 \strokec5  \cf9 \strokec9 =\cf5 \strokec5  val\cf9 \strokec9 ;\cf5 \strokec5  saveProgress\cf9 \strokec9 ();\cf5 \strokec5  \cf9 \strokec9 \}\cf5 \cb1 \strokec5 \
+\
+\cb3     init\cf9 \strokec9 ();\cf5 \cb1 \strokec5 \
+\cb3   \cf6 \strokec6 </\cf2 \strokec2 script\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\pard\pardeftab720\partightenfactor0
+\cf6 \cb3 \strokec6 </\cf2 \strokec2 body\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cf6 \cb3 \strokec6 </\cf2 \strokec2 html\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+}
